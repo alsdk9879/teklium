@@ -5,7 +5,7 @@ nav#mobile-menu(:class="{'show' : showMenu}")
         li
             router-link(to="/about") About Us
         li
-            router-link(to="/serve") Who We Serve
+            router-link(to="/carbon") A Carbon Alliance
         li 
             router-link(to="/news") News & Insights
         li 

@@ -92,15 +92,4 @@ a {
     text-decoration: none;
     color: #fff;
 }
-
-@media (max-width: 920px) {
-    #desktop-menu {
-        display: none;
-    }
-}
-@media (min-width: 921px) {
-    #desktop-menu {
-        display: block;
-    }
-}
 </style>

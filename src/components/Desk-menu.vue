@@ -4,12 +4,12 @@ nav#desktop-menu
         li 
             router-link(to="/about") About Us
         li
-            router-link(to="/serve") Who We Serve
+            router-link(to="/carbon") A Carbon Alliance
         li 
             router-link(to="/news") News & Insights
         li 
             router-link(to="/tech") Technologies
-    button(@click="router.push('/contact')") Contact Us
+    button.lineButton(@click="router.push('/contact')") Contact Us
 </template>
 
 <script setup>
@@ -34,20 +34,16 @@ const route = useRoute();
             }
         }
     }
-    button {
-        display: inline-block;
-        background-color: unset;
-        border: 2px solid #77F7B4;
-        border-radius: 1rem;
-        font-size: 0.9rem;
-        color: #fff;
-        padding: 0.4rem 0.9rem;
-        cursor: pointer;
+}
 
-        &:hover {
-            background-color: #77F7B4;
-            color: #061741;
-        }
+@media (max-width: 920px) {
+    #desktop-menu {
+        display: none;
+    }
+}
+@media (min-width: 921px) {
+    #desktop-menu {
+        display: block;
     }
 }
 </style>
