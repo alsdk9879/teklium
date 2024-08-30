@@ -14,7 +14,8 @@ section.white
 
     .inner
         .wrap
-            .image(style="background-color:#999; text-align:center") 관련 이미지
+            .image 
+                img(src="@/assets/img/internet.webp")
             .content
                 h1 Introduction
                 strong.sky Jason Ho has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.

@@ -4,6 +4,7 @@ import About from '@/views/About.vue'
 import Carbon from '@/views/Carbon.vue'
 import News from '@/views/News.vue'
 import Tech from '@/views/Tech.vue'
+import TechView from '@/views/tech/Tech-View.vue'
 import Contact from '@/views/Contact.vue'
 
 const router = createRouter({
@@ -32,7 +33,18 @@ const router = createRouter({
     {
       path: '/tech',
       name: 'tech',
-      component: Tech
+      component: Tech,
+    },
+    {
+      path: '/tech',
+      component: TechView,
+      children: [
+        {
+          path: 'ai-city',
+          name: 'ai-city',
+          component: () => import('@/views/tech/Ai.vue')
+        }
+      ]
     },
     {
       path: '/contact',

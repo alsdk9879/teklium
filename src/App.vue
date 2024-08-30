@@ -21,7 +21,7 @@ footer
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 import DeskMenu from '@/components/Desk-menu.vue'
 import MobMenu from '@/components/Mob-menu.vue'
@@ -38,6 +38,12 @@ window.addEventListener('scroll', (e) => {
     currentScrollY > previousScrollY ? scroll.value = true : scroll.value = false;
 
     previousScrollY = currentScrollY;
+})
+
+watch(route, (nv) => {
+    if (nv) {
+        window.scrollTo(0, 0);
+    }
 })
 </script>
 

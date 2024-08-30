@@ -195,12 +195,13 @@ const route = useRoute();
         color: #5c6479;
     }
     p {
+        font-size: 0.9rem;
         color: #999;
         overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 10; 
-        -webkit-box-orient: vertical;
+        // text-overflow: ellipsis;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 10; 
+        // -webkit-box-orient: vertical;
     }
 }
 </style>

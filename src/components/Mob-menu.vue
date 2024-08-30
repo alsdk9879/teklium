@@ -37,7 +37,7 @@ watch(route, (o, n) => {
 
 <style scoped lang="less">
 #mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     width: 100%;

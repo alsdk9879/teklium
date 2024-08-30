@@ -16,12 +16,13 @@ section.white
         h1(style="text-align:center") Press Releases
 
         .cardWrap 
-            .card 
-                .image 이미지
+            router-link.card(v-for="r in releases" :to="'/news/' + r.tit.replaceAll(' ', '-').toLowerCase()")
+                .image
+                    img(:src="'/src/assets/img/' + r.img")
                 .content 
-                    .date.sky 2024.01.01
-                    h2 Reusable Carbon Chip Announcement
-                    p Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.
+                    .date.sky {{ r.date }}
+                    h2 {{ r.tit }}
+                    p {{ r.cont }}
                 .button Read More >
 
     br
@@ -36,12 +37,13 @@ section.white
         h1(style="text-align:center") White Papers
 
         .cardWrap 
-            .card 
-                .image 이미지
+            router-link.card(v-for="p in papers" :to="'/news/' + p.tit.replaceAll(' ', '-').toLowerCase()")
+                .image 
+                    img(:src="'/src/assets/img/' + p.img")
                 .content 
-                    .date.sky 2024.01.01
-                    h2 Emulated Quantum Communication
-                    p Explore the groundbreaking research and applications of quantum communication technology, highlighted in Mark Bayliss’s upcoming white paper.
+                    .date.sky {{ p.date }}
+                    h2 {{ p.tit }}
+                    p {{ p.cont }}
                 .button Read More >
 
     br
@@ -51,7 +53,47 @@ section.white
 </template>
 
 <script setup>
+let releases = [
+    {
+        img: "carbon.webp",
+        tit: "Reusable Carbon Chip Announcement",
+        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+        date: "2024.01.01"
+    },
+    {
+        img: "carbon.webp",
+        tit: "Reusable Carbon Chip Announcement",
+        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+        date: "2024.01.01"
+    },
+    {
+        img: "carbon.webp",
+        tit: "Reusable Carbon Chip Announcement",
+        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+        date: "2024.01.01"
+    }
+]
 
+let papers = [
+    {
+        img: "communication.webp",
+        tit: "Emulated Quantum Communication",
+        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+        date: "2024.01.01"
+    },
+    {
+        img: "communication.webp",
+        tit: "Reusable Carbon Chip Announcement",
+        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+        date: "2024.01.01"
+    },
+    {
+        img: "communication.webp",
+        tit: "Reusable Carbon Chip Announcement",
+        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+        date: "2024.01.01"
+    }
+]
 </script>
 
 <style scoped lang="less">
@@ -66,6 +108,8 @@ section.white
     transform: translateY(0px);
     transition: all 0.3s;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 
     &:hover {
         transform: translateY(-5px);
@@ -75,6 +119,13 @@ section.white
         width: 100%;
         height: 300px;
         background-color: #999;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     .content {
         flex-grow: 1;
