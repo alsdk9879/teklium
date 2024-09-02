@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark(style="padding-top: 12rem")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") {{ route.path.split('/')[2] }}
+        h1.title {{ route.path.split('/')[2] }}
     
     br
     br

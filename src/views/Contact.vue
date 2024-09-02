@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem;")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") Contact Teklium
+        h1.title Contact Teklium
         p.green We want to hear from you
     img.bgi(src="@/assets/img/cu.png")
     
@@ -15,24 +15,24 @@ section.white
 
     .inner
         h1(style="text-align:center; margin-top:0 ") Connect with our team 
-        form
+        form(@submit.prevent="(e) => skapi.sendInquiry(e)")
             label Name
-            input(type="text" placeholder="Your name")
+            input(name='name' type="text" placeholder="Your name" required)
             
             br
             
             label Email
-            input(type="email" placeholder="Your email")
+            input(name='email' type="email" placeholder="your@email.com" required)
             
             br
             
-            label Phone number
-            input(placeholder="Your phone number")
+            label Subject
+            input(name='subject' placeholder="Your subject" required)
 
             br
 
-            label Content
-            textarea(placeholder="Your message" style="min-height: 150px")
+            label Message
+            textarea(name='message' placeholder="Your message" style="min-height: 150px" required)
 
             br
             br
@@ -47,7 +47,7 @@ section.white
 </template>
 
 <script setup>
-
+import { skapi } from '@/main'
 </script>
 
 <style scoped lang="less">

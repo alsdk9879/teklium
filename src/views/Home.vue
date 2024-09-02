@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark(style="padding-top: 12rem")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") Teklium
+        h1.title Teklium
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
     
     br

@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem;")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") A Carbon Alliance
+        h1.title A Carbon Alliance
         p.green eco-friendly carbon chips
     img.bgi(src="@/assets/img/c.png")
 

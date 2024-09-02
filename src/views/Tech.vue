@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem;")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") Revolutionary Technologies
+        h1.title Revolutionary Technologies
         p.green Innovations That Matter
     img.bgi(src="@/assets/img/t.png")
 

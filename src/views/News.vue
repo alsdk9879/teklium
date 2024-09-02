@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark(style="padding-top: 12rem")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") News & Insight
+        h1.title News & Insight
         p.green Stay updated with the latest developments at Teklium
     
     br
