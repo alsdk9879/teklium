@@ -15,7 +15,7 @@ section.white
 
     .inner
         h1(style="text-align:center; margin-top:0 ") Connect with our team 
-        form(@submit.prevent="(e) => skapi.sendInquiry(e)")
+        form#form(@submit.prevent="sendEmail")
             label Name
             input(name='name' type="text" placeholder="Your name" required)
             
@@ -48,6 +48,13 @@ section.white
 
 <script setup>
 import { skapi } from '@/main'
+
+let sendEmail = (e) => {
+    skapi.sendInquiry(e).then(r => {
+        alert('send Email!');
+        document.getElementById('form').reset();
+    })
+}
 </script>
 
 <style scoped lang="less">
