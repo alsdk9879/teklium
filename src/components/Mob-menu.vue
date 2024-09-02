@@ -6,7 +6,7 @@ nav#mobile-menu(:class="{'show' : showMenu}")
             router-link(to="/about") About Us
         li
             router-link(to="/carbon") A Carbon Alliance
-        li 
+        //- li 
             router-link(to="/news") News & Insights
         li 
             router-link(to="/tech") Technologies

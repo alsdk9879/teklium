@@ -7,15 +7,26 @@ header(:class="{'hide':scroll}")
 main
     router-view
 footer
-    router-link(to="/" style="flex-grow:3")
-        h2(style="margin: 0;") TEKLIUM INC.
+    div
+        router-link(to="/" style="flex-grow:3")
+            h2(style="margin: 0;") TEKLIUM INC.
+
+        br
+
+        p(style="margin:0; font-size:0.8rem;") Privacy Policy | Terms & Conditions
+        p(style="margin:0; font-size:0.8rem;") © 2024 teklium. All rights reserved.
+
     .routeWrap
-        .route
+        //- .route
             .title News & Insight
             p Explore news and thought leadership about water and sustainability.
+        .route 
+            .title Location 
+            p Teklium Inc., 2880 Zanker Road, San Jose, CA 95134
         .route
             .title Contact Us
-            p Learn more or get started with a project today.
+            p Should you wish to reach out to us, you can send us an email.
+            router-link(to="/contact" style="font-size: 0.9rem") Get in touch >
 
 </template>
 

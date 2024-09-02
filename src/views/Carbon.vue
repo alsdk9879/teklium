@@ -1,9 +1,10 @@
 <template lang="pug">
-section.dark(style="padding-top: 12rem")
+section.dark.img(style="padding-top: 12rem;")
     .inner
         h1(style="font-size: 3.5rem; margin-bottom:0") A Carbon Alliance
         p.green eco-friendly carbon chips
-    
+    img.bgi(src="@/assets/img/c.png")
+
     br
     br
 
@@ -34,7 +35,7 @@ section.white
     br
     br
 
-section.grad
+//- section.grad
     br
     br
     br

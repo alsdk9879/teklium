@@ -42,7 +42,42 @@ const router = createRouter({
         {
           path: 'ai-city',
           name: 'ai-city',
-          component: () => import('@/views/tech/Ai.vue')
+          component: () => import('@/views/tech/ai-city.vue')
+        },
+        {
+          path: 'chip-subscription-business',
+          name: 'chip-subscription-business',
+          component: () => import('@/views/tech/chip-subscription-business.vue')
+        },
+        {
+          path: 'content-aware-memory',
+          name: 'content-aware-memory',
+          component: () => import('@/views/tech/content-aware-memory.vue')
+        },
+        {
+          path: 'memory-mapped-cpu',
+          name: 'memory-mapped-cpu',
+          component: () => import('@/views/tech/memory-mapped-cpu.vue')
+        },
+        {
+          path: 'quantum-communication',
+          name: 'quantum-communication',
+          component: () => import('@/views/tech/quantum-communication.vue')
+        },
+        {
+          path: 'quantum-spooling',
+          name: 'quantum-spooling',
+          component: () => import('@/views/tech/quantum-spooling.vue')
+        },
+        {
+          path: 'reusable-carbon-semiconductors',
+          name: 'reusable-carbon-semiconductors',
+          component: () => import('@/views/tech/reusable-carbon-semiconductors.vue')
+        },
+        {
+          path: 'the-super-internet',
+          name: 'the-super-internet',
+          component: () => import('@/views/tech/the-super-internet.vue')
         }
       ]
     },

@@ -19,6 +19,10 @@ section {
 
     &.dark {
         color: #fff;
+
+        &.img {
+            overflow:hidden; position:relative; isolation: isolate;
+        }
     }
     &.white {
         background-color: #fff;
@@ -50,6 +54,14 @@ section {
 
 .wordset {
     display: inline-block;
+}
+
+.bgi {
+    position: absolute;
+    right: -10%;
+    bottom: -50%;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 .wrap {

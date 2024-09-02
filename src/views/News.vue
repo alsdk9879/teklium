@@ -59,18 +59,6 @@ let releases = [
         tit: "Reusable Carbon Chip Announcement",
         cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
         date: "2024.01.01"
-    },
-    {
-        img: "carbon.webp",
-        tit: "Reusable Carbon Chip Announcement",
-        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
-        date: "2024.01.01"
-    },
-    {
-        img: "carbon.webp",
-        tit: "Reusable Carbon Chip Announcement",
-        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
-        date: "2024.01.01"
     }
 ]
 
@@ -78,18 +66,6 @@ let papers = [
     {
         img: "communication.webp",
         tit: "Emulated Quantum Communication",
-        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
-        date: "2024.01.01"
-    },
-    {
-        img: "communication.webp",
-        tit: "Reusable Carbon Chip Announcement",
-        cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
-        date: "2024.01.01"
-    },
-    {
-        img: "communication.webp",
-        tit: "Reusable Carbon Chip Announcement",
         cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
         date: "2024.01.01"
     }

@@ -1,8 +1,9 @@
 <template lang="pug">
-section.dark(style="padding-top: 12rem")
+section.dark.img(style="padding-top: 12rem;")
     .inner
         h1(style="font-size: 3.5rem; margin-bottom:0") Jason Ho, CEO
         p.green A leading expert in semiconductor technology, #[br]specializing in Integrated Circuit (IC) Design with a focus #[br]on real-time AI technologies.
+    img.bgi(src="@/assets/img/i.png")
     
     br
     br

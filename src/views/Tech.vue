@@ -1,8 +1,9 @@
 <template lang="pug">
-section.dark(style="padding-top: 12rem")
+section.dark.img(style="padding-top: 12rem;")
     .inner
         h1(style="font-size: 3.5rem; margin-bottom:0") Revolutionary Technologies
         p.green Innovations That Matter
+    img.bgi(src="@/assets/img/t.png")
 
     br
     br
@@ -76,7 +77,7 @@ let techs = [
     ,
     {
         img: "carbon.webp",
-        tit: "Reusable Carbon Semiconductors ",
+        tit: "Reusable Carbon Semiconductors",
         link: "carbon",
         desc: "Industrialization, economics, science, and education heavily rely on artificial intelligence (AI) and semiconductor technology. Yet, the computing power of artificial intelligence doubles every three months, exceeding Moore's Law by far. AI also consumes a substantial amount of electricity, enormous computing power, and vast storage. "
     }
