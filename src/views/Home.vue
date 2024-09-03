@@ -150,7 +150,7 @@ const route = useRoute();
             display: none;
         }
         .hidden {
-            bottom: 1rem;
+            bottom: 0.5rem;
         }
     }
     &:first-child {
@@ -175,6 +175,7 @@ const route = useRoute();
         bottom: -100%;
         transition: all .3s;
         line-height: 1.2;
+        padding: 1rem;
     }
 }
 .vision .card {
