@@ -13,7 +13,7 @@ section.white
     br
     br
 
-    .inner
+    .inner(style="max-width:600px")
         h1(style="text-align:center; margin-top:0 ") Connect with our team 
         form#form(@submit.prevent="sendEmail")
             label Name

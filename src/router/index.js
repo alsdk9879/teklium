@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import Carbon from '@/views/Carbon.vue'
 import News from '@/views/News.vue'
+import NewsView from '@/views/News-View.vue'
 import Tech from '@/views/Tech.vue'
 import TechView from '@/views/tech/Tech-View.vue'
 import Contact from '@/views/Contact.vue'
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/news',
       name: 'news',
       component: News
+    },
+    {
+      path: '/news/:id',
+      name: 'news-view',
+      component: NewsView
     },
     {
       path: '/tech',
