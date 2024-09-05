@@ -15,7 +15,8 @@ section.white
     .inner 
         h1(style="text-align:center") Press Releases
 
-        .loading(v-if="fetching") ...
+        template(v-if="fetching")
+            Loading
         .cardWrap(v-else)
             //- a.card(v-for="r in releases" :href="r.url")
             router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
@@ -58,60 +59,12 @@ section.white
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { ref } from 'vue';
-import { skapi } from '@/main'
-import { releases } from '@/assets/js/news'
+import { releases, fetching ,getNewsletters } from '@/assets/js/news'
+import Loading from '@/components/Loading.vue'
 
 const router = useRouter();
 const route = useRoute();
 
-let fetching = ref(false);
-
-let getNewsletters = async() => {
-    fetching.value = true;
-
-    let fetchedData = await skapi.getNewsletters();
-
-    releases.value = fetchedData.list;
-    console.log(releases.value)
-
-    let crawl = async(obj) => {
-        // let decodedUrl = decodeURI(url);
-        let res = await fetch(obj.url);
-        let html = await res.text();
-        // console.log(html)
-
-        let parser = new DOMParser();
-        let doc = parser.parseFromString(html, 'text/html');
-        let imgTags = doc.querySelectorAll('img');
-        let imageLinks = Array.from(imgTags).map(img => img.src);
-        let divTags = doc.querySelectorAll('div');
-        let divContent = Array.from(divTags).map(div => div.textContent.trim()).filter(text => text.length > 0);
-        let preTags = doc.querySelectorAll('pre');
-        let preContent = Array.from(preTags).map(pre => pre.textContent.trim()).filter(text => text.length > 0);
-
-        if(imageLinks.length) {
-            obj.img = imageLinks[0];
-        }
-
-        if(divContent.length) {
-            obj.cont = divContent[0];
-        } else {
-            obj.cont = preContent[0];
-        }
-    }
-
-    for(let i=0; i < releases.value.length; i++) {
-        crawl(releases.value[i])
-    }
-
-
-    // for(let i=0; i < fetchedData.list.length; i++) {
-    //     crawl(fetchedData.list[i])
-    //     releases.value[fetchedData.list[i].message_id] = fetchedData.list[i];
-    // }
-
-    fetching.value = false;
-}
 getNewsletters();
 
 let formatTimestamp = (timestamp) => {
@@ -136,13 +89,6 @@ let formatTimestamp = (timestamp) => {
 </script>
 
 <style scoped lang="less">
-.loading {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3rem;
-    opacity: 0.5;
-    padding: 1rem 0 5rem 0;
-}
 .card {
     display: flex;
     flex-wrap: wrap;
