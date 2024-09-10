@@ -44,7 +44,7 @@ section.white
                         p An environmentally friendly energy storage solution utilizing flywheel angular momentum.
                     li Pathium Display Technology (PDT)
                         p A technology for displaying holographic videos without the need for 3D glasses.
-            .card
+            //- .card
                 h2 Mai Logic
                 strong.sky CEO
 

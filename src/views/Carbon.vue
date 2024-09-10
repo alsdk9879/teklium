@@ -37,15 +37,16 @@ section.white
     br
     br
 
-//- section.grad
+section.grad
     br
     br
     br
     br
     br
 
-    .inner(style="text-align:center")
-        h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
+    .inner(style="text-align:center; max-width: 1000px;")
+        //- h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
+        h1(style="color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
         button.lineButton(@click="router.push('/news')") View more
     br
     br

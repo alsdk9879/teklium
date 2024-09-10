@@ -94,7 +94,7 @@ section.grad
 
     .inner(style="text-align:center")
         h1(style="color:#fff") Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
-        button.lineButton(@click="router.push('/about')") View more
+        button.lineButton(@click="router.push('/tech')") View more
     br
     br
     br
