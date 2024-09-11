@@ -97,6 +97,19 @@ section.white
     br
     br
 
+section.white 
+    br
+
+    .inner(style="text-align:center")
+        h1 Partner
+        .imgWrap 
+            img(src="@/assets/img/skapi.png")
+            img(src="@/assets/img/nantero.svg" style="filter: brightness(0);")
+            //- img(src="@/assets/img/skapi.png")
+
+    br
+    br
+
 </template>
 
 <script setup>
@@ -141,6 +154,7 @@ section.white
         }
     }
 }
+
 .innovate {
     padding-left: 1rem;
 
@@ -153,6 +167,18 @@ section.white
             color: #999;
             font-weight: normal;
         }
+    }
+}
+
+.imgWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+        width: 150px;
     }
 }
 </style>

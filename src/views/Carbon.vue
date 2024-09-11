@@ -57,8 +57,8 @@ section.white
         br
 
         .wrap 
-            .image(style="background-color:#000;")
-                img(src="@/assets/img/nantero.svg")
+            .image
+                img(src="@/assets/img/nantero.svg" style="filter: brightness(0);")
             .content
                 h1 Nantero 
                 strong.sky Developing a new generation of super-fast, energy-efficient and secure non-volatile memory with the highest endurance.
