@@ -15,7 +15,7 @@ section.white
 
     .inner
         .wrap
-            .image 
+            .image(style="height:500px") 
                 img(src="@/assets/img/internet.webp")
             .content
                 h1 Introduction
@@ -44,13 +44,14 @@ section.white
                         p An environmentally friendly energy storage solution utilizing flywheel angular momentum.
                     li Pathium Display Technology (PDT)
                         p A technology for displaying holographic videos without the need for 3D glasses.
-            //- .card
-                h2 Mai Logic
-                strong.sky CEO
+            .card
+                h2 Advanced Projects
+                strong.sky &nbsp;
 
                 hr
 
-                p Raised over $10 million in partnership with IBM and Motorola, introducing several multi-million gate ICs.
+                p Successfully developed and delivered dozens of AI solutions for various government related projects, including the F-35 Fighter Jet Project.
+                p Served as lead designer of the custom computer chip control and image display systems for F-35 Fighter.
             .card
                 h2 Revatron Co., Ltd
                 strong.sky Chief Technology Officer (CTO)

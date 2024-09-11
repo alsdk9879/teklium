@@ -37,6 +37,36 @@ section.white
     br
     br
 
+section.white 
+    br
+    br
+    br
+
+    .inner
+        .wrap
+            .image(style="height:400px")
+                img(src="@/assets/img/communication.webp")
+            .content
+                h1 Mark Bayliss
+                strong.sky President Visual link, Member of FCC technical advisory council.
+                p The FCC’s Technology Advisory Council (TAC) provides technical advice to the FCC. The TAC is comprised of a diverse array of leading experts that will help the FCC identify important areas of innovation and develop informed technology policies supporting America’s competitiveness and job creation in the global economy.
+
+        br
+        br
+        br
+        br
+
+        .wrap 
+            .image(style="background-color:#000;")
+                img(src="@/assets/img/nantero.svg")
+            .content
+                h1 Nantero 
+                strong.sky Developing a new generation of super-fast, energy-efficient and secure non-volatile memory with the highest endurance.
+                p Nantero has developed the industry’s only non-volatile memory made with carbon nanotubes, enabling a new generation of super-fast, energy-efficient and secure memory with the highest endurance.  These NRAM™ storage solutions will enable Nantero to drive new innovations in consumer electronics, computing, automotive, space exploration, industrial, enterprise networks, and more
+
+        br
+        br
+
 section.grad
     br
     br
