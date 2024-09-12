@@ -1,9 +1,9 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem")
-    .inner
+    .inner(style="position:relative")
         h1.title Teklium
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
-    img.bgi(src="@/assets/img/teklium.png" style="right:0; bottom:0; width:50%; max-width:500px")
+        img.bgi(src="@/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
 
     br
     br

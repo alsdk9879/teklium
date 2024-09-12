@@ -105,7 +105,7 @@ section.white
         .imgWrap 
             img(src="@/assets/img/skapi.png")
             img(src="@/assets/img/nantero.svg" style="filter: brightness(0);")
-            //- img(src="@/assets/img/skapi.png")
+            img(src="@/assets/img/revatron.png" style="width: 50px")
 
     br
     br
