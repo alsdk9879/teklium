@@ -45,14 +45,6 @@ section.white
                     li Pathium Display Technology (PDT)
                         p A technology for displaying holographic videos without the need for 3D glasses.
             .card
-                h2 Advanced Projects
-                strong.sky &nbsp;
-
-                hr
-
-                p Successfully developed and delivered dozens of AI solutions for various government related projects, including the F-35 Fighter Jet Project.
-                p Served as lead designer of the custom computer chip control and image display systems for F-35 Fighter.
-            .card
                 h2 Revatron Co., Ltd
                 strong.sky Chief Technology Officer (CTO)
 
@@ -70,6 +62,14 @@ section.white
                 hr
 
                 p Focused on innovative solutions and international cooperation to advance Japan’s semiconductor industry.
+            .card
+                h2 Advanced Projects
+                strong.sky &nbsp;
+
+                hr
+
+                p Successfully developed and delivered dozens of AI solutions for various government related projects, including the F-35 Fighter Jet Project.
+                p Served as lead designer of the custom computer chip control and image display systems for F-35 Fighter.
 
     br
     br
@@ -104,8 +104,9 @@ section.white
         h1 Partner
         .imgWrap 
             img(src="@/assets/img/skapi.png")
-            img(src="@/assets/img/nantero.svg" style="filter: brightness(0);")
-            img(src="@/assets/img/revatron.png" style="width: 50px")
+            img(src="@/assets/img/focusgroup.jpeg")
+            img(src="@/assets/img/nantero.svg" style="filter: brightness(0); height: 35px")
+            img(src="@/assets/img/revatron.png")
 
     br
     br
@@ -180,7 +181,7 @@ section.white
     gap: 2rem;
 
     img {
-        width: 150px;
+        height: 50px;
     }
 }
 </style>
