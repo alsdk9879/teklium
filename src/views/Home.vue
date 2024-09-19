@@ -1,9 +1,10 @@
 <template lang="pug">
-section.dark(style="padding-top: 12rem")
-    .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") Teklium
+section.dark.img(style="padding-top: 12rem")
+    .inner(style="position:relative")
+        h1.title Teklium
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
-    
+        img.bgi(src="@/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
+
     br
     br
 
@@ -94,7 +95,7 @@ section.grad
 
     .inner(style="text-align:center")
         h1(style="color:#fff") Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
-        button.lineButton(@click="router.push('/about')") View more
+        button.lineButton(@click="router.push('/tech')") View more
     br
     br
     br
@@ -150,7 +151,7 @@ const route = useRoute();
             display: none;
         }
         .hidden {
-            bottom: 1rem;
+            bottom: 0.5rem;
         }
     }
     &:first-child {
@@ -175,6 +176,7 @@ const route = useRoute();
         bottom: -100%;
         transition: all .3s;
         line-height: 1.2;
+        padding: 1rem;
     }
 }
 .vision .card {
@@ -195,12 +197,13 @@ const route = useRoute();
         color: #5c6479;
     }
     p {
+        font-size: 0.9rem;
         color: #999;
         overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 10; 
-        -webkit-box-orient: vertical;
+        // text-overflow: ellipsis;
+        // display: -webkit-box;
+        // -webkit-line-clamp: 10; 
+        // -webkit-box-orient: vertical;
     }
 }
 </style>

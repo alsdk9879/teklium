@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark(style="padding-top: 12rem")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") News & Insight
+        h1.title News & Insight
         p.green Stay updated with the latest developments at Teklium
     
     br
@@ -15,19 +15,24 @@ section.white
     .inner 
         h1(style="text-align:center") Press Releases
 
-        .cardWrap 
-            .card 
-                .image 이미지
+        template(v-if="fetching")
+            Loading
+        .cardWrap(v-else)
+            //- a.card(v-for="r in releases" :href="r.url")
+            router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
+                .image
+                    template(v-if="r.img")
+                        img(:src="r.img")
                 .content 
-                    .date.sky 2024.01.01
-                    h2 Reusable Carbon Chip Announcement
-                    p Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.
+                    .date.sky {{ formatTimestamp(r.timestamp) }}
+                    h2 {{ r.subject }}
+                    p {{ r.cont }}
                 .button Read More >
 
     br
     br
 
-section.white
+//- section.white
     br
     br
     br
@@ -36,12 +41,13 @@ section.white
         h1(style="text-align:center") White Papers
 
         .cardWrap 
-            .card 
-                .image 이미지
+            router-link.card(v-for="p in papers" :to="'/news/' + p.tit.replaceAll(' ', '-').toLowerCase()")
+                .image 
+                    img(:src="'/src/assets/img/' + p.img")
                 .content 
-                    .date.sky 2024.01.01
-                    h2 Emulated Quantum Communication
-                    p Explore the groundbreaking research and applications of quantum communication technology, highlighted in Mark Bayliss’s upcoming white paper.
+                    .date.sky {{ p.date }}
+                    h2 {{ p.tit }}
+                    p {{ p.cont }}
                 .button Read More >
 
     br
@@ -51,7 +57,35 @@ section.white
 </template>
 
 <script setup>
+import { useRoute, useRouter } from 'vue-router';
+import { ref } from 'vue';
+import { releases, fetching ,getNewsletters } from '@/assets/js/news'
+import Loading from '@/components/Loading.vue'
 
+const router = useRouter();
+const route = useRoute();
+
+getNewsletters();
+
+let formatTimestamp = (timestamp) => {
+    let date = new Date(timestamp);
+    let year   = date.getFullYear().toString();
+    let month  = ("0" + (date.getMonth() + 1)).slice(-2);
+    let day    = ("0" + date.getDate()).slice(-2);
+
+    let formattedDateTime = `${year}/${month}/${day}`;
+
+    return formattedDateTime;
+}
+
+// let papers = [
+//     {
+//         img: "communication.webp",
+//         tit: "Emulated Quantum Communication",
+//         cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
+//         date: "2024.01.01"
+//     }
+// ]
 </script>
 
 <style scoped lang="less">
@@ -66,6 +100,8 @@ section.white
     transform: translateY(0px);
     transition: all 0.3s;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 
     &:hover {
         transform: translateY(-5px);
@@ -74,7 +110,15 @@ section.white
     .image {
         width: 100%;
         height: 300px;
-        background-color: #999;
+        // background-color: #999;
+        background: linear-gradient(150deg, rgba(6,23,65,1) 0%, rgba(9,51,121,1) 33%, rgba(119,247,180,1) 100%);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
     .content {
         flex-grow: 1;

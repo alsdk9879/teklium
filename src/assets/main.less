@@ -19,6 +19,15 @@ section {
 
     &.dark {
         color: #fff;
+
+        &.img {
+            overflow:hidden; position:relative; isolation: isolate;
+        }
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
     }
     &.white {
         background-color: #fff;
@@ -50,6 +59,14 @@ section {
 
 .wordset {
     display: inline-block;
+}
+
+.bgi {
+    position: absolute;
+    right: -10%;
+    bottom: -50%;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 .wrap {
@@ -142,5 +159,11 @@ section {
 @media all and (max-width: 1199px) {
     html {
         font-size: 18px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    html {
+        font-size: 16px;
     }
 }

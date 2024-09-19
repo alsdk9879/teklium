@@ -1,9 +1,23 @@
 <template lang="pug">
-section.dark(style="padding-top: 12rem")
+section.dark.img(style="padding-top: 12rem;")
     .inner
-        h1(style="font-size: 3.5rem; margin-bottom:0") Jason Ho, CEO
-        p.green A leading expert in semiconductor technology, #[br]specializing in Integrated Circuit (IC) Design with a focus #[br]on real-time AI technologies.
+        h1.title About Us
+        p.green Meet the people designing the future at Teklium.
+    img.bgi(src="@/assets/img/i.png")
     
+    br
+    br
+
+section.white 
+    br
+    br
+    br
+
+    .inner(style="max-width:900px; text-align:center")
+        h1 Teklium is a global leader
+        strong.sky in AI, semiconductor technology, and sustainable energy solutions, pioneering advanced carbon semiconductors to drive performance, efficiency, and industry transformation.
+
+    br
     br
     br
 
@@ -14,10 +28,11 @@ section.white
 
     .inner
         .wrap
-            .image(style="background-color:#999; text-align:center") 관련 이미지
+            .image(style="height:500px") 
+                img(src="@/assets/img/internet.webp")
             .content
-                h1 Introduction
-                strong.sky Jason Ho has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
+                h1 Jason Ho, CEO
+                strong.sky He has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
                 p He holds a Master’s degree in Electrical Engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan. Jason has contributed to numerous groundbreaking projects, including the F-35 Fighter Jet. With over 400 international patents in computer chip design, optical devices, computer security systems, and neural networks, he has made significant impacts across various technological fields.
 
 section.white
@@ -43,13 +58,6 @@ section.white
                     li Pathium Display Technology (PDT)
                         p A technology for displaying holographic videos without the need for 3D glasses.
             .card
-                h2 Mai Logic
-                strong.sky CEO
-
-                hr
-
-                p Raised over $10 million in partnership with IBM and Motorola, introducing several multi-million gate ICs.
-            .card
                 h2 Revatron Co., Ltd
                 strong.sky Chief Technology Officer (CTO)
 
@@ -67,12 +75,20 @@ section.white
                 hr
 
                 p Focused on innovative solutions and international cooperation to advance Japan’s semiconductor industry.
+            .card
+                h2 Advanced Projects
+                strong.sky &nbsp;
 
+                hr
+
+                p Successfully developed and delivered dozens of AI solutions for various government related projects, including the F-35 Fighter Jet Project.
+                p Served as lead designer of the custom computer chip control and image display systems for F-35 Fighter.
+
+    br
     br
     br
 
 section.white 
-    br
     br
     br
     br
@@ -90,6 +106,59 @@ section.white
                         p A network service solution that enhances peer-to-peer communications with advanced error recovery and encryption.
                     li.sky Super Internet Technology
                         p A low-latency communication technology designed to enhance 5G networks.
+    br
+    br
+    br
+
+section.white 
+    br
+    br
+    br
+
+    .inner
+        h1(style="text-align:center") Our team
+        .linkWrap 
+            //- .link
+                .image
+                    img(src="@/assets/img/internet.webp")
+                .content
+                    h2 Jason Ho
+                    strong.sky CEO
+                .button Read More >
+
+            a.link(href="https://www.skapi.com/" target="_blank")
+                .image(style="background: linear-gradient(32deg, #293fe6, #f000 80%), linear-gradient(229deg, #293fe6, #0f00 80%), linear-gradient(151deg, #0fa, #fcd04bcc 80%);")
+                .content 
+                    h2 Skapi 
+                    strong.sky Partner
+                .button Read More >
+            
+            a.link(href="https://www.linkedin.com/in/mark-bayliss-3b45777?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank") 
+                .image 
+                .content 
+                    h2 Mark Bayliss
+                    strong.sky Strategic Partner
+                .button Read More > 
+
+    br
+    br
+    br
+
+
+section.white 
+    br
+    br
+    br
+
+    .inner(style="text-align:center")
+        h1 Partner
+        .imgWrap 
+            img(src="@/assets/img/skapi.png")
+            img(src="@/assets/img/focusgroup.jpeg")
+            img(src="@/assets/img/nantero.svg" style="filter: brightness(0); height: 35px")
+            img(src="@/assets/img/revatron.png")
+
+    br
     br
     br
     br
@@ -138,6 +207,63 @@ section.white
         }
     }
 }
+
+.linkWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.link {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 32%;
+    min-width: 320px;
+    padding: 1rem;
+    box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .05);
+    transform: translateY(0px);
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .1);
+    }
+    .image {
+        width: 100%;
+        height: 300px;
+        // background-color: #999;
+        background: linear-gradient(150deg, rgba(6,23,65,1) 0%, rgba(9,51,121,1) 33%, rgba(119,247,180,1) 100%);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .content {
+        flex-grow: 1;
+
+        h2 {
+            margin: 0;
+        }
+    }
+    p {
+        color: #999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+    }
+}
+
 .innovate {
     padding-left: 1rem;
 
@@ -150,6 +276,18 @@ section.white
             color: #999;
             font-weight: normal;
         }
+    }
+}
+
+.imgWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+        height: 50px;
     }
 }
 </style>

@@ -3,13 +3,15 @@
 nav#mobile-menu(:class="{'show' : showMenu}")
     ul
         li
-            router-link(to="/about") About Us
+            router-link(to="/about" @click="showMenu = false") About Us
         li
-            router-link(to="/carbon") A Carbon Alliance
+            router-link(to="/carbon" @click="showMenu = false") A Carbon Alliance
         li 
-            router-link(to="/news") News & Insights
+            router-link(to="/news" @click="showMenu = false") News & Insights
         li 
-            router-link(to="/tech") Technologies
+            router-link(to="/tech" @click="showMenu = false") Technologies
+        li 
+            router-link(to="/contact" @click="showMenu = false") Contact Us
 </template>
 
 <script setup>
@@ -37,7 +39,7 @@ watch(route, (o, n) => {
 
 <style scoped lang="less">
 #mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
