@@ -5,17 +5,11 @@ export let releases = ref({});
 export let endOfList = ref(false);
 export let fetching = ref(false);
 export let getNewsletters = async() => {
-    if (endOfList.value) {
-
-    }
-    console.log('ddd')
-
     fetching.value = true;
 
     let fetchedData = await skapi.getNewsletters();
     endOfList.value = fetchedData.endOfList;
 
-    console.log(fetchedData)
 
     for(let k of fetchedData.list) {
         releases.value[k.message_id] = k;

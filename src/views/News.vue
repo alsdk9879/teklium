@@ -65,11 +65,9 @@ import Loading from '@/components/Loading.vue'
 const router = useRouter();
 const route = useRoute();
 
-console.log(releases.value)
-
-// if (!releases.value.length || !endOfList.value) {
-    // }
-getNewsletters();
+if (!endOfList.value) {
+    getNewsletters();
+}
 
 let formatTimestamp = (timestamp) => {
     let date = new Date(timestamp);
