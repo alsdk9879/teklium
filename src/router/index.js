@@ -1,12 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-import About from '@/views/About.vue'
-import Carbon from '@/views/Carbon.vue'
-import News from '@/views/News.vue'
-import NewsView from '@/views/News-View.vue'
-import Tech from '@/views/Tech.vue'
-import TechView from '@/views/tech/Tech-View.vue'
-import Contact from '@/views/Contact.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+// import Home from '@/views/Home.vue'
+import HomeCopy from '@/views/Home-copy.vue';
+import About from '@/views/About.vue';
+import Carbon from '@/views/Carbon.vue';
+import News from '@/views/News.vue';
+import NewsView from '@/views/News-View.vue';
+import Tech from '@/views/Tech.vue';
+import TechView from '@/views/tech/Tech-View.vue';
+import Contact from '@/views/Contact.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,27 +15,27 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: HomeCopy,
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
     },
     {
       path: '/carbon',
       name: 'carbon',
-      component: Carbon
+      component: Carbon,
     },
     {
       path: '/news',
       name: 'news',
-      component: News
+      component: News,
     },
     {
       path: '/news/:id',
       name: 'news-view',
-      component: NewsView
+      component: NewsView,
     },
     {
       path: '/tech',
@@ -48,51 +49,51 @@ const router = createRouter({
         {
           path: 'ai-city',
           name: 'ai-city',
-          component: () => import('@/views/tech/ai-city.vue')
+          component: () => import('@/views/tech/ai-city.vue'),
         },
         {
           path: 'chip-subscription-business',
           name: 'chip-subscription-business',
-          component: () => import('@/views/tech/chip-subscription-business.vue')
+          component: () => import('@/views/tech/chip-subscription-business.vue'),
         },
         {
           path: 'content-aware-memory',
           name: 'content-aware-memory',
-          component: () => import('@/views/tech/content-aware-memory.vue')
+          component: () => import('@/views/tech/content-aware-memory.vue'),
         },
         {
           path: 'memory-mapped-cpu',
           name: 'memory-mapped-cpu',
-          component: () => import('@/views/tech/memory-mapped-cpu.vue')
+          component: () => import('@/views/tech/memory-mapped-cpu.vue'),
         },
         {
           path: 'quantum-communication',
           name: 'quantum-communication',
-          component: () => import('@/views/tech/quantum-communication.vue')
+          component: () => import('@/views/tech/quantum-communication.vue'),
         },
         {
           path: 'quantum-spooling',
           name: 'quantum-spooling',
-          component: () => import('@/views/tech/quantum-spooling.vue')
+          component: () => import('@/views/tech/quantum-spooling.vue'),
         },
         {
           path: 'reusable-carbon-semiconductors',
           name: 'reusable-carbon-semiconductors',
-          component: () => import('@/views/tech/reusable-carbon-semiconductors.vue')
+          component: () => import('@/views/tech/reusable-carbon-semiconductors.vue'),
         },
         {
           path: 'the-super-internet',
           name: 'the-super-internet',
-          component: () => import('@/views/tech/the-super-internet.vue')
-        }
-      ]
+          component: () => import('@/views/tech/the-super-internet.vue'),
+        },
+      ],
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
-    }
-  ]
-})
+      component: Contact,
+    },
+  ],
+});
 
-export default router
+export default router;
