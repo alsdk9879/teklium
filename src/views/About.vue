@@ -156,7 +156,8 @@ section.white
             img(src="@/assets/img/skapi.png")
             img(src="@/assets/img/focusgroup.jpeg")
             img(src="@/assets/img/nantero.svg" style="filter: brightness(0); height: 35px")
-            img(src="@/assets/img/revatron.png")
+            .image(style="overflow:hidden; width:210px")
+                img(src="@/assets/img/revatron_text.jpeg" style="transform:scale(15) translateY(0.7px)")
 
     br
     br
