@@ -59,12 +59,16 @@ section.white
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { ref } from 'vue';
-import { releases, fetching ,getNewsletters } from '@/assets/js/news'
+import { releases, fetching, getNewsletters, endOfList } from '@/assets/js/news'
 import Loading from '@/components/Loading.vue'
 
 const router = useRouter();
 const route = useRoute();
 
+console.log(releases.value)
+
+// if (!releases.value.length || !endOfList.value) {
+    // }
 getNewsletters();
 
 let formatTimestamp = (timestamp) => {

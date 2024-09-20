@@ -1,8 +1,8 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem;")
     .inner
-        h1.title A Carbon Alliance
-        p.green eco-friendly carbon chips
+        h1.title The Carbon Alliance
+        p.green Eco-Friendly carbon chips
     img.bgi(src="@/assets/img/c.png")
 
     br

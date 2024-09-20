@@ -14,7 +14,7 @@ section.white
     br
 
     .inner(style="max-width:900px; text-align:center")
-        h1 Teklium is a global leader
+        h1 Teklium is the Global Leader
         strong.sky in AI, semiconductor technology, and sustainable energy solutions, pioneering advanced carbon semiconductors to drive performance, efficiency, and industry transformation.
 
     br
