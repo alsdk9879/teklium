@@ -3,7 +3,7 @@ section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title About Us
         p.green Meet the people designing the future at Teklium.
-    img.bgi(src="@/assets/img/i.png")
+    img.bgi(src="/assets/img/i.png")
     
     br
     br
@@ -29,7 +29,7 @@ section.white
     .inner
         .wrap
             .image(style="height:500px") 
-                img(src="@/assets/img/internet.webp")
+                img(src="/assets/img/internet.webp")
             .content
                 h1 Jason Ho, CEO
                 strong.sky He has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
@@ -120,7 +120,7 @@ section.white
         .linkWrap 
             //- .link
                 .image
-                    img(src="@/assets/img/internet.webp")
+                    img(src="/assets/img/internet.webp")
                 .content
                     h2 Jason Ho
                     strong.sky CEO
@@ -153,11 +153,11 @@ section.white
     .inner(style="text-align:center")
         h1 Partner
         .imgWrap 
-            img(src="@/assets/img/skapi.png")
-            img(src="@/assets/img/focusgroup.jpeg")
-            img(src="@/assets/img/nantero.svg" style="filter: brightness(0); height: 35px")
+            img(src="/assets/img/skapi.png")
+            img(src="/assets/img/focusgroup.jpeg")
+            img(src="/assets/img/nantero.svg" style="filter: brightness(0); height: 35px")
             .image(style="overflow:hidden; width:210px")
-                img(src="@/assets/img/revatron_text.jpeg" style="transform:scale(15) translateY(0.7px)")
+                img(src="/assets/img/revatron_text.jpeg" style="transform:scale(15) translateY(0.7px)")
 
     br
     br

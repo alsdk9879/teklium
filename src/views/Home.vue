@@ -3,7 +3,7 @@ section.dark.img(style="padding-top: 12rem")
     .inner(style="position:relative")
         h1.title Teklium
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
-        img.bgi(src="@/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
+        img.bgi(src="/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
 
     br
     br
@@ -16,13 +16,14 @@ section.white
     .inner 
         .wrap
             .image
-                img(src="@/assets/img/researcher.jpg")
+                img(src="/assets/img/researcher.jpg")
             .content(style="display:inline-block")
                 h1.blue Who We Are
                 strong.sky Pioneering the Future #[span.wordset of Semiconductor Technologies]
                 p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
                 button.lineButton(@click="router.push('/about')" style="color:#000") View more
         br
+    br
     br
 
 section.dark 
@@ -155,16 +156,16 @@ const route = useRoute();
         }
     }
     &:first-child {
-        background-image: url(@/assets/img/AI.webp);
+        background-image: url(/assets/img/AI.webp);
     }
     &:nth-child(2) {
-        background-image: url(@/assets/img/A&D.webp);
+        background-image: url(/assets/img/A&D.webp);
     }
     &:nth-child(3) {
-        background-image: url(@/assets/img/CE.webp);
+        background-image: url(/assets/img/CE.webp);
     }
     &:last-child {
-        background-image: url(@/assets/img/AM.webp);
+        background-image: url(/assets/img/AM.webp);
     }
 
     .show {

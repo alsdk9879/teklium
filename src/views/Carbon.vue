@@ -3,7 +3,7 @@ section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title The Carbon Alliance
         p.green Eco-Friendly carbon chips
-    img.bgi(src="@/assets/img/c.png")
+    img.bgi(src="/assets/img/c.png")
 
     br
     br
@@ -16,7 +16,7 @@ section.white
     .inner
         .wrap(style="align-items:unset")
             .image(style="max-width:500px")
-                img(src="@/assets/img/carbon.webp")
+                img(src="/assets/img/carbon.webp")
             .content
                 h1 Eco-Friendly, High-Performance Carbon Semiconductor Tech
                 p We are the leading global pioneer in semiconductors, creating advanced technologies to meet the evolving requirements of AI and computing. #[strong.sky By means of eco-friendly carbon chips we are revolutionizing the industry by providing unrivaled performance, energy efficiency, and environmental friendliness.]
@@ -32,7 +32,7 @@ section.white
                 p The highest transistor density is now available on the market due to this advancement that extends Moore's Law beyond physical limitations. #[strong.sky In contrast to silicon semiconductors, carbon semiconductors excel at heat dissipation and power efficiency, resulting in sub-nanometer performance and 90% lower production costs.] Using a 20 nm process, Nantero's carbon memory chips offer ten times faster reading speeds and lower power consumption.
                 p This close partnership allows us to focus on comprehensive solutions, ecosystem development, and global market adoption.
             .image(style="max-width:400px")
-                img(src="@/assets/img/carbon2.webp")
+                img(src="/assets/img/carbon2.webp")
     br
     br
     br
@@ -45,7 +45,7 @@ section.white
     .inner
         .wrap
             .image(style="height:400px")
-                img(src="@/assets/img/communication.webp")
+                img(src="/assets/img/communication.webp")
             .content
                 h1 Mark Bayliss
                 strong.sky President Visual link, Member of FCC technical advisory council.
@@ -58,7 +58,7 @@ section.white
 
         .wrap 
             .image
-                img(src="@/assets/img/nantero.svg" style="filter: brightness(0);")
+                img(src="/assets/img/nantero.svg" style="filter: brightness(0);")
             .content
                 h1 Nantero 
                 strong.sky Developing a new generation of super-fast, energy-efficient and secure non-volatile memory with the highest endurance.
