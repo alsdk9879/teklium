@@ -4,7 +4,7 @@ nav#desktop-menu
         li 
             router-link(to="/about") About Us
         li
-            router-link(to="/carbon") A Carbon Alliance
+            router-link(to="/carbon") The Carbon Alliance
         li 
             router-link(to="/news") News & Insights
         li 

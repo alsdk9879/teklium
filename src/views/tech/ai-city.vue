@@ -5,7 +5,7 @@ br
 
 .inner
     .image
-        img(src="/src/assets/img/AI.webp")
+        img(src="/assets/img/AI.webp")
 
     br
     br
