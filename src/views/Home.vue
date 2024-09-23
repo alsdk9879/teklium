@@ -137,7 +137,7 @@ section.white
     br
     br
 
-section.dark
+section.grad
     br
     br
     br

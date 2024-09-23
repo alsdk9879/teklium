@@ -28,10 +28,12 @@ section.white
 
     .inner
         .wrap
-            .image(style="height:500px") 
+            //- .image(style="height:500px") 
                 img(src="/assets/img/internet.webp")
             .content
-                h1 Jason Ho, CEO
+                .tit(style="display:flex; align-items:center;")
+                    img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem")
+                    h1 Jason Ho, CEO
                 strong.sky He has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
                 p He holds a Master’s degree in Electrical Engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan. Jason has contributed to numerous groundbreaking projects, including the F-35 Fighter Jet. With over 400 international patents in computer chip design, optical devices, computer security systems, and neural networks, he has made significant impacts across various technological fields.
 
@@ -127,18 +129,20 @@ section.white
                 .button Read More >
 
             a.link(href="https://www.skapi.com/" target="_blank")
-                .image(style="background: linear-gradient(32deg, #293fe6, #f000 80%), linear-gradient(229deg, #293fe6, #0f00 80%), linear-gradient(151deg, #0fa, #fcd04bcc 80%);")
+                .image
+                    img(src="/assets/img/skapi_symbol.png" style="width:35px")
                 .content 
                     h2 Skapi 
                     strong.sky Partner
-                .button Read More >
+                .button Click >
             
             a.link(href="https://www.linkedin.com/in/mark-bayliss-3b45777?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank") 
                 .image 
+                    img(src="/assets/img/person.png" style="width:40px")
                 .content 
                     h2 Mark Bayliss
                     strong.sky Strategic Partner
-                .button Read More > 
+                .button Click > 
 
     br
     br
@@ -153,11 +157,14 @@ section.white
     .inner(style="text-align:center")
         h1 Partner
         .imgWrap 
-            img(src="/assets/img/skapi.png")
-            img(src="/assets/img/focusgroup.jpeg")
-            img(src="/assets/img/nantero.svg" style="filter: brightness(0); height: 35px")
-            .image(style="overflow:hidden; width:210px")
-                img(src="/assets/img/revatron_text.jpeg" style="transform:scale(15) translateY(0.7px)")
+            .image
+                img(src="/assets/img/skapi.png" style="transform: translateY(2px)")
+            .image
+                img(src="/assets/img/focusgroup.png")
+            .image    
+                img(src="/assets/img/nantero.svg" style="filter: brightness(0); height: 1.5rem")
+            .image
+                img(src="/assets/img/revatron.png")
 
     br
     br
@@ -219,6 +226,7 @@ section.white
     position: relative;
     flex-grow: 1;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     width: 32%;
@@ -236,16 +244,17 @@ section.white
         box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .1);
     }
     .image {
-        width: 100%;
-        height: 300px;
-        // background-color: #999;
-        background: linear-gradient(150deg, rgba(6,23,65,1) 0%, rgba(9,51,121,1) 33%, rgba(119,247,180,1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #eee;
+        overflow: hidden;
 
         img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
-            object-position: center;
         }
     }
     .content {
@@ -287,8 +296,18 @@ section.white
     justify-content: center;
     gap: 2rem;
 
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.2rem;
+        height: 70px;
+        border-radius: 70px;
+        box-shadow: inset 0 0px 10px 0 rgba(5, 19, 55, .07);
+        overflow:hidden;
+    }
     img {
-        height: 50px;
+        height: 2.2rem;
     }
 }
 </style>
