@@ -12,41 +12,82 @@ section.white
     br
     br
     br
+    br
+    br
 
     .inner 
         .wrap
             .image
-                img(src="/assets/img/researcher.jpg")
+                img(src="/assets/img/tech.jpg")
             .content(style="display:inline-block")
                 h1.blue Who We Are
                 strong.sky Pioneering the Future #[span.wordset of Semiconductor Technologies]
                 p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
                 button.lineButton(@click="router.push('/about')" style="color:#000") View more
-        br
+    br
+    br
+    br
     br
     br
 
 section.dark 
     br
     br
+    br
 
     .inner
         h1(style="text-align:center") We are serve 
 
-        .cardWrap.serve
-            .card 
-                .show Artificial Intelligence
-                .hidden Artificial Intelligence: Data centers and AI-centric businesses can benefit from our state-of-the-art AI processors and memory solutions, which support AI's increasing computational demands.
-            .card 
-                .show Aerospace and Defense
-                .hidden Aerospace and Defense: Our aerospace and defense experience include providing rugged high-performance technologies for military applications.
-            .card 
-                .show Consumer Electronics
-                .hidden Consumer Electronics: We bring next-generation computing power to consumer electronics such as smartphones and gaming consoles.
-            .card 
-                .show Automotive
-                .hidden Automotive: The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
+        br
+        br
+        br
+
+        .wrap
+            .image(style="max-width:300px")
+                img(src="/assets/img/ai.jpg" style="height: 200px")
+            .content 
+                h2 Artificial Intelligence
+                p Data centers and AI-centric businesses can benefit from our state-of-the-art AI processors and memory solutions, which support AI's increasing computational demands.
+
+        br
+        br
+        br
+        br
+
+        .wrap 
+            .content
+                h2 Aerospace and Defense
+                p Our aerospace and defense experience include providing rugged high-performance technologies for military applications.
+            .image(style="max-width:300px")
+                img(src="/assets/img/space.jpg" style="height: 200px")
+        
+        br
+        br
+        br
+        br
+
+        .wrap 
+            .image(style="max-width:300px") 
+                img(src="/assets/img/electronic.jpg" style="height: 200px")
+            .content
+                h2 Consumer Electronics
+                p We bring next-generation computing power to consumer electronics such as smartphones and gaming consoles.
+
+        br
+        br
+        br
+        br
+
+        .wrap 
+            .content
+                h2 Automotive
+                p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
+            .image(style="max-width:300px") 
+                img(src="/assets/img/automotive.jpg" style="height: 200px")
+
     
+    br
+    br
     br
     br
     br
@@ -113,73 +154,6 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-.serve .card {
-    position: relative;
-    width: 23%;
-    min-width: 250px;
-    height: 12rem;
-    // line-height: 12rem;
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s;
-    overflow: hidden;
-    isolation: isolate;
-    user-select: none;
-
-    &::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,0.5);
-        transition: all 0.3s;
-        z-index: -1;
-    }
-    &:hover {
-        background-size: 110%;
-
-        &::after {
-            background-color: rgba(0,0,0,0.8);
-        }
-        .show {
-            display: none;
-        }
-        .hidden {
-            bottom: 0.5rem;
-        }
-    }
-    &:first-child {
-        background-image: url(/assets/img/AI.webp);
-    }
-    &:nth-child(2) {
-        background-image: url(/assets/img/A&D.webp);
-    }
-    &:nth-child(3) {
-        background-image: url(/assets/img/CE.webp);
-    }
-    &:last-child {
-        background-image: url(/assets/img/AM.webp);
-    }
-
-    .show {
-        line-height: 12rem;
-    }
-    .hidden {
-        position: absolute;
-        left: 0;
-        bottom: -100%;
-        transition: all .3s;
-        line-height: 1.2;
-        padding: 1rem;
-    }
-}
 .vision .card {
     width: 32%;
     min-width: 320px;
@@ -194,8 +168,13 @@ const route = useRoute();
         font-weight: bold;
         opacity: 0.2;
     }
+    h2 {
+        min-height: 6rem;
+    }
     strong {
         color: #5c6479;
+        min-height: 5rem;
+        display: block;
     }
     p {
         font-size: 0.9rem;
@@ -205,6 +184,17 @@ const route = useRoute();
         // display: -webkit-box;
         // -webkit-line-clamp: 10; 
         // -webkit-box-orient: vertical;
+    }
+}
+
+@media (max-width: 1031px) {
+    .vision .card {
+        h2 {
+            min-height: auto;
+        }
+        strong {
+            min-height: auto;
+        }
     }
 }
 </style>
