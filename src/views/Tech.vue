@@ -29,8 +29,10 @@ section.white
 
                 div(style="text-align:right")
                     button.fullButton Read More >
-        br
-        br
+    br
+    br
+    br
+    br
 </template>
 
 <script setup>
