@@ -154,86 +154,6 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-// .serve .card {
-//     position: relative;
-//     width: 23%;
-//     min-width: 250px;
-//     height: 12rem;
-//     // line-height: 12rem;
-//     color: #fff;
-//     font-weight: 500;
-//     text-align: center;
-//     text-decoration: none;
-//     background-size: 100%;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     transition: all .3s;
-//     overflow: hidden;
-//     isolation: isolate;
-//     user-select: none;
-
-//     &::after {
-//         position: absolute;
-//         content: '';
-//         width: 100%;
-//         height: 100%;
-//         top: 0;
-//         left: 0;
-//         background-color: rgba(0,0,0,0.5);
-//         transition: all 0.3s;
-//         z-index: -1;
-//     }
-//     &:hover {
-//         background-size: 110%;
-
-//         &::after {
-//             background-color: rgba(0,0,0,0.8);
-//         }
-//         .show {
-//             display: none;
-//         }
-//         .hidden {
-//             bottom: 0.5rem;
-//         }
-//     }
-//     &:first-child {
-//         background-image: url(/assets/img/ai.jpg);
-//     }
-//     &:nth-child(2) {
-//         background-image: url(/assets/img/A&D.webp);
-//     }
-//     &:nth-child(3) {
-//         background-image: url(/assets/img/CE.webp);
-//     }
-//     &:last-child {
-//         background-image: url(/assets/img/AM.webp);
-//     }
-
-//     .show {
-//         line-height: 12rem;
-//     }
-//     .hidden {
-//         position: absolute;
-//         left: 0;
-//         bottom: -100%;
-//         transition: all .3s;
-//         line-height: 1.2;
-//         padding: 1rem;
-//     }
-// }
-// .serve {
-//     display: flex;
-//     flex-wrap: wrap;
-
-//     .image {
-//         width: 300px;
-
-//         img {
-//             width: 100%;
-//             height: 100%;
-//         }
-//     }
-// }
 .vision .card {
     width: 32%;
     min-width: 320px;
@@ -248,8 +168,13 @@ const route = useRoute();
         font-weight: bold;
         opacity: 0.2;
     }
+    h2 {
+        min-height: 6rem;
+    }
     strong {
         color: #5c6479;
+        min-height: 5rem;
+        display: block;
     }
     p {
         font-size: 0.9rem;
@@ -259,6 +184,17 @@ const route = useRoute();
         // display: -webkit-box;
         // -webkit-line-clamp: 10; 
         // -webkit-box-orient: vertical;
+    }
+}
+
+@media (max-width: 1031px) {
+    .vision .card {
+        h2 {
+            min-height: auto;
+        }
+        strong {
+            min-height: auto;
+        }
     }
 }
 </style>
