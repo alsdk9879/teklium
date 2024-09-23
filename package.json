@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "less": "^4.2.0",
     "pug": "^3.0.3",
     "skapi-js": "^1.0.143",
