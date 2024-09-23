@@ -99,7 +99,8 @@ footer {
 
         .title {
             font-weight: bold;
-            color: #0078ff;
+            // color: #0078ff;
+            color: #a5ae66;
         }
         p {
             font-size: 0.9rem;
