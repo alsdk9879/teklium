@@ -22,7 +22,7 @@ section.white
             router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
                 .image
                     img(v-if="r.img" :src="r.img")
-                    img(v-else src="/assets/img/teklium.png" style="opacity:0.5; transform:scale(0.3)")
+                    img(v-else src="/assets/img/teklium.png" style="width:100px; height:100px; opacity:0.5;")
                 .content 
                     .date.sky {{ formatTimestamp(r.timestamp) }}
                     h2 {{ r.subject }}
@@ -112,6 +112,8 @@ let formatTimestamp = (timestamp) => {
     .image {
         width: 100%;
         height: 300px;
+        text-align: center;
+        line-height: 370px;
         border: #ddd 1px solid;
         // background-color: #999;
         // background: linear-gradient(150deg, rgba(6,23,65,1) 0%, rgba(9,51,121,1) 33%, rgba(119,247,180,1) 100%);

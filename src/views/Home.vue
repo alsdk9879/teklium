@@ -1,9 +1,9 @@
 <template lang="pug">
-section.dark.img(style="padding-top: 12rem")
-    .inner(style="position:relative")
-        h1.title Teklium
+section(style="padding-top: 12rem")
+    .inner
+        h1(style="font-size:3rem;margin-bottom:0;color:#fff;") Teklium
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
-        img.bgi(src="/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
+        //- img.bgi(src="/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
 
     br
     br
@@ -128,7 +128,7 @@ section.white
     br
     br
 
-section.grad
+section.dark
     br
     br
     br
@@ -154,6 +154,12 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
+// #landing {
+//     background: url('/assets/img/background.jpg') no-repeat;
+//     background-size: cover;
+//     // background-image: url('/assets/img/background.jpg');
+//     background-attachment: fixed;
+// }
 .vision .card {
     width: 32%;
     min-width: 320px;

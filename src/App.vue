@@ -82,7 +82,7 @@ header {
     }
 }
 main {
-    background-image: linear-gradient(to bottom right, #4b85a0, #061741)
+    // background-image: linear-gradient(to bottom right, #4b85a0, #061741)
 }
 footer {
     padding: 3rem 1rem 2rem 1rem;

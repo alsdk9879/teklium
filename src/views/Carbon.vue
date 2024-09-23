@@ -15,8 +15,8 @@ section.white
 
     .inner
         .wrap(style="align-items:unset")
-            .image(style="max-width:500px")
-                img(src="/assets/img/carbon.webp")
+            .image
+                img(src="/assets/img/eco_friendly.jpg")
             .content
                 h1 Eco-Friendly, High-Performance Carbon Semiconductor Tech
                 p We are the leading global pioneer in semiconductors, creating advanced technologies to meet the evolving requirements of AI and computing. #[strong.sky By means of eco-friendly carbon chips we are revolutionizing the industry by providing unrivaled performance, energy efficiency, and environmental friendliness.]
@@ -31,8 +31,8 @@ section.white
                 h1 Superior Heat Dissipation #[span.wordset and Cost Efficiency]
                 p The highest transistor density is now available on the market due to this advancement that extends Moore's Law beyond physical limitations. #[strong.sky In contrast to silicon semiconductors, carbon semiconductors excel at heat dissipation and power efficiency, resulting in sub-nanometer performance and 90% lower production costs.] Using a 20 nm process, Nantero's carbon memory chips offer ten times faster reading speeds and lower power consumption.
                 p This close partnership allows us to focus on comprehensive solutions, ecosystem development, and global market adoption.
-            .image(style="max-width:400px")
-                img(src="/assets/img/carbon2.webp")
+            .image
+                img(src="/assets/img/memory_chip.webp")
     br
     br
     br
@@ -44,8 +44,8 @@ section.white
 
     .inner
         .wrap
-            .image(style="height:400px")
-                img(src="/assets/img/communication.webp")
+            .image
+                img(src="/assets/img/fcc.svg" style="filter: brightness(0);")
             .content
                 h1 Mark Bayliss
                 strong.sky President Visual link, Member of FCC technical advisory council.
@@ -94,5 +94,9 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-
+.wrap {
+    .image {
+        max-width: 400px !important;
+    }
+}
 </style>
