@@ -1,5 +1,5 @@
 <template lang="pug">
-section.top-area
+section(style="padding-top: 12rem")
     .inner
         h1(style="font-size:3rem;margin-bottom:0;color:#fff;") Teklium
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
@@ -30,7 +30,7 @@ section.white
     br
     br
 
-section.dark.serve
+section.dark 
     br
     br
     br
@@ -42,7 +42,7 @@ section.dark.serve
         br
         br
 
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
+        .wrap
             .image(style="max-width:300px")
                 img(src="/assets/img/ai.jpg" style="height: 200px")
             .content 
@@ -53,26 +53,20 @@ section.dark.serve
         br
         br
         br
-        br
-        br
-        br
 
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
-            .image(style="max-width:300px")
-                    img(src="/assets/img/space.jpg" style="height: 200px")
+        .wrap 
             .content
                 h2 Aerospace and Defense
                 p Our aerospace and defense experience include providing rugged high-performance technologies for military applications.
+            .image(style="max-width:300px")
+                img(src="/assets/img/space.jpg" style="height: 200px")
         
         br
         br
         br
         br
-        br
-        br
-        br
 
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
+        .wrap 
             .image(style="max-width:300px") 
                 img(src="/assets/img/electronic.jpg" style="height: 200px")
             .content
@@ -83,16 +77,13 @@ section.dark.serve
         br
         br
         br
-        br
-        br
-        br
 
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
-            .image(style="max-width:300px") 
-                img(src="/assets/img/automotive.jpg" style="height: 200px")
+        .wrap 
             .content
                 h2 Automotive
                 p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
+            .image(style="max-width:300px") 
+                img(src="/assets/img/automotive.jpg" style="height: 200px")
 
     
     br
@@ -116,19 +107,19 @@ section.white
         br
 
         .cardWrap.vision 
-            .card(data-aos="fade-up" data-aos-duration="1000")
+            .card 
                 .num.blue 1
                 h2 Advanced Carbon Semiconductor Technologies
                 strong Unlocking Superior Performance with Carbon-Based Chips
                 p Our cutting-edge carbon semiconductors represent a leap forward from traditional silicon chips, offering unparalleled performance, power efficiency, and heat dissipation. Developed in collaboration with leading partners like Nantero and Visual Link, our technology incorporates multi-layered 3D semiconductor structures and Carbon Nanotubes (CNT). These advancements not only extend the lifespan of chips to up to 100 years but also ensure their reliable operation even in extreme conditions.
 
-            .card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500")
+            .card 
                 .num.blue 2
                 h2 Innovative Solutions for a Digital World
                 strong Revolutionizing Data and Connectivity with Advanced Technologies
                 p We are at the forefront of transforming digital infrastructure with several groundbreaking solutions. Our Reusable Chip technology promotes sustainability by allowing chips to be reused, while the Memory-Mapped CPU enhances data processing speed and efficiency. Quantum Communications provide a new level of security, and Content Aware Memory improves memory management. Additionally, our vision for a Super Internet, featuring Quantum Spooling and Atomic Routing, aims to redefine global internet infrastructure with superior security and faster speeds.
 
-            .card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000")
+            .card 
                 .num.blue 3
                 h2 Strategic Business Innovations
                 strong Redefining Technology Access and Sustainability with New Models
@@ -144,7 +135,7 @@ section.dark
     br
     br
 
-    .inner(style="text-align:center")(data-aos="fade-up" data-aos-duration="1000")
+    .inner(style="text-align:center")
         h1(style="color:#fff") Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
         button.lineButton(@click="router.push('/tech')") View more
     br
@@ -163,35 +154,12 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-.top-area {
-    background: url('/assets/img/background.jpg') no-repeat;
-    background-size: cover;
-    // background-image: url('/assets/img/background.jpg');
-    background-attachment: fixed;
-    background-image: linear-gradient(to bottom right, #4b85a0, #061741);
-    padding-top: 15rem;
-
-    .inner {
-        position: relative;
-
-        &:before {
-            content:'';
-            display: block;
-            width: 300px;
-            height: 300px;
-            background: url('/assets/img/test_logo.svg') center / cover no-repeat;
-            position: absolute;
-            right: 0;
-            bottom: -10%;
-            filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.7)) opacity(0.6);
-        }
-    }
-}
-.serve {
-    .wrap:nth-of-type(even) {
-        flex-direction: row-reverse;
-    }
-}
+// #landing {
+//     background: url('/assets/img/background.jpg') no-repeat;
+//     background-size: cover;
+//     // background-image: url('/assets/img/background.jpg');
+//     background-attachment: fixed;
+// }
 .vision .card {
     width: 32%;
     min-width: 320px;
@@ -225,16 +193,6 @@ const route = useRoute();
     }
 }
 
-@media (max-width: 1190px) {
-     .top-area {
-        .inner {
-            &:before {
-                width: 250px;
-                height: 250px;
-            }
-        }
-    }
-}
 @media (max-width: 1031px) {
     .vision .card {
         h2 {
@@ -243,23 +201,6 @@ const route = useRoute();
         strong {
             min-height: auto;
         }
-    }
-}
-@media (max-width: 768px) {
-    .top-area {
-        padding-top: 12rem;
-
-        .inner {
-            &:before {
-                content: none;
-            }
-        }
-    }
-    .wrap .content {
-        text-align: center;
-    }
-    .cardWrap {
-        gap: 5rem;
     }
 }
 </style>
