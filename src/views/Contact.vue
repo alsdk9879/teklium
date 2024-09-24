@@ -61,6 +61,8 @@ let sendEmail = (e) => {
 form {
     label {
         color: #061741;
+        display: block;
+        margin-bottom: .375rem;
     }
     input, textarea {
         display: block;
