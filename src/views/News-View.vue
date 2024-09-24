@@ -53,9 +53,16 @@ let fetchNews = async () => {
         let images = doc.querySelectorAll('img');
 
         images.forEach(img => {
-            img.parentNode.classList.add('img')
-            img.style.display = 'block';
-            img.style.margin = '0 auto';
+            img.parentNode.classList.add('image');
+            img.parentNode.style.margin = '0 auto';
+            img.parentNode.style.maxWidth = '600px';
+            img.parentNode.style.height = '400px';
+            img.parentNode.style.overflow = 'hidden';
+
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            img.style.objectPosition = 'center';
         });
 
         newsHtml.value = doc.body.innerHTML;
@@ -68,20 +75,6 @@ onMounted(() => {
 </script>
 
 <style scoped lang="less">
-.image {
-    margin: 0 auto;
-    max-width: 600px;
-    height: 400px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
 ul {
     padding-left: 1rem;
 
