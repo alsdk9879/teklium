@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark(style="padding-top: 12rem")
     .inner
-        h1(v-if="currentNews" style="font-size: 3.5rem; margin-bottom:0") {{ currentNews?.subject }}
+        h1(v-if="currentNews" style="font-size: 3rem; margin-bottom:0; word-break: break-all") {{ currentNews?.subject }}
     
     br
     br
@@ -53,6 +53,7 @@ let fetchNews = async () => {
         let images = doc.querySelectorAll('img');
 
         images.forEach(img => {
+            img.parentNode.classList.add('img')
             img.style.display = 'block';
             img.style.margin = '0 auto';
         });
@@ -99,5 +100,17 @@ ul {
 
 img {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .img {
+        overflow: hidden;
+        
+        img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
+    }
 }
 </style>

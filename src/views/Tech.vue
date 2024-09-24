@@ -107,6 +107,11 @@ let techs = [
     h2 {
         margin: 0;
         margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
     }
 
     .image {

@@ -22,7 +22,7 @@ section.white
             router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
                 .image
                     img(v-if="r.img" :src="r.img")
-                    img(v-else src="/assets/img/teklium.png" style="width:100px; height:100px; opacity:0.5;")
+                    img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
                 .content 
                     .date.sky {{ formatTimestamp(r.timestamp) }}
                     h2 {{ r.subject }}
@@ -94,12 +94,32 @@ let formatTimestamp = (timestamp) => {
 </script>
 
 <style scoped lang="less">
+.content {
+    h2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        min-height: 64px;
+        max-height: 64px;
+    }
+    p {
+        min-height: 56px;
+        max-height: 84px;
+    }
+}
+.cardWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .card {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
     width: 32%;
-    min-width: 320px;
+    // min-width: 320px;
     padding: 1rem;
     box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .05);
     transform: translateY(0px);
@@ -107,6 +127,9 @@ let formatTimestamp = (timestamp) => {
     cursor: pointer;
     text-decoration: none;
     color: #000;
+    border: 1px solid #e6eaf2;
+    border-radius: 1rem;
+    width: 100%;
 
     &:hover {
         transform: translateY(-5px);
@@ -138,6 +161,27 @@ let formatTimestamp = (timestamp) => {
         display: -webkit-box;
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
+    }
+}
+
+@media (max-width: 991px) {
+    .cardWrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 693px) {
+    .content {
+        h2 {
+            min-height: auto;
+            max-height: initial;
+        }
+        p {
+            min-height: auto;
+            max-height: initial;
+        }
+    }
+    .cardWrap {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 </style>
