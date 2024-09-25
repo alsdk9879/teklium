@@ -90,20 +90,4 @@ ul {
         }
     }
 }
-
-img {
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .img {
-        overflow: hidden;
-        
-        img {
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover !important;
-        }
-    }
-}
 </style>
