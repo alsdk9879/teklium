@@ -167,7 +167,7 @@ const route = useRoute();
             display: block;
             width: 300px;
             height: 300px;
-            background: url('/assets/img/test_logo.svg') center / cover no-repeat;
+            background: url('/assets/img/teklium.svg') center / cover no-repeat;
             position: absolute;
             right: 0;
             bottom: -10%;
