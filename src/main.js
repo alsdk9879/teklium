@@ -7,12 +7,7 @@ import { Skapi } from 'skapi-js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const skapi = new Skapi(
-  'ap21NMrFIOGHhIoTCmGr',
-  '5750ee2c-f7f7-43ff-b6a5-cce599d30101',
-  { autoLogin: true },
-  { hostDomain: 'skapi.app', target_cdn: 'd1wrj5ymxrt2ir' }
-);
+const skapi = new Skapi('ap22NMqyE0aASl1ogi5D','bf305ace-03b5-4f9d-b88f-291458748ca3');
 
 const app = createApp(App);
 
