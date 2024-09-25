@@ -3,7 +3,7 @@ section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title The Carbon Alliance
         p.green Eco-Friendly carbon chips
-    img.bgi(src="/assets/img/carbon_back.png")
+    img.bgi(src="/assets/img/carbon_bg.png")
 
     br
     br
