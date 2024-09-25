@@ -4,28 +4,13 @@ section.dark.img(style="padding-top: 12rem;")
         h1.title About Us
         p.green Meet the people designing the future at Teklium.
     img.bgi(src="/assets/img/about_bg.png")
-    
-    br
-    br
 
 section.white 
-    br
-    br
-    br
-
     .inner(style="max-width:900px; text-align:center")
         h1 Teklium is the Global Leader
         strong.sky in AI, semiconductor technology, and sustainable energy solutions, pioneering advanced carbon semiconductors to drive performance, efficiency, and industry transformation.
 
-    br
-    br
-    br
-
 section.white 
-    br
-    br
-    br
-
     .inner
         .wrap
             //- .image(style="height:500px") 
@@ -38,10 +23,6 @@ section.white
                 p He holds a Master’s degree in Electrical Engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan. Jason has contributed to numerous groundbreaking projects, including the F-35 Fighter Jet. With over 400 international patents in computer chip design, optical devices, computer security systems, and neural networks, he has made significant impacts across various technological fields.
 
 section.white
-    br
-    br
-    br
-
     .inner 
         h1 Career
 
@@ -86,15 +67,7 @@ section.white
                 p Successfully developed and delivered dozens of AI solutions for various government related projects, including the F-35 Fighter Jet Project.
                 p Served as lead designer of the custom computer chip control and image display systems for F-35 Fighter.
 
-    br
-    br
-    br
-
 section.white 
-    br
-    br
-    br
-
     .inner
         .wrap(style="align-items:unset")
             .content 
@@ -108,15 +81,8 @@ section.white
                         p A network service solution that enhances peer-to-peer communications with advanced error recovery and encryption.
                     li.sky Super Internet Technology
                         p A low-latency communication technology designed to enhance 5G networks.
-    br
-    br
-    br
 
 section.white 
-    br
-    br
-    br
-
     .inner
         h1(style="text-align:center") Our team
         .linkWrap 
@@ -144,16 +110,7 @@ section.white
                     strong.sky Strategic Partner
                 .button Click > 
 
-    br
-    br
-    br
-
-
 section.white 
-    br
-    br
-    br
-
     .inner(style="text-align:center")
         h1 Partner
         .imgWrap 
@@ -166,11 +123,8 @@ section.white
             .image
                 img(src="/assets/img/revatron.png")
 
-    br
-    br
-    br
-    br
-
+br
+br
 </template>
 
 <script setup>

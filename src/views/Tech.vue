@@ -5,14 +5,8 @@ section.dark.img(style="padding-top: 12rem;")
         p.green Innovations That Matter
     img.bgi(src="/assets/img/tech_bg.png")
 
+section.white
     br
-    br
-
-section.white 
-    br
-    br
-    br
-
     .inner
         .cardWrap 
             router-link.card(v-for="tech in techs" :to="'/tech/' + tech.tit.replaceAll(' ', '-')")
@@ -29,10 +23,9 @@ section.white
 
                 div(style="text-align:right")
                     button.fullButton Read More >
-    br
-    br
-    br
-    br
+
+br
+br
 </template>
 
 <script setup>

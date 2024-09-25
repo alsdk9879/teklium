@@ -4,15 +4,8 @@ section.dark.img(style="padding-top: 12rem;")
         h1.title Contact Teklium
         p.green We want to hear from you
     img.bgi(src="/assets/img/contact_bg.png")
-    
-    br
-    br
 
 section.white 
-    br
-    br
-    br
-
     .inner(style="max-width:600px")
         h1(style="text-align:center; margin-top:0 ") Connect with our team 
         form#form(@submit.prevent="sendEmail")
@@ -39,10 +32,6 @@ section.white
 
             div(style="text-align:center")
                 button.fullButton(type="submit") Send Message
-
-    br
-    br
-    br
 
 </template>
 

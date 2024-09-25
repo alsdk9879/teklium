@@ -5,16 +5,7 @@ section.top-area
         p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
         //- img.bgi(src="/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
 
-    br
-    br
-
-section.white 
-    br
-    br
-    br
-    br
-    br
-
+section.white(style="padding: 6rem 1rem")
     .inner 
         .wrap
             .image
@@ -24,17 +15,8 @@ section.white
                 strong.sky Pioneering the Future #[span.wordset of Semiconductor Technologies]
                 p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
                 button.lineButton(@click="router.push('/about')" style="color:#000") View more
-    br
-    br
-    br
-    br
-    br
 
 section.dark.serve
-    br
-    br
-    br
-
     .inner
         h1(style="text-align:center") We are serve 
 
@@ -42,50 +24,26 @@ section.dark.serve
         br
         br
 
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
+        .wrap(data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 6rem")
             .image(style="max-width:300px")
                 img(src="/assets/img/ai.jpg" style="height: 200px")
             .content 
                 h2 Artificial Intelligence
                 p Data centers and AI-centric businesses can benefit from our state-of-the-art AI processors and memory solutions, which support AI's increasing computational demands.
 
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
+        .wrap(data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 6rem")
             .image(style="max-width:300px")
                     img(src="/assets/img/space.jpg" style="height: 200px")
             .content
                 h2 Aerospace and Defense
                 p Our aerospace and defense experience include providing rugged high-performance technologies for military applications.
-        
-        br
-        br
-        br
-        br
-        br
-        br
-        br
 
-        .wrap(data-aos="fade-up" data-aos-duration="1000")
+        .wrap(data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 6rem")
             .image(style="max-width:300px") 
                 img(src="/assets/img/electronic.jpg" style="height: 200px")
             .content
                 h2 Consumer Electronics
                 p We bring next-generation computing power to consumer electronics such as smartphones and gaming consoles.
-
-        br
-        br
-        br
-        br
-        br
-        br
-        br
 
         .wrap(data-aos="fade-up" data-aos-duration="1000")
             .image(style="max-width:300px") 
@@ -94,18 +52,7 @@ section.dark.serve
                 h2 Automotive
                 p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
 
-    
-    br
-    br
-    br
-    br
-    br
-
 section.white
-    br
-    br
-    br
-
     .inner(style="text-align:center")
         h1.blue Pioneering the Future #[br]of Semiconductor Technologies
         strong.sky Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
@@ -133,9 +80,6 @@ section.white
                 h2 Strategic Business Innovations
                 strong Redefining Technology Access and Sustainability with New Models
                 p Our innovative business strategies are designed to drive both technological advancement and sustainable development. AI City, supported by strategic partnerships, aims to boost broadband accessibility and improve data center efficiency, contributing to sustainable economic growth. Meanwhile, our Chip Subscription model offers a modern solution to keep consumers up-to-date with the latest technology while reducing electronic waste through a subscription-based access model.
-
-    br
-    br
 
 section.grad
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
