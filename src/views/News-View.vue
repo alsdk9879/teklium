@@ -2,15 +2,8 @@
 section.dark(style="padding-top: 12rem")
     .inner
         h1(v-if="currentNews" style="font-size: 3rem; margin-bottom:0; word-break: break-all") {{ currentNews?.subject }}
-    
-    br
-    br
 
 section.white 
-    br
-    br
-    br
-
     .inner
         template(v-if="currentNews")
             div(v-html="newsHtml")
@@ -22,9 +15,7 @@ section.white
                 button.fullButton(@click="router.push('/news')") Back
         template(v-else)
             Loading
-    br
-    br
-    br
+
 </template>
 
 <script setup>

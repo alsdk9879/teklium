@@ -5,14 +5,7 @@ section.dark.img(style="padding-top: 12rem;")
         p.green Eco-Friendly carbon chips
     img.bgi(src="/assets/img/carbon_bg.png")
 
-    br
-    br
-
 section.white 
-    br
-    br
-    br
-
     .inner
         .wrap(style="align-items:unset")
             .image
@@ -25,6 +18,7 @@ section.white
         br
         br
         br
+        br
 
         .wrap(style="flex-wrap: wrap-reverse;align-items: unset;")
             .content 
@@ -33,15 +27,8 @@ section.white
                 p This close partnership allows us to focus on comprehensive solutions, ecosystem development, and global market adoption.
             .image
                 img(src="/assets/img/memory_chip.webp")
-    br
-    br
-    br
 
 section.white 
-    br
-    br
-    br
-
     .inner
         .wrap
             .image
@@ -63,9 +50,6 @@ section.white
                 h1 Nantero 
                 strong.sky Developing a new generation of super-fast, energy-efficient and secure non-volatile memory with the highest endurance.
                 p Nantero has developed the industry’s only non-volatile memory made with carbon nanotubes, enabling a new generation of super-fast, energy-efficient and secure memory with the highest endurance.  These NRAM™ storage solutions will enable Nantero to drive new innovations in consumer electronics, computing, automotive, space exploration, industrial, enterprise networks, and more
-
-        br
-        br
 
 section.grad
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center; max-width: 1000px;")
