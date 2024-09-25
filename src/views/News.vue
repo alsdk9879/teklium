@@ -17,6 +17,9 @@ section.white
 
         template(v-if="fetching")
             Loading
+        div(v-else-if="!Object.keys(releases).length" style="text-align:center; color:#999; padding:9rem 0 6rem")
+            img(src="/assets/img/error.svg" style="width:3rem; opacity:0.7")
+            p No notice has been uploaded
         .cardWrap(v-else)
             //- a.card(v-for="r in releases" :href="r.url")
             router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
@@ -139,7 +142,7 @@ let formatTimestamp = (timestamp) => {
         width: 100%;
         height: 300px;
         text-align: center;
-        line-height: 370px;
+        line-height: 320px;
         border: #ddd 1px solid;
         // background-color: #999;
         // background: linear-gradient(150deg, rgba(6,23,65,1) 0%, rgba(9,51,121,1) 33%, rgba(119,247,180,1) 100%);
