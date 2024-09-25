@@ -3,7 +3,7 @@ section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title About Us
         p.green Meet the people designing the future at Teklium.
-    img.bgi(src="/assets/img/i.png")
+    img.bgi(src="/assets/img/about_bg.png")
     
     br
     br
