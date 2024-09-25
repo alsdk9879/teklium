@@ -1,7 +1,6 @@
 <template lang="pug">
 header(:class="{'hide':scroll}")
-    router-link(to="/")
-        h2(style="margin: 0;") TEKLIUM INC.
+    router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
     DeskMenu
     MobMenu
 main
@@ -66,8 +65,6 @@ header, footer {
     justify-content: space-between;
     padding: 1rem;
     // background-color: #061741;
-    background-color: #000;
-    color: #fff;
 }
 header {
     position: fixed;
@@ -77,17 +74,26 @@ header {
     z-index: 999;
     transition: all 0.3s;
 
-    &.hide {
-        top: -100%;
+    a {
+        color: #000;
+        mix-blend-mode: difference;
     }
+    // &.hide {
+    //     top: -100%;
+    // }
 }
 main {
     // background-image: linear-gradient(to bottom right, #4b85a0, #061741)
 }
 footer {
+    background-color: #000;
+    color: #fff;
     padding: 3rem 1rem 2rem 1rem;
     gap: 3rem;
 
+    a {
+        color: #fff;
+    }
     .routeWrap {
         display: flex;
         flex-wrap: wrap;
@@ -109,6 +115,5 @@ footer {
 }
 a {
     text-decoration: none;
-    color: #fff;
 }
 </style>
