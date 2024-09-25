@@ -137,6 +137,10 @@ let formatTimestamp = (timestamp) => {
     &:hover {
         transform: translateY(-5px);
         box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .1);
+
+        .button {
+            color: #4b85a0;
+        }
     }
     .image {
         width: 100%;
@@ -164,6 +168,9 @@ let formatTimestamp = (timestamp) => {
         display: -webkit-box;
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
+    }
+    .button {
+        transition: all .3s;
     }
 }
 

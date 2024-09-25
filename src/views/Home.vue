@@ -138,21 +138,10 @@ section.white
     br
 
 section.grad
-    br
-    br
-    br
-    br
-    br
-
-    .inner(style="text-align:center")(data-aos="fade-up" data-aos-duration="1000")
+    .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
         h1(style="color:#fff") Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
         button.lineButton(@click="router.push('/tech')") View more
-    br
-    br
-    br
-    br
-    br
-    br
+
 </template>
 
 <script setup>
