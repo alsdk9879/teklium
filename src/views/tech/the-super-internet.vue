@@ -5,8 +5,9 @@ br
 
 .inner
     .image
-        img(src="/src/assets/img/internet.webp")
+        img(src="/assets/img/internet.webp")
 
+    br
     br
     br
 
@@ -16,12 +17,16 @@ br
     p When people connect to the Internet, they do so either through Wi-Fi or cellular networks. While Wi-Fi routers must link to an Internet source like a broadband modem, cellular networks provide Internet service through cell towers or base stations. Despite the Internet's half-century-old architecture, which has never been updated, users continually desire faster and more reliable connections. Technological advancements over the past 50 years have not fully addressed these demands, prompting the development of the Super Internet. This innovative approach fundamentally addresses the most pressing Internet issues: privacy, security, and speed.
     
     br
+    br
+    br
     
     strong.sky The Emergence of the Super Internet
     
     p With the advent of 5G wireless technology, a new solution merged Wi-Fi and cellular networks into one device. This hybrid device combines a 5G modem with a Wi-Fi router, leading to the development of wireless microcells. Microcells, which are low-power cellular base stations covering limited areas, are designed for crowded locations like malls, hotels, and transportation hubs. They use small antennas with a limited coverage radius, consuming significantly less power compared to base stations. This new small cell service model integrates microcells into streetlights and replaces rooftop base stations, reducing wireless pollution and energy costs.
     p Now another milestone is in the making: Teklium has successfully completed the structural design of a new Internet – the Super Internet. The first stage of the Super Internet platform is set to launch within a year and will feature Teklium's Cell Structured Computer Chip technology, which enables real-time Internet services. We have also achieved significant breakthroughs with Quantum Spooling and Atomic Routing, transforming the Super Internet from a concept to a practical solution. Quantum Spooling ensures secure network packets using Emulated Quantum Communication. The technologies will be offered soon, providing users and developers new, efficient, and secure ways to access and utilize the Internet.
     
+    br
+    br
     br
 
     strong.sky Atomic Routing
@@ -54,4 +59,8 @@ const route = useRoute();
         object-position: center;
     }
 }
+
+// strong {
+//     font-size: 1.4rem;
+// }
 </style>

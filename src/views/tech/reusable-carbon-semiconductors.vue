@@ -5,8 +5,9 @@ br
 
 .inner
     .image
-        img(src="/src/assets/img/carbon.webp")
+        img(src="/assets/img/carbon.webp")
 
+    br
     br
     br
 
@@ -18,6 +19,8 @@ br
     p Typically, silicon chips last between 10-15 years, which requires frequent replacements. Laptops have an average upgrade cycle of three to five years, while smartphones have an average upgrade cycle of 3.6 years, resulting in substantial electronic waste. An estimated 151 million mobile phones are discarded annually in the US, contributing to heavy metals in landfills because of low recycling rates, concerns about data security, and limited access to recycling facilities.
     
     br
+    br
+    br
 
     strong.sky A World of Opportunity
     
@@ -25,6 +28,8 @@ br
     p Chips made of carbon nanotubes have shown sub-nanometer PPAC performance and have a lifespan of 100 years, making them the ideal platform for reusable chips. With CSCC technology and a programmable architecture, Reusable Chips allow users to select and program netlists from various chip design firms. Featuring programmable logic cells interconnected by a switching network, these chips simplify programming and facilitate repeated programming.
     p As a result of Teklium's CSCC technology, which operates ten times faster and consumes only 10% of the power of a high-end GPU, the CNT technology has the potential to surpass current semiconductor benchmarks, creating a sought-after solution for AI processing power and reliability issues.
     
+    br
+    br
     br
 
     strong.sky INCLUDE STATS & CITATIONS

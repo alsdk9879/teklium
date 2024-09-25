@@ -1,27 +1,21 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem;")
     .inner
-        h1.title A Carbon Alliance
-        p.green eco-friendly carbon chips
-    img.bgi(src="@/assets/img/c.png")
-
-    br
-    br
+        h1.title The Carbon Alliance
+        p.green Eco-Friendly carbon chips
+    img.bgi(src="/assets/img/carbon_bg.png")
 
 section.white 
-    br
-    br
-    br
-
     .inner
         .wrap(style="align-items:unset")
-            .image(style="max-width:500px")
-                img(src="@/assets/img/carbon.webp")
+            .image
+                img(src="/assets/img/eco_friendly.jpg")
             .content
                 h1 Eco-Friendly, High-Performance Carbon Semiconductor Tech
                 p We are the leading global pioneer in semiconductors, creating advanced technologies to meet the evolving requirements of AI and computing. #[strong.sky By means of eco-friendly carbon chips we are revolutionizing the industry by providing unrivaled performance, energy efficiency, and environmental friendliness.]
                 p A strategic alliance has been formed between Teklium, Nantero, and Visual Link to advance CNT semiconductor technology. Specifically, we are leading the way on carbon semiconductors, a breakthrough technology utilizing multi-layered 3D semiconductor technology and Carbon Nanotubes (CNT), which overcome Moore's Law by lowering power consumption, including in standby mode, and operating at extreme temperatures with a lifespan of up to 100 years.
 
+        br
         br
         br
         br
@@ -31,21 +25,14 @@ section.white
                 h1 Superior Heat Dissipation #[span.wordset and Cost Efficiency]
                 p The highest transistor density is now available on the market due to this advancement that extends Moore's Law beyond physical limitations. #[strong.sky In contrast to silicon semiconductors, carbon semiconductors excel at heat dissipation and power efficiency, resulting in sub-nanometer performance and 90% lower production costs.] Using a 20 nm process, Nantero's carbon memory chips offer ten times faster reading speeds and lower power consumption.
                 p This close partnership allows us to focus on comprehensive solutions, ecosystem development, and global market adoption.
-            .image(style="max-width:400px")
-                img(src="@/assets/img/carbon2.webp")
-    br
-    br
-    br
+            .image
+                img(src="/assets/img/memory_chip.webp")
 
 section.white 
-    br
-    br
-    br
-
     .inner
         .wrap
-            .image(style="height:400px")
-                img(src="@/assets/img/communication.webp")
+            .image
+                img(src="/assets/img/fcc.svg" style="filter: brightness(0);")
             .content
                 h1 Mark Bayliss
                 strong.sky President Visual link, Member of FCC technical advisory council.
@@ -58,32 +45,17 @@ section.white
 
         .wrap 
             .image
-                img(src="@/assets/img/nantero.svg" style="filter: brightness(0);")
+                img(src="/assets/img/nantero.svg" style="filter: brightness(0);")
             .content
                 h1 Nantero 
                 strong.sky Developing a new generation of super-fast, energy-efficient and secure non-volatile memory with the highest endurance.
                 p Nantero has developed the industry’s only non-volatile memory made with carbon nanotubes, enabling a new generation of super-fast, energy-efficient and secure memory with the highest endurance.  These NRAM™ storage solutions will enable Nantero to drive new innovations in consumer electronics, computing, automotive, space exploration, industrial, enterprise networks, and more
 
-        br
-        br
-
 section.grad
-    br
-    br
-    br
-    br
-    br
-
-    .inner(style="text-align:center; max-width: 1000px;")
+    .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center; max-width: 1000px;")
         //- h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
         h1(style="color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
         button.lineButton(@click="router.push('/news')") View more
-    br
-    br
-    br
-    br
-    br
-    br
 </template>
 
 <script setup>
@@ -94,5 +66,9 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-
+.wrap {
+    .image {
+        max-width: 400px !important;
+    }
+}
 </style>

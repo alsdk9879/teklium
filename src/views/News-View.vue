@@ -1,16 +1,9 @@
 <template lang="pug">
 section.dark(style="padding-top: 12rem")
     .inner
-        h1(v-if="currentNews" style="font-size: 3.5rem; margin-bottom:0") {{ currentNews?.subject }}
-    
-    br
-    br
+        h1(v-if="currentNews" style="font-size: 3rem; margin-bottom:0; word-break: break-all") {{ currentNews?.subject }}
 
 section.white 
-    br
-    br
-    br
-
     .inner
         template(v-if="currentNews")
             div(v-html="newsHtml")
@@ -22,9 +15,7 @@ section.white
                 button.fullButton(@click="router.push('/news')") Back
         template(v-else)
             Loading
-    br
-    br
-    br
+
 </template>
 
 <script setup>
@@ -53,8 +44,16 @@ let fetchNews = async () => {
         let images = doc.querySelectorAll('img');
 
         images.forEach(img => {
-            img.style.display = 'block';
-            img.style.margin = '0 auto';
+            img.parentNode.classList.add('image');
+            img.parentNode.style.margin = '0 auto';
+            img.parentNode.style.maxWidth = '600px';
+            img.parentNode.style.height = '400px';
+            img.parentNode.style.overflow = 'hidden';
+
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            img.style.objectPosition = 'center';
         });
 
         newsHtml.value = doc.body.innerHTML;
@@ -67,20 +66,6 @@ onMounted(() => {
 </script>
 
 <style scoped lang="less">
-.image {
-    margin: 0 auto;
-    max-width: 600px;
-    height: 400px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
 ul {
     padding-left: 1rem;
 
@@ -95,9 +80,5 @@ ul {
             margin: 0;
         }
     }
-}
-
-img {
-    text-align: center;
 }
 </style>

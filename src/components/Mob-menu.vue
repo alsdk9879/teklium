@@ -5,7 +5,7 @@ nav#mobile-menu(:class="{'show' : showMenu}")
         li
             router-link(to="/about" @click="showMenu = false") About Us
         li
-            router-link(to="/carbon" @click="showMenu = false") A Carbon Alliance
+            router-link(to="/carbon" @click="showMenu = false") The Carbon Alliance
         li 
             router-link(to="/news" @click="showMenu = false") News & Insights
         li 
@@ -93,7 +93,7 @@ watch(route, (o, n) => {
         height: 2px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #fff;
+        background-color: #000;
         transition: all 0.3s;
     }
     &::before {

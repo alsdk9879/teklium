@@ -4,7 +4,7 @@ nav#desktop-menu
         li 
             router-link(to="/about") About Us
         li
-            router-link(to="/carbon") A Carbon Alliance
+            router-link(to="/carbon") The Carbon Alliance
         li 
             router-link(to="/news") News & Insights
         li 
@@ -30,7 +30,8 @@ const route = useRoute();
 
             a {
                 text-decoration: none;
-                color: #fff;
+                color: #333;
+                mix-blend-mode: difference;
             }
         }
     }

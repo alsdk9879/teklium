@@ -3,21 +3,15 @@ section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title Revolutionary Technologies
         p.green Innovations That Matter
-    img.bgi(src="@/assets/img/t.png")
+    img.bgi(src="/assets/img/tech_bg.png")
 
+section.white
     br
-    br
-
-section.white 
-    br
-    br
-    br
-
     .inner
         .cardWrap 
-            router-link.card(v-for="tech in techs" :to="'/tech/' + tech.tit.replaceAll(' ', '-').toLowerCase()")
+            router-link.card(v-for="tech in techs" :to="'/tech/' + tech.tit.replaceAll(' ', '-')")
                 .image
-                    img(:src="'/src/assets/img/' + tech.img")
+                    img(:src="'/assets/img/' + tech.img")
 
                 br
 
@@ -29,8 +23,9 @@ section.white
 
                 div(style="text-align:right")
                     button.fullButton Read More >
-        br
-        br
+
+br
+br
 </template>
 
 <script setup>
@@ -105,6 +100,11 @@ let techs = [
     h2 {
         margin: 0;
         margin-bottom: 0.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
     }
 
     .image {
