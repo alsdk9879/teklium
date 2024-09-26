@@ -21,7 +21,7 @@ section.white
                     img(v-if="r.img" :src="r.img")
                     img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
                 .content 
-                    .date.sky {{ formatTimestamp(r.timestamp) }}
+                    .date(style="color:#999") {{ formatTimestamp(r.timestamp) }}
                     h2 {{ r.subject }}
                     p {{ r.cont }}
                 .button Read More >

@@ -79,31 +79,23 @@ section.white
                 p His impressive career is marked by many trailblazing inventions that have been adopted by major corporations throughout the world. Some examples are:
             .image 
                 ul.innovate
-                    li.sky Tapestry Exchange (TE)
+                    li Tapestry Exchange (TE)
                         p An AI-based cryptographic system for creating secure private keys for communications.
-                    li.sky NetDMA
+                    li NetDMA
                         p A network service solution that enhances peer-to-peer communications with advanced error recovery and encryption.
-                    li.sky Super Internet Technology
+                    li Super Internet Technology
                         p A low-latency communication technology designed to enhance 5G networks.
 
 section.white 
     .inner
         h1(style="text-align:center") Our team
         .linkWrap 
-            //- .link
-                .image
-                    img(src="/assets/img/internet.webp")
-                .content
-                    h2 Jason Ho
-                    strong.sky CEO
-                .button Read More >
-
             a.link(href="https://www.skapi.com/" target="_blank")
                 .image
                     img(src="/assets/img/skapi_symbol.png" style="width:35px")
                 .content 
                     h2 Skapi 
-                    strong.sky Partner
+                    strong Partner
                 .button Click >
             
             a.link(href="https://www.linkedin.com/in/mark-bayliss-3b45777?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank") 
@@ -111,7 +103,7 @@ section.white
                     img(src="/assets/img/person.png" style="width:40px")
                 .content 
                     h2 Mark Bayliss
-                    strong.sky Strategic Partner
+                    strong Strategic Partner
                 .button Click > 
 
 section.white 
@@ -152,6 +144,7 @@ br
     p {
         margin: 0;
         color: #999;
+        font-weight: 300;
     }
 
     hr {
@@ -166,6 +159,7 @@ br
 
         li {
             margin-bottom: 1.2rem;
+            font-weight: bold;
 
             &:last-child {
                 margin-bottom: 0;

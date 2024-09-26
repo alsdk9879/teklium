@@ -53,7 +53,7 @@ section.bright.serve(style="padding:5rem 0 6rem")
 section.bright
     .inner(style="text-align:center")
         h1.blue Pioneering the Future #[br]of Semiconductor Technologies
-        //- strong.sky Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
+        //- strong Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
 
         .cardWrap.vision 
             .card(data-aos="fade-up")
