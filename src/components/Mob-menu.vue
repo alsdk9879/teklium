@@ -1,17 +1,18 @@
 <template lang="pug">
-.hamber(:class="{'show' : showMenu}" @click="showMenu = !showMenu")
-nav#mobile-menu(:class="{'show' : showMenu}")
-    ul
-        li
-            router-link(to="/about" @click="showMenu = false") About Us
-        li
-            router-link(to="/carbon" @click="showMenu = false") The Carbon Alliance
-        li 
-            router-link(to="/news" @click="showMenu = false") News & Insights
-        li 
-            router-link(to="/tech" @click="showMenu = false") Technologies
-        li 
-            router-link(to="/contact" @click="showMenu = false") Contact Us
+div
+    .hamber(:class="{'show' : showMenu}" @click="showMenu = !showMenu")
+    nav#mobile-menu(:class="{'show' : showMenu}")
+        ul
+            li
+                router-link(to="/about" @click="showMenu = false") About Us
+            li
+                router-link(to="/carbon" @click="showMenu = false") The Carbon Alliance
+            li 
+                router-link(to="/news" @click="showMenu = false") News & Insights
+            li 
+                router-link(to="/tech" @click="showMenu = false") Technologies
+            li 
+                router-link(to="/contact" @click="showMenu = false") Contact Us
 </template>
 
 <script setup>
@@ -38,6 +39,13 @@ watch(route, (o, n) => {
 </script>
 
 <style scoped lang="less">
+.dark-mode {
+    .hamber {
+        &::before, &::after {
+            background-color: #fff;
+        }
+    }
+}
 #mobile-menu {
     position: fixed;
     top: 0;
@@ -81,6 +89,7 @@ watch(route, (o, n) => {
 .hamber {
     position: fixed;
     right: 1rem;
+    top: 1rem;
     width: 30px;
     height: 30px;
     cursor: pointer;

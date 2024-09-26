@@ -2,7 +2,7 @@
 header#header(:class="{'hide':scroll, 'dark-mode':darkMode}")
     router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
     DeskMenu(:class="{'dark-mode':darkMode}")
-    MobMenu
+    MobMenu(:class="{'dark-mode':darkMode}")
 main(:class="{'animation': route.name == 'home'}")
     router-view
 footer
