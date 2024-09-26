@@ -47,8 +47,8 @@ watch(route, (o, n) => {
     padding: 1rem;
     padding-top: 5rem;
     text-align: center;
-    background-color: rgba(255,255,255,0.5);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,0.9);
+    backdrop-filter: blur(30px);
     transition: all 0.3s;
 
     &.show {

@@ -189,9 +189,15 @@ br
         padding: 0 1.2rem;
         height: 70px;
         border-radius: 24px;
-        box-shadow: inset 0 0px 10px 0 rgba(5, 19, 55, .07);
+        box-shadow: inset 0 0px 10px 0 rgba(0, 0, 0, .07);
+        transition: all .3s;
         overflow:hidden;
         flex: 1;
+    }
+    a {
+        &:hover {
+            box-shadow: inset 0 3px 12px 0px rgba(0, 0, 0, .17);
+        }
     }
     img {
         height: 2.2rem;

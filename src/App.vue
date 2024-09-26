@@ -113,7 +113,7 @@ watch(route, (ov, nv) => {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 900px 900px, 900px 900px, 900px 900px;
     background-attachment: fixed;
-    animation: bganimation 20s infinite;
+    animation: bganimation 30s infinite;
 }
 header, footer {
     display: flex;
