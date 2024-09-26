@@ -12,62 +12,43 @@ p, strong {
     line-height: 1.4;
 }
 
-.bright {
-    background-color: #efebdb;
-    color: #000;
-}
-.dark {
-    background-color: #222;
-    color: #fff;
-
-    &.img {
-        overflow:hidden; position:relative; isolation: isolate;
-    }
-
-    .title {
-        font-size: 3rem;
-        margin-bottom: 0;
-    }
-}
-
 section {
     padding: 3rem 1rem;
     cursor: default;
 
-    // &.grad {
-    //     padding: 5rem 0 6rem;
-    //     // background-image: linear-gradient(to bottom, #fff, #838da4, #314165, #061741);
-    //     background-image: linear-gradient(to bottom, #fff, #6494aa, #2a4e6a, #061741);
-    // }
+    &.bright {
+        background-color: #efebdb;
+        color: #000;
+    }
+    &.dark {
+        background-color: #222;
+        color: #fff !important;
+    
+        &.img {
+            overflow:hidden; position:relative; isolation: isolate;
+        }
+    
+        .title {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+    }
+
     h1 {
         font-size: 2rem;
-        color: #444;
     }
     .inner {
         max-width: 1200px;
         margin: 0 auto;
     }
-    strong {
-        color: #000;
-    }
+}
+
+.red {
+    color:#ff5151;
 }
 
 .yellow {
-    color:#fff2be;;
-}
-
-.green {
-    color: rgb(165, 174, 102);
-}
-
-.blue {
-    // color: #061741;
-    color: #000;
-}
-
-.sky {
-    // color: #4b85a0;
-    color: #fff2be;
+    color:#fff2be;
 }
 
 .wordset {
@@ -161,18 +142,18 @@ section {
 }
 
 .fullButton {
-    background-color: rgb(165, 174, 102);
+    background-color: #ff5151;
     border-radius: 1rem;
     border: unset;
-    color: #000;
+    color: #fff;
     font-size: 0.9rem;
     padding: 0.4rem 0.9rem;
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover {
-        background-color: #061741;
-        color: rgb(165, 174, 102);
+        // background-color: #061741;
+        color: #000;
     }
 }
 

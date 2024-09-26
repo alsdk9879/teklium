@@ -116,13 +116,13 @@ let formatTimestamp = (timestamp) => {
     width: 32%;
     // min-width: 320px;
     padding: 1rem;
-    box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .05);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .05);
     transform: translateY(0px);
     transition: all 0.3s;
     cursor: pointer;
     text-decoration: none;
     color: #000;
-    border: 1px solid #e6eaf2;
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 1rem;
     width: 100%;
 
@@ -131,7 +131,7 @@ let formatTimestamp = (timestamp) => {
         box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .1);
 
         .button {
-            color: #4b85a0;
+            color: #ff5151;
         }
     }
     .image {

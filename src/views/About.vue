@@ -8,19 +8,23 @@ section.dark.img(style="padding-top: 12rem;")
 section.white 
     .inner(style="max-width:900px; text-align:center")
         h1 Teklium is the Global Leader
-        strong.sky in AI, semiconductor technology, and sustainable energy solutions, pioneering advanced carbon semiconductors to drive performance, efficiency, and industry transformation.
+        strong(style="color:#999") in AI, semiconductor technology, and sustainable energy solutions, pioneering advanced carbon semiconductors to drive performance, efficiency, and industry transformation.
+
+br
+br
+br
 
 section.white 
     .inner
         .wrap
-            //- .image(style="height:500px") 
-                img(src="/assets/img/internet.webp")
+            .image(style="max-width:250px;min-width:unset") 
+                img(src="/assets/img/profile.jpg")
             .content
-                .tit(style="display:flex; align-items:center;")
-                    img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem")
-                    h1 Jason Ho, CEO
-                strong.sky He has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
-                p He holds a Master’s degree in Electrical Engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan. Jason has contributed to numerous groundbreaking projects, including the F-35 Fighter Jet. With over 400 international patents in computer chip design, optical devices, computer security systems, and neural networks, he has made significant impacts across various technological fields.
+                //- .tit(style="display:flex; align-items:flex-end; ")
+                    img(src="/assets/img/jasonho.jpeg" style="width: 100px; margin-right: 1rem")
+                h1(style="margin-top: 0;") Jason Ho, CEO
+                strong He has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
+                p(style="margin-bottom: 0; color:#999") He holds a Master’s degree in Electrical Engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan. Jason has contributed to numerous groundbreaking projects, including the F-35 Fighter Jet. With over 400 international patents in computer chip design, optical devices, computer security systems, and neural networks, he has made significant impacts across various technological fields.
 
 section.white
     .inner 
@@ -29,7 +33,7 @@ section.white
         .cardWrap 
             .card
                 h2 Teklium Inc.
-                strong.sky Founder & CEO
+                p Founder & CEO
 
                 hr
 
@@ -42,7 +46,7 @@ section.white
                         p A technology for displaying holographic videos without the need for 3D glasses.
             .card
                 h2 Revatron Co., Ltd
-                strong.sky Chief Technology Officer (CTO)
+                p Chief Technology Officer (CTO)
 
                 hr
 
@@ -53,14 +57,14 @@ section.white
                         p A technology for holographic video display without 3D glasses.
             .card
                 h2 Harada International Law Firm
-                strong.sky Consultant
+                p Consultant
 
                 hr
 
                 p Focused on innovative solutions and international cooperation to advance Japan’s semiconductor industry.
             .card
                 h2 Advanced Projects
-                strong.sky &nbsp;
+                p &nbsp;
 
                 hr
 

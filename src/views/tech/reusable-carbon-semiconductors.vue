@@ -11,7 +11,7 @@ br
     br
     br
 
-    strong.sky Today's Challenge
+    strong.red Today's Challenge
 
     p Industrialization, economics, science, and education heavily rely on artificial intelligence (AI) and semiconductor technology. Yet, the computing power of artificial intelligence doubles every three months, exceeding Moore's Law by far. AI also consumes a substantial amount of electricity, enormous computing power, and vast storage. 
     p Today's silicon-based AI chips struggle to keep up with rapidly evolving AI algorithms. These chips fall short of performance density, power consumption, and storage capacity. With increasing transistor numbers, semiconductor functionality and computing power increase. Modern chips contain over 50 billion transistors, but as components shrink, they face physical limits. Semiconductor development focuses on increasing transistor density, speed, and power efficiency. Stacking multiple silicon chips in a single package is difficult and costly due to heat dissipation issues and high failure rates caused by silicon's limitations.
@@ -22,7 +22,7 @@ br
     br
     br
 
-    strong.sky A World of Opportunity
+    strong.red A World of Opportunity
     
     p The Reusable Chip represents a pivotal development in mitigating environmental impacts associated with silicon-based semiconductors. By repurposing this chip multiple times, it reduces production volumes and enhances chip value. Removing chips from obsolete devices, reprogramming them with updated functionality, and integrating them into new computers enables users to upgrade their devices rather than buy new ones.
     p Chips made of carbon nanotubes have shown sub-nanometer PPAC performance and have a lifespan of 100 years, making them the ideal platform for reusable chips. With CSCC technology and a programmable architecture, Reusable Chips allow users to select and program netlists from various chip design firms. Featuring programmable logic cells interconnected by a switching network, these chips simplify programming and facilitate repeated programming.
@@ -32,7 +32,7 @@ br
     br
     br
 
-    strong.sky INCLUDE STATS & CITATIONS
+    strong.red INCLUDE STATS & CITATIONS
 
     ul
         li R&D Investment
