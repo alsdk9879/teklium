@@ -35,6 +35,12 @@ const route = useRoute();
             }
         }
     }
+
+    &.dark-mode {
+        ul li a{
+            color: #fff;
+        }
+    }
 }
 
 @media (max-width: 920px) {

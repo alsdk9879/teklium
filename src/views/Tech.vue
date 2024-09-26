@@ -2,7 +2,7 @@
 section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title Revolutionary Technologies
-        p.green Innovations That Matter
+        p.yellow Innovations That Matter
     img.bgi(src="/assets/img/tech_bg.png")
 
 section.white

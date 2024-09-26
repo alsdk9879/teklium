@@ -4,15 +4,18 @@ section.top-area.bright(style="padding: 16rem 1rem")
         h1(data-aos="zoom-in" data-aos-duration="1000") Teklium
         p(data-aos="fade-up" data-aos-duration="1200") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
 
-section.dark(style="padding: 16rem 1rem; background-color:#222")
-    .inner(style="color:#fff")
+section.dark(style="padding: 16rem 1rem;")
+    .inner
         //- h1(style="color:#fff") Who We Are
         .tit(style="display:flex; align-items:center;")
-            img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem")
-            h1(style="color:#fff") Teklium
-        strong(style="color:#fff2be") Pioneering the Future #[span.wordset of Semiconductor Technologies]
+            img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem;")
+            h1(style="font-weight:300;") Teklium
+        br
+        strong.yellow(style="font-size:1.1rem;") Pioneering the Future #[span.wordset of Semiconductor Technologies]
         p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
-        button.lineButton(@click="router.push('/about')" style="color:#000") View more
+        br
+        br
+        button.lineButton(@click="router.push('/about')") View more
 
 //- section.dark.serve
     .inner
@@ -79,9 +82,9 @@ section.dark(style="padding: 16rem 1rem; background-color:#222")
                 strong Redefining Technology Access and Sustainability with New Models
                 p Our innovative business strategies are designed to drive both technological advancement and sustainable development. AI City, supported by strategic partnerships, aims to boost broadband accessibility and improve data center efficiency, contributing to sustainable economic growth. Meanwhile, our Chip Subscription model offers a modern solution to keep consumers up-to-date with the latest technology while reducing electronic waste through a subscription-based access model.
 
-section
+section.bright
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
-        h1(style="color:#fff") Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
+        h1 Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
         button.lineButton(@click="router.push('/tech')") View more
 
 </template>
