@@ -89,34 +89,28 @@ section.white
 section.white 
     .inner
         h1(style="text-align:center") Our team
-        .linkWrap 
-            a.link(href="https://www.skapi.com/" target="_blank")
-                .image
-                    img(src="/assets/img/skapi_symbol.png" style="width:35px")
-                .content 
-                    h2 Skapi 
-                    strong Partner
-                .button Click >
+        .cardWrap
+            .card
+                h2 Baksa Gimm
+                hr
+                p Founder of broadway Inc., Expert in network API's and internet technologies.
             
-            a.link(href="https://www.linkedin.com/in/mark-bayliss-3b45777?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank") 
-                .image 
-                    img(src="/assets/img/person.png" style="width:40px")
-                .content 
-                    h2 Mark Bayliss
-                    strong Strategic Partner
-                .button Click > 
+            .card
+                h2 Mark Bayliss
+                hr
+                p President Visual link, Member of FCC technical advisory council.
 
 section.white 
     .inner(style="text-align:center")
         h1 Partner
-        .imgWrap 
-            .image
+        .linkWrap 
+            a.link(href="https://www.skapi.com/" target="_blank")
                 img(src="/assets/img/skapi.png" style="transform: translateY(2px)")
-            .image
+            a.link(href="https://www.rhfocus.com/index" target="_blank")
                 img(src="/assets/img/focusgroup.png")
-            .image    
+            a.link(href="https://www.nantero.com/" target="_blank")   
                 img(src="/assets/img/nantero.svg" style="filter: brightness(0); height: 1.5rem")
-            .image
+            .link
                 img(src="/assets/img/revatron.png")
 
 br
@@ -131,8 +125,8 @@ br
 .card {
     width: 45%;
     min-width: 320px;
-    border: 1px solid #e6eaf2;
-    box-shadow: 0 36px 32px -22px #e6eaf2;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 36px 32px -22px rgba(0,0,0,0.1);
     border-radius: 16px;
     padding: 1rem;
 
@@ -167,69 +161,6 @@ br
         }
     }
 }
-
-.linkWrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.link {
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    // flex-wrap: wrap;
-    gap: 1rem;
-    width: 32%;
-    min-width: 320px;
-    padding: 1rem;
-    box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .05);
-    transform: translateY(0px);
-    transition: all 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
-    border-radius: 1rem;
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .1);
-    }
-    .image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        border: 1px solid #eee;
-        overflow: hidden;
-
-        img {
-            object-fit: cover;
-        }
-    }
-    .content {
-        flex-grow: 1;
-
-        h2 {
-            margin: 0;
-        }
-    }
-    p {
-        color: #999;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; 
-        -webkit-box-orient: vertical;
-    }
-    .button {
-        flex: none;
-    }
-}
-
 .innovate {
     padding-left: 1rem;
 
@@ -244,15 +175,14 @@ br
         }
     }
 }
-
-.imgWrap {
+.linkWrap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
 
-    .image {
+    .link {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -269,16 +199,16 @@ br
 }
 
 @media (max-width: 991px) {
-    .imgWrap {
-        .image {
+    .linkWrap {
+        .link {
             width: calc(50% - 1rem);
             flex: auto;
         }
     }
 }
 @media (max-width: 600px) {
-    .imgWrap {
-        .image {
+    .linkWrap {
+        .link {
             width: 100%;
         }
     }

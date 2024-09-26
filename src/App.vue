@@ -3,7 +3,7 @@ header#header(:class="{'hide':scroll, 'dark-mode':darkMode}")
     router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
     DeskMenu(:class="{'dark-mode':darkMode}")
     MobMenu
-main
+main(:class="{'animation': route.name == 'home'}")
     router-view
 footer
     div
@@ -28,7 +28,7 @@ footer
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
-import { ref, watch } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 
 import DeskMenu from '@/components/Desk-menu.vue'
 import MobMenu from '@/components/Mob-menu.vue'
@@ -80,6 +80,41 @@ watch(route, (ov, nv) => {
 </script>
 
 <style scoped lang="less"> 
+@keyframes bganimation {
+    0% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+    50% {
+        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+    }
+    100% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+}
+.animation {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 255, 0.3) 0%,
+        rgba(0, 0, 0, 0) 70%
+        ),
+        /* niebieski */
+        radial-gradient(
+            ellipse at center,
+            rgba(255, 0, 0, 0.3) 0%,
+            rgba(29, 21, 21, 0) 70%
+        ),
+        /*czerwony */
+        radial-gradient(
+            ellipse at center,
+            rgba(0, 255, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0) 70%
+        )
+        /*zielony */ #efebdb;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 900px 900px, 900px 900px, 900px 900px;
+    background-attachment: fixed;
+    animation: bganimation 20s infinite;
+}
 header, footer {
     display: flex;
     flex-wrap: wrap;
