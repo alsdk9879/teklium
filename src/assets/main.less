@@ -12,39 +12,33 @@ p, strong {
     line-height: 1.4;
 }
 
-strong {
-    // font-size: 1.4rem;
-    // text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+.bright {
+    background-color: #efebdb;
+    color: #000;
+}
+.dark {
+    background-color: #222;
+    color: #fff;
+
+    &.img {
+        overflow:hidden; position:relative; isolation: isolate;
+    }
+
+    .title {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
 }
 
 section {
     padding: 3rem 1rem;
     cursor: default;
 
-    &.dark {
-        color: #000;
-        background-color: #efebdb;
-
-        &.img {
-            overflow:hidden; position:relative; isolation: isolate;
-        }
-
-        .title {
-            font-size: 3rem;
-            margin-bottom: 0;
-            color: #000;
-        }
-    }
-    &.white {
-        background-color: #fff;
-        color: #000;
-    }
-    &.grad {
-        padding: 5rem 0 6rem;
-        // background-image: linear-gradient(to bottom, #fff, #838da4, #314165, #061741);
-        // background-image: linear-gradient(to bottom, #fff, #6494aa, #2a4e6a, #061741);
-        background-color: #000;
-    }
+    // &.grad {
+    //     padding: 5rem 0 6rem;
+    //     // background-image: linear-gradient(to bottom, #fff, #838da4, #314165, #061741);
+    //     background-image: linear-gradient(to bottom, #fff, #6494aa, #2a4e6a, #061741);
+    // }
     h1 {
         font-size: 2rem;
         color: #444;
@@ -58,6 +52,10 @@ section {
     }
 }
 
+.yellow {
+    color:#fff2be;;
+}
+
 .green {
     color: rgb(165, 174, 102);
 }
@@ -69,8 +67,7 @@ section {
 
 .sky {
     // color: #4b85a0;
-    // color: #76b6d3;
-    color: #999;
+    color: #fff2be;
 }
 
 .wordset {
@@ -143,17 +140,23 @@ section {
     display: inline-block;
     background-color: unset;
     // border: 2px solid #77F7B4;
-    border: 2px solid rgb(165, 174, 102);
+    // border: 2px solid rgb(165, 174, 102);
+    // border: 2px solid #333;
+    border: 2px solid #ff5151;
     border-radius: 1rem;
     font-size: 0.9rem;
-    color: #fff;
+    // color: #000;
+    color: #ff5151;
     padding: 0.4rem 0.9rem;
     cursor: pointer;
     transition: all 0.3s;
-
+    // mix-blend-mode: difference;
+    
     &:hover {
-        background-color: rgb(165, 174, 102);
-        color: #061741;
+        // background-color: rgb(165, 174, 102);
+        // background-color: #333;
+        background-color: #ff5151;
+        color: #efebdb;
     }
 }
 

@@ -1,23 +1,22 @@
 <template lang="pug">
-section.top-area.bright(style="padding: 16rem 1rem")
+section.top-area
     .inner
-        h1(data-aos="zoom-in" data-aos-duration="1000") Teklium
-        p(data-aos="fade-up" data-aos-duration="1200") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
+        h1(style="font-size:3rem;margin-bottom:0;color:#fff;") Teklium
+        p.green Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
+        //- img.bgi(src="/assets/img/teklium.png" style="right:-0.7rem; bottom:-3rem; width:50%; max-width:500px")
 
-section.dark(style="padding: 16rem 1rem;")
-    .inner
-        //- h1(style="color:#fff") Who We Are
-        .tit(style="display:flex; align-items:center;")
-            img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem;")
-            h1(style="font-weight:300;") Teklium
-        br
-        strong.yellow(style="font-size:1.1rem;") Pioneering the Future #[span.wordset of Semiconductor Technologies]
-        p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
-        br
-        br
-        button.lineButton(@click="router.push('/about')") View more
+section.white(style="padding: 6rem 1rem")
+    .inner 
+        .wrap
+            .image
+                img(src="/assets/img/tech.jpg")
+            .content(style="display:inline-block")
+                h1.blue Who We Are
+                strong.sky Pioneering the Future #[span.wordset of Semiconductor Technologies]
+                p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
+                button.lineButton(@click="router.push('/about')" style="color:#000") View more
 
-//- section.dark.serve
+section.dark.serve
     .inner
         h1(style="text-align:center") We are serve 
 
@@ -53,7 +52,7 @@ section.dark(style="padding: 16rem 1rem;")
                 h2 Automotive
                 p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
 
-//- section.white
+section.white
     .inner(style="text-align:center")
         h1.blue Pioneering the Future #[br]of Semiconductor Technologies
         strong.sky Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
@@ -82,9 +81,9 @@ section.dark(style="padding: 16rem 1rem;")
                 strong Redefining Technology Access and Sustainability with New Models
                 p Our innovative business strategies are designed to drive both technological advancement and sustainable development. AI City, supported by strategic partnerships, aims to boost broadband accessibility and improve data center efficiency, contributing to sustainable economic growth. Meanwhile, our Chip Subscription model offers a modern solution to keep consumers up-to-date with the latest technology while reducing electronic waste through a subscription-based access model.
 
-section.bright
+section.grad
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
-        h1 Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
+        h1(style="color:#fff") Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
         button.lineButton(@click="router.push('/tech')") View more
 
 </template>
@@ -97,56 +96,27 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-@keyframes bganimation {
-    0% {
-        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
-    }
-    50% {
-        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
-    }
-    100% {
-        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
-    }
-}
-
 .top-area {
-    background: radial-gradient(
-        ellipse at center,
-        rgba(0, 0, 255, 0.3) 0%,
-        rgba(0, 0, 0, 0) 70%
-        ),
-        /* niebieski */
-        radial-gradient(
-            ellipse at center,
-            rgba(255, 0, 0, 0.3) 0%,
-            rgba(29, 21, 21, 0) 70%
-        ),
-        /*czerwony */
-        radial-gradient(
-            ellipse at center,
-            rgba(0, 255, 0, 0.3) 0%,
-            rgba(0, 0, 0, 0) 70%
-        )
-        /*zielony */ #efebdb;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 900px 900px, 900px 900px, 900px 900px;
-    background-attachment: fixed;
-    animation: bganimation 20s infinite;
+    background-image: linear-gradient(to bottom right, #4b85a0, #061741);
     padding-top: 15rem;
     position: sticky;
     top: 0;
     z-index: -1;
-    text-align: center;
 
-    h1 {
-        font-size: 4rem;
-        margin: 0;
-        background-color: #aba89c;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    .inner {
+        position: relative;
+
+        &:before {
+            content:'';
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: url('/assets/img/teklium.svg') center / cover no-repeat;
+            position: absolute;
+            right: 0;
+            bottom: -10%;
+            filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.7)) opacity(0.6);
+        }
     }
 }
 .serve {

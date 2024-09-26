@@ -93,7 +93,7 @@ watch(route, (o, n) => {
         height: 2px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #fff;
+        background-color: #000;
         transition: all 0.3s;
     }
     &::before {

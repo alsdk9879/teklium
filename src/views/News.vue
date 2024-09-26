@@ -2,7 +2,7 @@
 section.dark.img(style="padding-top: 12rem")
     .inner
         h1.title News & Insight
-        p.green Stay updated with the latest developments at Teklium
+        p.yellow Stay updated with the latest developments at Teklium
         img.bgi(src="/assets/img/news_bg.png" style="filter: brightness(1.3);")
 
 section.white    
