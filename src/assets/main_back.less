@@ -22,8 +22,8 @@ section {
     cursor: default;
 
     &.dark {
-        color: #000;
-        background-color: #efebdb;
+        color: #fff;
+        background-image: linear-gradient(to bottom right, #4b85a0, #061741);
 
         &.img {
             overflow:hidden; position:relative; isolation: isolate;
@@ -32,7 +32,6 @@ section {
         .title {
             font-size: 3rem;
             margin-bottom: 0;
-            color: #000;
         }
     }
     &.white {
@@ -42,19 +41,14 @@ section {
     &.grad {
         padding: 5rem 0 6rem;
         // background-image: linear-gradient(to bottom, #fff, #838da4, #314165, #061741);
-        // background-image: linear-gradient(to bottom, #fff, #6494aa, #2a4e6a, #061741);
-        background-color: #000;
+        background-image: linear-gradient(to bottom, #fff, #6494aa, #2a4e6a, #061741);
     }
     h1 {
         font-size: 2rem;
-        color: #444;
     }
     .inner {
         max-width: 1200px;
         margin: 0 auto;
-    }
-    strong {
-        color: #000;
     }
 }
 
@@ -63,14 +57,12 @@ section {
 }
 
 .blue {
-    // color: #061741;
-    color: #000;
+    color: #061741;
 }
 
 .sky {
     // color: #4b85a0;
-    // color: #76b6d3;
-    color: #999;
+    color: #76b6d3;
 }
 
 .wordset {
@@ -109,7 +101,7 @@ section {
         flex-grow: 2;
 
         p {
-            color: #000;
+            color: #999;
 
             &.ellipsis {
                 overflow: hidden;
@@ -119,9 +111,6 @@ section {
                 -webkit-box-orient: vertical;
             }
         }
-    }
-    h2 {
-        color: #444;
     }
 }
 
@@ -133,9 +122,6 @@ section {
     .card {
         position: relative;
         flex-grow: 1;
-    }
-    h2 {
-        color: #444;
     }
 }
 

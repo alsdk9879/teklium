@@ -127,12 +127,17 @@ const route = useRoute();
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-top: 4rem;
 }
 .vision .card {
     padding: 1rem;
     box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .05);
     text-align: left;
     margin-top: 5rem;
+
+    &:last-of-type {
+        margin-bottom: 3rem;
+    }
 
     .num {
         position: absolute;
@@ -143,17 +148,13 @@ const route = useRoute();
         opacity: 0.2;
     }
     strong {
-        color: #5c6479;
+        color: #ff5151;
         display: block;
     }
     p {
         font-size: 0.9rem;
-        color: #999;
+        color: #000;
         overflow: hidden;
-        // text-overflow: ellipsis;
-        // display: -webkit-box;
-        // -webkit-line-clamp: 10; 
-        // -webkit-box-orient: vertical;
     }
 }
 
@@ -179,9 +180,6 @@ const route = useRoute();
     }
     .wrap .content {
         text-align: center;
-    }
-    .cardWrap {
-        gap: 5rem;
     }
 }
 </style>
