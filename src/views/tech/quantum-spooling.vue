@@ -5,7 +5,7 @@ br
 
 .inner
     .image
-        img(src="/assets/img/spooling.webp")
+        img(src="/assets/img/spooling.jpg")
 
     br
     br
