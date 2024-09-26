@@ -17,13 +17,13 @@ section.white
         .cardWrap(v-else)
             //- a.card(v-for="r in releases" :href="r.url")
             router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
-                .image
-                    img(v-if="r.img" :src="r.img")
-                    img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
+                .image(v-if="r.img")
+                    img(:src="r.img")
+                    //- img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
                 .content 
                     .date(style="color:#999") {{ formatTimestamp(r.timestamp) }}
                     h2 {{ r.subject }}
-                    p {{ r.cont }}
+                    p(:class="{'long' : !r.img}") {{ r.cont }}
                 .button Read More >
 
 
@@ -99,10 +99,10 @@ let formatTimestamp = (timestamp) => {
         min-height: 64px;
         max-height: 64px;
     }
-    p {
-        min-height: 56px;
-        max-height: 84px;
-    }
+    // p {
+    //     min-height: 56px;
+    //     max-height: 84px;
+    // }
 }
 .cardWrap {
     display: grid;
@@ -160,6 +160,10 @@ let formatTimestamp = (timestamp) => {
         display: -webkit-box;
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
+
+        &.long {
+            -webkit-line-clamp: 15; 
+        }
     }
     .button {
         transition: all .3s;
@@ -177,10 +181,10 @@ let formatTimestamp = (timestamp) => {
             min-height: auto;
             max-height: initial;
         }
-        p {
-            min-height: auto;
-            max-height: initial;
-        }
+        // p {
+        //     min-height: auto;
+        //     max-height: initial;
+        // }
     }
     .cardWrap {
         grid-template-columns: repeat(1, 1fr);

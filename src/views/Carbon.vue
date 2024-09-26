@@ -26,7 +26,7 @@ section.white
                 p The highest transistor density is now available on the market due to this advancement that extends Moore's Law beyond physical limitations. #[strong.highlight In contrast to silicon semiconductors, carbon semiconductors excel at heat dissipation and power efficiency, resulting in sub-nanometer performance and 90% lower production costs.] Using a 20 nm process, Nantero's carbon memory chips offer ten times faster reading speeds and lower power consumption.
                 p This close partnership allows us to focus on comprehensive solutions, ecosystem development, and global market adoption.
             .image
-                img(src="/assets/img/memory_chip.webp")
+                img(src="/assets/img/memory_chip.jpg")
 
 section.white 
     .inner

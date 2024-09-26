@@ -1,5 +1,5 @@
 <template lang="pug">
-section.bright.top-area(style="padding: 16rem 1rem")
+section.top-area(style="padding: 16rem 1rem")
     .inner
         h1(data-aos="zoom-in" data-aos-duration="1000") Teklium
         p(data-aos="fade-up" data-aos-duration="1200") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
@@ -17,7 +17,7 @@ section.dark(style="padding: 16rem 1rem;")
         br
         button.lineButton(@click="router.push('/about')") View more
 
-section.bright.serve(style="padding:5rem 0 6rem")
+section.serve(style="padding:5rem 0 6rem")
     .inner
         h1(style="text-align:center") We are serve
 
@@ -50,7 +50,6 @@ section.bright.serve(style="padding:5rem 0 6rem")
                     h2 Automotive
                     p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
 
-section.bright
     .inner(style="text-align:center")
         h1.blue Pioneering the Future #[br]of Semiconductor Technologies
         //- strong Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
@@ -88,45 +87,8 @@ const route = useRoute();
 </script>
 
 <style scoped lang="less">
-@keyframes bganimation {
-    0% {
-        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
-    }
-    50% {
-        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
-    }
-    100% {
-        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
-    }
-}
-
 .top-area {
-    background: radial-gradient(
-        ellipse at center,
-        rgba(0, 0, 255, 0.3) 0%,
-        rgba(0, 0, 0, 0) 70%
-        ),
-        /* niebieski */
-        radial-gradient(
-            ellipse at center,
-            rgba(255, 0, 0, 0.3) 0%,
-            rgba(29, 21, 21, 0) 70%
-        ),
-        /*czerwony */
-        radial-gradient(
-            ellipse at center,
-            rgba(0, 255, 0, 0.3) 0%,
-            rgba(0, 0, 0, 0) 70%
-        )
-        /*zielony */ #efebdb;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 900px 900px, 900px 900px, 900px 900px;
-    background-attachment: fixed;
-    animation: bganimation 20s infinite;
     padding-top: 15rem;
-    position: sticky;
-    top: 0;
-    z-index: -1;
     text-align: center;
 
     h1 {
