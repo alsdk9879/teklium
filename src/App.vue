@@ -16,16 +16,13 @@ footer
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
-        //- .route
-            .title News & Insight
-            p Explore news and thought leadership about water and sustainability.
         .route 
-            .title Location 
+            .title.yellow Location 
             p Teklium Inc., 2880 Zanker Road, San Jose, CA 95134
         .route
-            .title Contact Us
+            .title.yellow Contact Us
             p Should you wish to reach out to us, you can send us an email.
-            router-link(to="/contact" style="font-size: 0.9rem") Get in touch >
+            router-link(to="/contact" style="font-size: 0.9rem;text-decoration:underline") Get in touch >
 
 </template>
 
@@ -124,7 +121,7 @@ main {
     // background-image: linear-gradient(to bottom right, #4b85a0, #061741)
 }
 footer {
-    background-color: #000;
+    background-color: #222;
     color: #fff;
     padding: 3rem 1rem 2rem 1rem;
     gap: 3rem;
@@ -143,8 +140,6 @@ footer {
 
         .title {
             font-weight: bold;
-            // color: #0078ff;
-            color: #a5ae66;
         }
         p {
             font-size: 0.9rem;

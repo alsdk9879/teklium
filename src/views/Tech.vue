@@ -22,7 +22,7 @@ section.white
                 hr
 
                 div(style="text-align:right")
-                    button.fullButton Read More >
+                    button.lineButton Read More >
 
 br
 br
@@ -90,8 +90,8 @@ let techs = [
 .card {
     width: 45%;
     min-width: 320px;
-    border: 1px solid #e6eaf2;
-    box-shadow: 0 36px 32px -22px #e6eaf2;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 36px 32px -22px rgba(0,0,0,0.1);
     border-radius: 16px;
     padding: 1rem;
     text-decoration: none;
