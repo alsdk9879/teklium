@@ -21,6 +21,8 @@ const route = useRoute();
 
 <style scoped lang="less">
 #desktop-menu {
+    margin-left: auto;
+    
     ul {
         display: inline-block;
         li {

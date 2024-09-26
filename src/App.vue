@@ -131,6 +131,7 @@ header {
     top: 0;
     z-index: 999;
     transition: all 0.3s;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 
     a {
         color: #000;
