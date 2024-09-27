@@ -32,7 +32,7 @@ section.white
     .inner
         .wrap
             .image
-                img(src="/assets/img/fcc.svg" style="filter: brightness(0);")
+                img(src="/assets/img/visuallink.jpg")
             .content
                 h1 Mark Bayliss
                 strong President Visual link, Member of FCC technical advisory council.
