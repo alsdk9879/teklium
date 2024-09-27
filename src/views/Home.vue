@@ -4,9 +4,8 @@ section.top-area(style="padding: 16rem 1rem")
         h1(data-aos="zoom-in" data-aos-duration="1000") Teklium
         p(data-aos="fade-up" data-aos-duration="1200") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
 
-section.dark(style="padding: 16rem 1rem;")
+section.dark.blend(style="padding: 16rem 1rem;")
     .inner
-        //- h1(style="color:#fff") Who We Are
         .tit(style="display:flex; align-items:center;")
             img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem;")
             h1(style="font-weight:300;") Teklium
@@ -70,7 +69,7 @@ section.serve(style="padding:5rem 1rem 6rem")
                 strong Redefining Technology Access and Sustainability with New Models
                 p Our innovative business strategies are designed to drive both technological advancement and sustainable development. AI City, supported by strategic partnerships, aims to boost broadband accessibility and improve data center efficiency, contributing to sustainable economic growth. Meanwhile, our Chip Subscription model offers a modern solution to keep consumers up-to-date with the latest technology while reducing electronic waste through a subscription-based access model.
 
-section.dark
+section.dark.blend
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
         h1 Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
         button.lineButton(@click="router.push('/tech')") View more
@@ -100,6 +99,26 @@ const route = useRoute();
         background-clip: text;
         color: transparent;
         text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    }
+}
+.blend {
+    position: relative;
+    background-color: unset;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,255,255,0.85);
+        mix-blend-mode: difference;
+    }
+
+    .inner {
+        position: relative;
+        z-index: 1;
     }
 }
 .serve {
