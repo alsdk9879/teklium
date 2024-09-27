@@ -32,7 +32,7 @@ const route = useRoute();
 
             a {
                 text-decoration: none;
-                color: #333;
+                color: #000;
                 mix-blend-mode: difference;
             }
         }

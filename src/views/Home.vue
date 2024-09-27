@@ -4,7 +4,7 @@ section.top-area(style="padding: 16rem 1rem")
         h1(data-aos="zoom-in" data-aos-duration="1000") Teklium
         p(data-aos="fade-up" data-aos-duration="1200") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
 
-section.dark(style="padding: 16rem 1rem;")
+section.dark.intro(style="padding: 16rem 1rem;")
     .inner
         //- h1(style="color:#fff") Who We Are
         .tit(style="display:flex; align-items:center;")
@@ -94,13 +94,21 @@ const route = useRoute();
     h1 {
         font-size: 4rem;
         margin: 0;
-        background-color: #aba89c;
+        background-color: #372f0f;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         color: transparent;
         text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+        font-size: clamp(5rem, 23.8vw, 16rem);
     }
+    
+    p {
+        font-size: clamp(0rem, 3.5vw, 1.5rem);
+    }
+}
+.intro {
+    background: #222 url('/assets/img/bg_main_intro.jpg') center/cover no-repeat;
 }
 .serve {
     .wrap {
@@ -108,6 +116,9 @@ const route = useRoute();
         flex: 1;
         min-width: 270px;
         background-color: #ffffff52;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
 
         > div {
             min-width: initial;
@@ -131,15 +142,15 @@ const route = useRoute();
     text-align: left;
     margin-top: 2rem;
     border-radius: 1rem;
-    background: #ffffff52 url(/assets/img/icon_technologie1.svg) right -7rem center / 24rem no-repeat;
+    background: #ffffff52 url('/assets/img/icon_technologie1.svg') right -7rem center / 24rem no-repeat;
 
     &:nth-of-type(2) {
-        background: #ffffff52 url(/assets/img/icon_technologie2.svg) right -9rem center / 28rem no-repeat;
+        background: #ffffff52 url('/assets/img/icon_technologie2.svg') right -9rem center / 28rem no-repeat;
     }
 
     &:last-of-type {
         margin-bottom: 3rem;
-        background: #ffffff52 url(/assets/img/icon_technologie3.svg) right -7.8rem center / 28rem no-repeat;
+        background: #ffffff52 url('/assets/img/icon_technologie3.svg') right -7.8rem center / 28rem no-repeat;
     }
 
     // .num {
