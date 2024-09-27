@@ -15,7 +15,7 @@ section.dark.blend(style="padding: 12rem 1rem;")
         p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
         br
         br
-        button.lineButton(@click="router.push('/about')") View more
+        button.fullButton(@click="router.push('/about')") View more
 
 section.serve(style="padding:5rem 1rem 6rem")
     .inner
@@ -73,7 +73,7 @@ section.serve(style="padding:5rem 1rem 6rem")
 section.dark.blend
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
         h1 Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
-        button.lineButton(@click="router.push('/tech')") View more
+        button.fullButton(@click="router.push('/tech')") View more
     br
     br
 

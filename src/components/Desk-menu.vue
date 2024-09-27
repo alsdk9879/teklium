@@ -9,7 +9,7 @@ nav#desktop-menu
             router-link(to="/news") News & Insights
         li 
             router-link(to="/tech") Technologies
-    button.lineButton(@click="router.push('/contact')") Contact Us
+    button.fullButton(@click="router.push('/contact')") Contact Us
 </template>
 
 <script setup>
