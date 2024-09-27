@@ -17,7 +17,7 @@ section.dark(style="padding: 16rem 1rem;")
         br
         button.lineButton(@click="router.push('/about')") View more
 
-section.serve(style="padding:5rem 0 6rem")
+section.serve(style="padding:5rem 1rem 6rem")
     .inner
         h1(style="text-align:center") We are serve
 
@@ -50,7 +50,7 @@ section.serve(style="padding:5rem 0 6rem")
                     h2 Automotive
                     p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
 
-    .inner(style="text-align:center")
+    .inner(style="text-align:center; margin-top: 11rem;")
         h1.blue Pioneering the Future #[br]of Semiconductor Technologies
         //- strong Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
 
@@ -107,10 +107,15 @@ const route = useRoute();
         display: block;
         flex: 1;
         min-width: 270px;
+        background-color: #ffffff52;
 
         > div {
             min-width: initial;
             width: 100%;
+        }
+
+        .content {
+            padding: 0 1rem;
         }
     }
 }
@@ -126,15 +131,15 @@ const route = useRoute();
     text-align: left;
     margin-top: 2rem;
     border-radius: 1rem;
-    background: url(/assets/img/icon_technologie1.svg) right -7rem center / 24rem no-repeat;
+    background: #ffffff52 url(/assets/img/icon_technologie1.svg) right -7rem center / 24rem no-repeat;
 
     &:nth-of-type(2) {
-        background: url(/assets/img/icon_technologie2.svg) right -9rem center / 28rem no-repeat;
+        background: #ffffff52 url(/assets/img/icon_technologie2.svg) right -9rem center / 28rem no-repeat;
     }
 
     &:last-of-type {
         margin-bottom: 3rem;
-        background: url(/assets/img/icon_technologie3.svg) right -7.8rem center / 28rem no-repeat;
+        background: #ffffff52 url(/assets/img/icon_technologie3.svg) right -7.8rem center / 28rem no-repeat;
     }
 
     // .num {

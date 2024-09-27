@@ -122,7 +122,7 @@ header, footer {
     justify-content: space-between;
     padding: 1rem;
     background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(24px);
 }
 header {
     position: fixed;
@@ -131,7 +131,7 @@ header {
     top: 0;
     z-index: 999;
     transition: all 0.3s;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 
     a {
         color: #000;
