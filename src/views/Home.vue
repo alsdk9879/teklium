@@ -1,16 +1,17 @@
 <template lang="pug">
-section.top-area(style="padding: 16rem 1rem")
+//- section.top-area(style="padding: 16rem 1rem")
     .inner
-        h1(data-aos="zoom-in" data-aos-duration="1000") Teklium
+        img(src="/assets/img/teklium.png" style="width: 17vw; min-width: 120px; margin-bottom: 2rem;")
+        h1(data-aos="zoom-in" data-aos-duration="1000" style="font-size: 3rem") Teklium
         p(data-aos="fade-up" data-aos-duration="1200") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
 
-section.dark.blend(style="padding: 16rem 1rem;")
+section.dark.blend(style="padding: 12rem 1rem;")
     .inner
         .tit(style="display:flex; align-items:center;")
             img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem;")
             h1(style="font-weight:300;") Teklium
         br
-        strong.yellow(style="font-size:1.1rem;") Pioneering the Future #[span.wordset of Semiconductor Technologies]
+        strong.yellow(style="font-size:1.1rem;") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
         p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
         br
         br
@@ -103,7 +104,7 @@ const route = useRoute();
     }
     
     p {
-        font-size: clamp(0rem, 3.5vw, 1.5rem);
+        font-size: clamp(14px, 3.5vw, 1.5rem);
     }
 }
 .blend {
