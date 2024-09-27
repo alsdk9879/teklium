@@ -1,6 +1,9 @@
 <template lang="pug">
 header#header(:class="{'hide':scroll, 'dark-mode':darkMode}")
-    router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
+    //- router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
+    router-link.tit(to="/" style="display:flex; align-items:center;")
+        img(src="/assets/img/teklium.png" style="width: 30px; margin-right: 0.7rem;")
+        h1(style="font-size:1.5em; margin:0") TEKLIUM INC.
     DeskMenu(:class="{'dark-mode':darkMode}")
     MobMenu(:class="{'dark-mode':darkMode}")
 main(:class="{'animation': route.name == 'home'}")
@@ -69,12 +72,13 @@ watch(route, (ov, nv) => {
     if (nv) {
         window.scrollTo(0, 0);
         checkHeaderColor();
+        darkMode.value = true;
 
-        if (nv.name == 'home') {
-            darkMode.value = false;
-        } else {
-            darkMode.value = true;
-        }
+        // if (nv.name == 'home') {
+        //     darkMode.value = false;
+        // } else {
+        //     darkMode.value = true;
+        // }
     }
 }, {immediate: true})
 </script>
