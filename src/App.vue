@@ -111,7 +111,8 @@ watch(route, (ov, nv) => {
         )
         /*zielony */ #efebdb;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 900px 900px, 900px 900px, 900px 900px;
+    // background-size: 900px 900px, 900px 900px, 900px 900px;
+    background-size: 900px 1500px, 1500px 900px, 1100px 1800px;
     background-attachment: fixed;
     animation: bganimation 30s infinite;
 }
