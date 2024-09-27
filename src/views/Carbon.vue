@@ -55,7 +55,7 @@ section.dark
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center; max-width: 1000px;")
         //- h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
         h1(style="color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
-        button.lineButton(@click="router.push('/news')") View more
+        button.fullButton(@click="router.push('/news')") View more
 </template>
 
 <script setup>
