@@ -12,7 +12,7 @@ section.dark.blend(style="padding: 12rem 1rem;")
             h1(style="font-weight:300;") Teklium
         br
         strong.yellow(style="font-size:1.1rem;") Innovating eco-friendly technologies to transform everyday living, working, and recreation.
-        p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
+        p.ellipsis We are a seasoned team of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Our team members have made significant contributions to advanced projects, including the F-35, the United States' most advanced jet fighter. With a proven track record of innovation and excellence in mechanical design, computer science, semiconductor technologies, and energy solutions, we are dedicated to pioneering advancements in these fields.
         br
         br
         button.fullButton(@click="router.push('/tech')") View more
