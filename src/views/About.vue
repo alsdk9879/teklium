@@ -23,8 +23,8 @@ section.white
                 //- .tit(style="display:flex; align-items:flex-end; ")
                     img(src="/assets/img/jasonho.jpeg" style="width: 100px; margin-right: 1rem")
                 h1(style="margin-top: 0;") Jason Ho, CEO
-                strong He has transformed the semiconductor and energy industries with his pioneering inventions. #[br]His technologies have been adopted by leading global companies such as Toyota, Nissan, and Intel, and his work continues to shape the future of technology.
-                p(style="margin-bottom: 0; color:#999") He holds a Master’s degree in Electrical Engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan. Jason has contributed to numerous groundbreaking projects, including the F-35 Fighter Jet. With over 400 international patents in computer chip design, optical devices, computer security systems, and neural networks, he has made significant impacts across various technological fields.
+                strong He is a recognized leader in semiconductor technology, specializes in Integrated Circuit (IC) Design with an emphasis on real-time AI technologies.
+                p(style="margin-bottom: 0; color:#999") Holding a master’s degree in electrical engineering from Pennsylvania State University and a Bachelor of Science from National Chiao Tung University, Taiwan, Jason has significantly contributed to pioneering projects such as the F-35 Fighter Jet. He has developed advanced AI solutions for government projects and holds over 400 international patents in computer chip design, optic devices, computer security systems, and neural networks.
 
 section.white
     .inner 
@@ -37,32 +37,23 @@ section.white
 
                 hr
 
-                ul
-                    li Cell Structured Computer Chip
-                        p A reusable chip technology featuring unique architecture for auto-detection and correction of runtime errors.
-                    li Near Frictionless Mechanical Battery
-                        p An environmentally friendly energy storage solution utilizing flywheel angular momentum.
-                    li Pathium Display Technology (PDT)
-                        p A technology for displaying holographic videos without the need for 3D glasses.
+                p Jason introduced innovations like the reusable Cell Structured Computer Chip and near-frictionless mechanical batteries, revolutionizing the semiconductor and energy industries. His inventions have been adopted by leading companies, including Toyota, Nissan, and Intel. While serving as CEO of Mai Logic, Jason partnered strategically with IBM and Motorola, raising over $10 million and introducing several multi-million gate ICs.
+
             .card
                 h2 Revatron Co., Ltd
                 p Chief Technology Officer (CTO)
 
                 hr
 
-                ul
-                    li Direct Object-Oriented Reality (DOORs) System
-                        p A real-time AI solution focusing on machine learning and 3D reality modeling.
-                    li Pathium Display Technology (PDT)
-                        p A technology for holographic video display without 3D glasses.
+                p Jason invented the Direct Object-Oriented Reality (DOORs) system technology, a real-time AI solution for machine learning and 3D reality modeling. In 2010, he developed Pathium Display Technology (PDT), a solution for displaying holographic videos on flat panel displays without 3D glasses.
             .card
                 h2 Harada International Law Firm
                 p Consultant
 
                 hr
 
-                p Focused on innovative solutions and international cooperation to advance Japan’s semiconductor industry.
-            .card
+                p focusing on innovative solutions and international cooperation to advance Japan’s semiconductor industry. His strategic insights address technology-driven environmental challenges and market forces, leading to applications like mechanical batteries and reusable chips.
+            //- .card
                 h2 Advanced Projects
                 p &nbsp;
 
@@ -73,29 +64,34 @@ section.white
 
 section.white 
     .inner
-        .wrap(style="align-items:unset")
-            .content 
-                h1 Key Technological Innovations
-                p His impressive career is marked by many trailblazing inventions that have been adopted by major corporations throughout the world. Some examples are:
-            .image 
-                ul.innovate
-                    li Tapestry Exchange (TE)
-                        p An AI-based cryptographic system for creating secure private keys for communications.
-                    li NetDMA
-                        p A network service solution that enhances peer-to-peer communications with advanced error recovery and encryption.
-                    li Super Internet Technology
-                        p A low-latency communication technology designed to enhance 5G networks.
+        h1 Technological Innovations
+
+        br
+        
+        ul.innovate
+            li Cell Structured Computer Chip
+                p A reusable chip with a unique architecture for auto-detection and correction of runtime errors.
+            li Near Frictionless Mechanical Battery
+                p An environmentally friendly energy storage solution using flywheel angular momentum.
+            li Tapestry Exchange (TE)
+                p An AI-based cryptograph system that creates secure private keys for communications.
+            li Pathium Display Technology
+                p A holographic video display system that operates without the need for 3D glasses.
+            li Direct Object-Oriented Reality (DOORs) System
+                p A real-time AI solution focusing on 3D reality modeling and machine learning.
+            li Super Internet Technology
+                p A low-latency communication technology that enhances 5G networks.
 
 section.white 
     .inner
         h1(style="text-align:center") Partners
         .cardWrap
-            .card
+            .card(style="width: 45%")
                 h2 Baksa Gimm
                 hr
                 p Founder of broadway Inc., Expert in network API's and internet technologies.
             
-            .card
+            .card(style="width: 45%")
                 h2 Mark Bayliss
                 hr
                 p President Visual link, Member of FCC technical advisory council.
@@ -121,7 +117,7 @@ br
 
 <style scoped lang="less">
 .card {
-    width: 45%;
+    // width: 45%;
     min-width: 320px;
     border: 1px solid rgba(0,0,0,0.1);
     box-shadow: 0 36px 32px -22px rgba(0,0,0,0.1);
@@ -160,11 +156,17 @@ br
     }
 }
 .innovate {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding-left: 1rem;
 
     li {
+        width: 45%;
+        min-width: 300px;
         margin-bottom: 1rem;
         font-weight: bold;
+        flex-grow: 1;
 
         p {
             margin: 0;
