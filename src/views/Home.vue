@@ -11,11 +11,11 @@ section.dark.blend(style="padding: 12rem 1rem;")
             img(src="/assets/img/teklium.png" style="width: 50px; margin-right: 1rem;")
             h1(style="font-weight:300;") Teklium
         br
-        strong.yellow(style="font-size:1.1rem;") Pioneering new environmentally sustainable technologies #[br] to revolutionize the way we live, work, and play.
+        strong.yellow(style="font-size:1.1rem;") Innovating eco-friendly technologies to transform everyday living, working, and recreation.
         p.ellipsis We are a seasoned collective of scientists with extensive expertise in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology. Notably, the team includes individuals with significant contributions to cutting-edge projects, like those related to the F-35, the United States' most advanced jet fighter.
         br
         br
-        button.fullButton(@click="router.push('/about')") View more
+        button.fullButton(@click="router.push('/tech')") View more
 
 section.serve(style="padding:5rem 1rem 6rem")
     .inner
@@ -27,28 +27,28 @@ section.serve(style="padding:5rem 1rem 6rem")
                     img(src="/assets/img/ai.jpg" style="height: 200px")
                 .content 
                     h2 Artificial Intelligence
-                    p Data centers and AI-centric businesses can benefit from our state-of-the-art AI processors and memory solutions, which support AI's increasing computational demands.
+                    p Our state-of-the-art AI processors and memory solutions meet the growing computational demands of data centers and AI-focused businesses.
 
             .wrap
                 .image
                         img(src="/assets/img/space.jpg" style="height: 200px")
                 .content
                     h2 Aerospace and Defense
-                    p Our aerospace and defense experience include providing rugged high-performance technologies for military applications.
+                    p We provide rugged, high-performance technologies tailored for military applications, drawing on extensive experience in aerospace and defense.
 
             .wrap
                 .image 
                     img(src="/assets/img/electronic.jpg" style="height: 200px")
                 .content
                     h2 Consumer Electronics
-                    p We bring next-generation computing power to consumer electronics such as smartphones and gaming consoles.
+                    p We deliver next-generation computing power to consumer electronics, including smartphones and gaming consoles.
 
             .wrap
                 .image 
                     img(src="/assets/img/automotive.jpg" style="height: 200px")
                 .content
                     h2 Automotive
-                    p The auto industry is revolutionizing thanks to our advanced in-car system-processing power and autonomous driving capabilities.
+                    p Our advanced in-car system processing power and autonomous driving capabilities are revolutionizing the automotive industry.
 
     .inner(style="text-align:center; margin-top: 11rem;")
         h1.blue Pioneering the Future #[br]of Semiconductor Technologies
@@ -56,19 +56,19 @@ section.serve(style="padding:5rem 1rem 6rem")
 
         .cardWrap.vision 
             .card(data-aos="fade-up")
-                h2 Advanced Carbon Semiconductor Technologies
-                strong Unlocking Superior Performance with Carbon-Based Chips
-                p Our cutting-edge carbon semiconductors represent a leap forward from traditional silicon chips, offering unparalleled performance, power efficiency, and heat dissipation. Developed in collaboration with leading partners like Nantero and Visual Link, our technology incorporates multi-layered 3D semiconductor structures and Carbon Nanotubes (CNT). These advancements not only extend the lifespan of chips to up to 100 years but also ensure their reliable operation even in extreme conditions.
+                h2 Innovative Carbon Semiconductor Technology
+                strong Solutions for Industrialization and the Digital World
+                p At Teklium, we address the increasing demands of industrialization, economics, science, education, and politics with our groundbreaking carbon semiconductor technology developed in partnership with Nantero and Visual Link. Unlike traditional silicon chips, our carbon semiconductors deliver superior performance, power efficiency, and heat dissipation, featuring multi-layered 3D semiconductor technology and Carbon Nanotubes (CNT), with a lifespan of up to 100 years.
 
             .card(data-aos="fade-up")
-                h2 Innovative Solutions for a Digital World
-                strong Revolutionizing Data and Connectivity with Advanced Technologies
-                p We are at the forefront of transforming digital infrastructure with several groundbreaking solutions. Our Reusable Chip technology promotes sustainability by allowing chips to be reused, while the Memory-Mapped CPU enhances data processing speed and efficiency. Quantum Communications provide a new level of security, and Content Aware Memory improves memory management. Additionally, our vision for a Super Internet, featuring Quantum Spooling and Atomic Routing, aims to redefine global internet infrastructure with superior security and faster speeds.
+                h2 Creating Innovative Solutions for a Digital World
+                strong Revolutionizing Data Center Operations and AI Applications
+                p With innovations such as the Reusable Chip, Memory-Mapped CPU, Quantum Communications, and Content Aware Memory, we are transforming data center operations and enhancing the speed, efficiency, and security of AI applications. Our vision for a Super Internet, featuring Quantum Spooling and Atomic Routing, aims to improve global internet infrastructure.
 
             .card(data-aos="fade-up")
-                h2 Strategic Business Innovations
-                strong Redefining Technology Access and Sustainability with New Models
-                p Our innovative business strategies are designed to drive both technological advancement and sustainable development. AI City, supported by strategic partnerships, aims to boost broadband accessibility and improve data center efficiency, contributing to sustainable economic growth. Meanwhile, our Chip Subscription model offers a modern solution to keep consumers up-to-date with the latest technology while reducing electronic waste through a subscription-based access model.
+                h2 Sustainable Business Strategies
+                strong AI City and Chip Subscription Model
+                p AI City, supported by strategic partnerships, aims to enhance broadband accessibility, data center efficiency, and sustainable economic development. Additionally, our Chip Subscription model allows users to access the latest advanced chips on a subscription basis, reducing electronic waste and ensuring they remain up to date with cutting-edge technology.
 
 section.dark.blend
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")

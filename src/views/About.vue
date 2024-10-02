@@ -8,7 +8,7 @@ section.dark.img(style="padding-top: 12rem;")
 section.white 
     .inner(style="max-width:900px; text-align:center")
         h1 Teklium is the Global Leader
-        strong(style="color:#999") in AI, semiconductor technology, and sustainable energy solutions, pioneering advanced carbon semiconductors to drive performance, efficiency, and industry transformation.
+        strong(style="color:#999") We are dedicated to driving innovation and advancements in aerospace, mechanical engineering, energy, artificial intelligence, and semiconductor technology.
 
 br
 br
@@ -88,7 +88,7 @@ section.white
 
 section.white 
     .inner
-        h1(style="text-align:center") Our team
+        h1(style="text-align:center") Partners
         .cardWrap
             .card
                 h2 Baksa Gimm
@@ -102,14 +102,12 @@ section.white
 
 section.white 
     .inner(style="text-align:center")
-        h1 Partner
+        h1 Alliance
         .linkWrap 
             a.link(href="https://www.skapi.com/" target="_blank")
                 img(src="/assets/img/skapi.png" style="transform: translateY(2px)")
             a.link(href="https://www.rhfocus.com/index" target="_blank")
                 img(src="/assets/img/focusgroup.png")
-            a.link(href="https://www.nantero.com/" target="_blank")   
-                img(src="/assets/img/nantero.svg" style="filter: brightness(0); height: 1.5rem")
             .link
                 img(src="/assets/img/revatron.png")
 

@@ -2,13 +2,13 @@
 nav#desktop-menu
     ul
         li 
-            router-link(to="/about") About Us
+            router-link(to="/tech") Technologies
         li
             router-link(to="/carbon") The Carbon Alliance
         li 
             router-link(to="/news") News & Insights
         li 
-            router-link(to="/tech") Technologies
+            router-link(to="/about") About Us
     button.fullButton(@click="router.push('/contact')") Contact Us
 </template>
 

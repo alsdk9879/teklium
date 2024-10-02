@@ -3,14 +3,14 @@ div
     .hamber(:class="{'show' : showMenu}" @click="showMenu = !showMenu")
     nav#mobile-menu(:class="{'show' : showMenu}")
         ul
-            li
-                router-link(to="/about" @click="showMenu = false") About Us
+            li 
+                router-link(to="/tech" @click="showMenu = false") Technologies
             li
                 router-link(to="/carbon" @click="showMenu = false") The Carbon Alliance
             li 
                 router-link(to="/news" @click="showMenu = false") News & Insights
-            li 
-                router-link(to="/tech" @click="showMenu = false") Technologies
+            li
+                router-link(to="/about" @click="showMenu = false") About Us
             li 
                 router-link(to="/contact" @click="showMenu = false") Contact Us
 </template>

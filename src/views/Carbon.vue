@@ -43,14 +43,6 @@ section.white
         br
         br
 
-        .wrap 
-            .image
-                img(src="/assets/img/nantero.svg" style="filter: brightness(0);")
-            .content
-                h1 Nantero 
-                strong Developing a new generation of super-fast, energy-efficient and secure non-volatile memory with the highest endurance.
-                p(style="color:#999") Nantero has developed the industry’s only non-volatile memory made with carbon nanotubes, enabling a new generation of super-fast, energy-efficient and secure memory with the highest endurance.  These NRAM™ storage solutions will enable Nantero to drive new innovations in consumer electronics, computing, automotive, space exploration, industrial, enterprise networks, and more
-
 section.dark
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center; max-width: 1000px;")
         //- h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
