@@ -11,9 +11,9 @@ section.white
             .image
                 img(src="/assets/img/eco_friendly.jpg")
             .content
-                h1 Eco-Friendly, High-Performance Carbon Semiconductor Tech
-                p We are the leading global pioneer in semiconductors, creating advanced technologies to meet the evolving requirements of AI and computing. #[strong.highlight By means of eco-friendly carbon chips we are revolutionizing the industry by providing unrivaled performance, energy efficiency, and environmental friendliness.]
-                p A strategic alliance has been formed between Teklium, Nantero, and Visual Link to advance CNT semiconductor technology. Specifically, we are leading the way on carbon semiconductors, a breakthrough technology utilizing multi-layered 3D semiconductor technology and Carbon Nanotubes (CNT), which overcome Moore's Law by lowering power consumption, including in standby mode, and operating at extreme temperatures with a lifespan of up to 100 years.
+                h1 Pioneering Advanced Semiconductor Technologies
+                p We are the leading global pioneer in semiconductors, developing advanced technologies to meet the evolving demands of AI and computing. #[strong.highlight Our eco-friendly carbon chips revolutionize the industry with unmatched performance, energy efficiency, and environmental sustainability.]
+                p Teklium has formed a strategic alliance with Nantero and Visual Link to advance Carbon Nanotube (CNT) semiconductor technology. Our focus on multi-layered 3D semiconductors and CNTs enables breakthroughs that surpass Moore's Law, reducing power consumption—even in standby mode—and operating at extreme temperatures with a lifespan of up to 100 years.
 
         br
         br
@@ -22,17 +22,17 @@ section.white
 
         .wrap(style="flex-wrap: wrap-reverse;align-items: unset;")
             .content 
-                h1 Superior Heat Dissipation #[span.wordset and Cost Efficiency]
-                p The highest transistor density is now available on the market due to this advancement that extends Moore's Law beyond physical limitations. #[strong.highlight In contrast to silicon semiconductors, carbon semiconductors excel at heat dissipation and power efficiency, resulting in sub-nanometer performance and 90% lower production costs.] Using a 20 nm process, Nantero's carbon memory chips offer ten times faster reading speeds and lower power consumption.
-                p This close partnership allows us to focus on comprehensive solutions, ecosystem development, and global market adoption.
+                h1 Unmatched Performance and Market Solutions
+                p This innovation delivers the highest transistor density available, extending Moore's Law beyond its physical limitations. #[strong.highlight Unlike silicon semiconductors, carbon semiconductors excel in heat dissipation and power efficiency, offering sub-nanometer performance at 90% lower production costs.] Nantero's carbon memory chips, produced using a 20 nm process, provide ten times faster read speeds and lower power consumption.
+                p Our partnership enables us to deliver comprehensive solutions, develop ecosystems, and drive global market adoption.
             .image
                 img(src="/assets/img/memory_chip.jpg")
 
 section.white 
     .inner
         .wrap
-            .image
-                img(src="/assets/img/visuallink.jpg")
+            .image(style='height: 300px; padding: 1rem; border: 1px solid #ddd; border-radius: .625rem;')
+                img(src="/assets/img/visuallink.jpg" style='object-fit: contain;')
             .content
                 h1 Mark Bayliss
                 strong President Visual link, Member of FCC technical advisory council.
