@@ -5,7 +5,7 @@ br
 
 .inner
     .image
-        img(src="/assets/img/communication.jpg")
+        img(src="/assets/img/quantum.png")
 
     br
     br
@@ -18,11 +18,11 @@ br
     br
     br
 
-    .image
+    //- .image
         img(src="/assets/img/spooling.jpg")
 
-    br
-    br
+    //- br
+    //- br
 
     strong.red Quantum Spooling
 

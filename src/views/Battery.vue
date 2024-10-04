@@ -16,7 +16,7 @@ section.white
     .inner
         .wrap(style="align-items:unset")
             .image
-                img(src="/assets/img/eco_friendly.jpg")
+                img(src="/assets/img/hydrogen.jpg")
             .content
                 h1 Revolutionizing Closed-Loop Hydrogen Energy Systems
                 p Teklium and Visual Link have #[strong.highlight developed a groundbreaking closed-loop hydrogen energy system] that efficiently generates electricity using water, hydrogen, and oxygen, #[strong.highlight marking a significant advancement in fuel cell technology.] While fuel cells offer advantages like over 80% energy efficiency and environmental friendliness, challenges such as high hydrogen production costs and expensive catalysts remain.
@@ -33,7 +33,7 @@ section.white
                 p Looking ahead, Teklium is developing magnetic-driven fuel cell technology, poised to revolutionize catalyst cost reduction.
                 p(style="margin-top: 2rem;") This innovation represents the next generation of closed-loop hydrogen energy systems and #[strong.highlight holds immense economic potential, estimated in the hundreds of billions to trillions of US dollars, making it a highly sought-after product in the market.]
             .image
-                img(src="/assets/img/memory_chip.jpg")
+                img(src="/assets/img/potential.jpg")
 
 section.white 
     .inner
