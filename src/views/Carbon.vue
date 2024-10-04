@@ -71,9 +71,4 @@ section {
         color: #444;
     }
 }
-.highlight {
-    background-color: #fff2be;
-    color: #666;
-    padding: 0 0.25rem;
-}
 </style>

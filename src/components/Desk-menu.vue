@@ -1,8 +1,10 @@
 <template lang="pug">
 nav#desktop-menu
     ul
-        li 
-            router-link(to="/tech") Technologies
+        li
+            router-link(to="/tech") Revolutionary Technologies
+        li
+            router-link(to="/battery") Hydrogen Battery
         li
             router-link(to="/carbon") The Carbon Alliance
         li 
@@ -45,12 +47,22 @@ const route = useRoute();
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1380px) {
+    #desktop-menu {
+        font-size: 16px;
+
+        .fullButton {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 1190px) {
     #desktop-menu {
         display: none;
     }
 }
-@media (min-width: 921px) {
+@media (min-width: 1191px) {
     #desktop-menu {
         display: block;
     }
