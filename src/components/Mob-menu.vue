@@ -4,7 +4,9 @@ div
     nav#mobile-menu(:class="{'show' : showMenu}")
         ul
             li 
-                router-link(to="/tech" @click="showMenu = false") Technologies
+                router-link(to="/tech" @click="showMenu = false") Revolutionary Technologies
+            li 
+                router-link(to="/battery" @click="showMenu = false") Hydrogen Battery
             li
                 router-link(to="/carbon" @click="showMenu = false") The Carbon Alliance
             li 
@@ -126,12 +128,12 @@ watch(route, (o, n) => {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1190px) {
     .hamber, #mobile-menu {
         display: block;
     }
 }
-@media (min-width: 921px) {
+@media (min-width: 1191px) {
     .hamber, #mobile-menu {
         display: none;
     }
