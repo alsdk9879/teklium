@@ -7,6 +7,7 @@ import NewsView from '@/views/News-View.vue';
 import Tech from '@/views/Tech.vue';
 import TechView from '@/views/tech/Tech-View.vue';
 import Contact from '@/views/Contact.vue';
+import Battery from '@/views/Battery.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,11 +72,6 @@ const router = createRouter({
           component: () => import('@/views/tech/quantum-communication.vue'),
         },
         {
-          path: 'quantum-spooling',
-          name: 'quantum-spooling',
-          component: () => import('@/views/tech/quantum-spooling.vue'),
-        },
-        {
           path: 'reusable-carbon-semiconductors',
           name: 'reusable-carbon-semiconductors',
           component: () => import('@/views/tech/reusable-carbon-semiconductors.vue'),
@@ -91,6 +87,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: Contact,
+    },
+    {
+      path: '/battery',
+      name: 'battery',
+      component: Battery,
     },
   ],
 });
