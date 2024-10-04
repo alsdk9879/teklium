@@ -2,7 +2,7 @@
 section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title Contact Teklium
-        p.green We want to hear from you
+        p.yellow We want to hear from you
     img.bgi(src="/assets/img/contact_bg.png")
 
 section.white 

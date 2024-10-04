@@ -2,7 +2,7 @@
 section.dark.img(style="padding-top: 12rem")
     .inner
         h1.title News & Insight
-        p.green Stay updated with the latest developments at Teklium
+        p.yellow(style="max-width: 700px") Stay updated with the latest developments at Teklium as well as in-depth insights into our technological advancements and industry impact.
         img.bgi(src="/assets/img/news_bg.png" style="filter: brightness(1.3);")
 
 section.white    
@@ -17,13 +17,13 @@ section.white
         .cardWrap(v-else)
             //- a.card(v-for="r in releases" :href="r.url")
             router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
-                .image
-                    img(v-if="r.img" :src="r.img")
-                    img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
+                .image(v-if="r.img")
+                    img(:src="r.img")
+                    //- img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
                 .content 
-                    .date.sky {{ formatTimestamp(r.timestamp) }}
+                    .date(style="color:#999") {{ formatTimestamp(r.timestamp) }}
                     h2 {{ r.subject }}
-                    p {{ r.cont }}
+                    p(:class="{'long' : !r.img}") {{ r.cont }}
                 .button Read More >
 
 
@@ -99,10 +99,10 @@ let formatTimestamp = (timestamp) => {
         min-height: 64px;
         max-height: 64px;
     }
-    p {
-        min-height: 56px;
-        max-height: 84px;
-    }
+    // p {
+    //     min-height: 56px;
+    //     max-height: 84px;
+    // }
 }
 .cardWrap {
     display: grid;
@@ -116,13 +116,13 @@ let formatTimestamp = (timestamp) => {
     width: 32%;
     // min-width: 320px;
     padding: 1rem;
-    box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .05);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .05);
     transform: translateY(0px);
     transition: all 0.3s;
     cursor: pointer;
     text-decoration: none;
     color: #000;
-    border: 1px solid #e6eaf2;
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 1rem;
     width: 100%;
 
@@ -131,7 +131,7 @@ let formatTimestamp = (timestamp) => {
         box-shadow: 0 2px 20px 0 rgba(5, 19, 55, .1);
 
         .button {
-            color: #4b85a0;
+            color: #ff5151;
         }
     }
     .image {
@@ -160,6 +160,10 @@ let formatTimestamp = (timestamp) => {
         display: -webkit-box;
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
+
+        &.long {
+            -webkit-line-clamp: 15; 
+        }
     }
     .button {
         transition: all .3s;
@@ -177,10 +181,10 @@ let formatTimestamp = (timestamp) => {
             min-height: auto;
             max-height: initial;
         }
-        p {
-            min-height: auto;
-            max-height: initial;
-        }
+        // p {
+        //     min-height: auto;
+        //     max-height: initial;
+        // }
     }
     .cardWrap {
         grid-template-columns: repeat(1, 1fr);

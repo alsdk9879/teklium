@@ -1,9 +1,12 @@
 <template lang="pug">
-header(:class="{'hide':scroll}")
-    router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
-    DeskMenu
-    MobMenu
-main
+header#header(:class="{'hide':scroll, 'dark-mode':darkMode}")
+    //- router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
+    router-link.tit(to="/" style="display:flex; align-items:center;")
+        img(src="/assets/img/teklium.png" style="width: 30px; margin-right: 0.7rem;")
+        h1(style="font-size:1.5em; margin:0") TEKLIUM INC.
+    DeskMenu(:class="{'dark-mode':darkMode}")
+    MobMenu(:class="{'dark-mode':darkMode}")
+main(:class="{'animation': route.name == 'home'}")
     router-view
 footer
     div
@@ -16,22 +19,19 @@ footer
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
-        //- .route
-            .title News & Insight
-            p Explore news and thought leadership about water and sustainability.
         .route 
-            .title Location 
+            .title.yellow Location 
             p Teklium Inc., 2880 Zanker Road, San Jose, CA 95134
         .route
-            .title Contact Us
+            .title.yellow Contact Us
             p Should you wish to reach out to us, you can send us an email.
-            router-link(to="/contact" style="font-size: 0.9rem") Get in touch >
+            router-link(to="/contact" style="font-size: 0.9rem;text-decoration:underline") Get in touch >
 
 </template>
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
-import { ref, watch } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 
 import DeskMenu from '@/components/Desk-menu.vue'
 import MobMenu from '@/components/Mob-menu.vue'
@@ -40,31 +40,94 @@ const router = useRouter();
 const route = useRoute();
 
 let scroll = ref(false);
+let darkMode = ref(false);
 let previousScrollY = window.scrollY;
+
+let checkHeaderColor = () => {
+    const header = document.getElementById('header');
+    const sections = document.getElementsByTagName('section');
+
+    console.log('ddd')
+
+    Array.from(sections).forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            section.classList.contains('dark') ? darkMode.value = true : darkMode.value = false;
+        }
+    });
+}
 
 window.addEventListener('scroll', (e) => {
     const currentScrollY = window.scrollY;
 
     currentScrollY > previousScrollY ? scroll.value = true : scroll.value = false;
-
     previousScrollY = currentScrollY;
+
+    checkHeaderColor();
 })
 
-watch(route, (nv) => {
+watch(route, (ov, nv) => {
     if (nv) {
         window.scrollTo(0, 0);
+        checkHeaderColor();
+        darkMode.value = true;
+
+        // if (nv.name == 'home') {
+        //     darkMode.value = false;
+        // } else {
+        //     darkMode.value = true;
+        // }
     }
-})
+}, {immediate: true})
 </script>
 
 <style scoped lang="less"> 
+@keyframes bganimation {
+    0% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+    50% {
+        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+    }
+    100% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+}
+.animation {
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 255, 0.3) 0%,
+        rgba(0, 0, 0, 0) 70%
+        ),
+        /* niebieski */
+        radial-gradient(
+            ellipse at center,
+            rgba(255, 0, 0, 0.3) 0%,
+            rgba(29, 21, 21, 0) 70%
+        ),
+        /*czerwony */
+        radial-gradient(
+            ellipse at center,
+            rgba(0, 255, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0) 70%
+        )
+        /*zielony */ #efebdb;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    // background-size: 900px 900px, 900px 900px, 900px 900px;
+    background-size: 900px 1500px, 1500px 900px, 1100px 1800px;
+    background-attachment: fixed;
+    animation: bganimation 30s infinite;
+}
 header, footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    // background-color: #061741;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(24px);
 }
 header {
     position: fixed;
@@ -73,6 +136,7 @@ header {
     top: 0;
     z-index: 999;
     transition: all 0.3s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 
     a {
         color: #000;
@@ -81,12 +145,24 @@ header {
     // &.hide {
     //     top: -100%;
     // }
+    &.dark-mode {
+        a {
+            color: #fff !important;
+        }
+        ul {
+            li {
+                a {
+                    color: #fff o !important;
+                }
+            }
+        }
+    }
 }
 main {
     // background-image: linear-gradient(to bottom right, #4b85a0, #061741)
 }
 footer {
-    background-color: #000;
+    background-color: #222;
     color: #fff;
     padding: 3rem 1rem 2rem 1rem;
     gap: 3rem;
@@ -105,8 +181,6 @@ footer {
 
         .title {
             font-weight: bold;
-            // color: #0078ff;
-            color: #a5ae66;
         }
         p {
             font-size: 0.9rem;

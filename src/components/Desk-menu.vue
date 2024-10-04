@@ -2,14 +2,14 @@
 nav#desktop-menu
     ul
         li 
-            router-link(to="/about") About Us
+            router-link(to="/tech") Technologies
         li
             router-link(to="/carbon") The Carbon Alliance
         li 
             router-link(to="/news") News & Insights
         li 
-            router-link(to="/tech") Technologies
-    button.lineButton(@click="router.push('/contact')") Contact Us
+            router-link(to="/about") About Us
+    button.fullButton(@click="router.push('/contact')") Contact Us
 </template>
 
 <script setup>
@@ -21,6 +21,8 @@ const route = useRoute();
 
 <style scoped lang="less">
 #desktop-menu {
+    margin-left: auto;
+    
     ul {
         display: inline-block;
         li {
@@ -30,9 +32,15 @@ const route = useRoute();
 
             a {
                 text-decoration: none;
-                color: #333;
+                color: #000;
                 mix-blend-mode: difference;
             }
+        }
+    }
+
+    &.dark-mode {
+        ul li a{
+            color: #fff;
         }
     }
 }
