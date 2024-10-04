@@ -37,11 +37,14 @@ export let getNewsletters = async() => {
         } else {
             obj.cont = preContent[0];
         }
+        console.log(obj)
     }
 
     for(let k in releases.value) {
         crawl(releases.value[k]);
     }
+
+    console.log(releases.value)
 
     fetching.value = false;
 }

@@ -7,7 +7,7 @@ section.dark.img(style="padding-top: 12rem")
 
 section.white    
     .inner 
-        h1(style="text-align:center") Press Releases
+        h1(style="text-align:center") News
 
         template(v-if="fetching")
             Loading
