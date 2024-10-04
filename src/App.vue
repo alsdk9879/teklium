@@ -15,7 +15,7 @@ footer
 
         br
 
-        p(style="margin:0; font-size:0.8rem;") Privacy Policy | Terms & Conditions
+        router-link.policy(to="/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy | Terms & Conditions
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
@@ -189,5 +189,11 @@ footer {
 }
 a {
     text-decoration: none;
+
+    &.policy {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 </style>

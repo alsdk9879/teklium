@@ -2,14 +2,14 @@
 section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title The Carbon Alliance
-        p.yellow Eco-Friendly carbon chips
+        p.yellow Eco-Friendly Carbon Chips
     img.bgi(src="/assets/img/carbon_bg.png")
 
 section.white 
     .inner
         .wrap(style="align-items:unset")
             .image
-                img(src="/assets/img/eco_friendly.jpg")
+                img(src="/assets/img/carbon_chips.jpg")
             .content
                 h1 Pioneering Advanced Semiconductor Technologies
                 p We are the leading global pioneer in semiconductors, developing advanced technologies to meet the evolving demands of AI and computing. #[strong.highlight Our eco-friendly carbon chips revolutionize the industry with unmatched performance, energy efficiency, and environmental sustainability.]
@@ -26,7 +26,7 @@ section.white
                 p This innovation delivers the highest transistor density available, extending Moore's Law beyond its physical limitations. #[strong.highlight Unlike silicon semiconductors, carbon semiconductors excel in heat dissipation and power efficiency, offering sub-nanometer performance at 90% lower production costs.] Nantero's carbon memory chips, produced using a 20 nm process, provide ten times faster read speeds and lower power consumption.
                 p Our partnership enables us to deliver comprehensive solutions, develop ecosystems, and drive global market adoption.
             .image
-                img(src="/assets/img/memory_chip.jpg")
+                img(src="/assets/img/carbon.jpg")
 
 section.white 
     .inner
