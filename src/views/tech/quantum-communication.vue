@@ -5,7 +5,7 @@ br
 
 .inner
     .image
-        img(src="/assets/img/quantum.png")
+        img(src="/assets/img/quantum.jpg")
 
     br
     br
