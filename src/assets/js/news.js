@@ -34,6 +34,7 @@ export let getNewsletters = async() => {
         }
         if(divContent.length) {
             obj.cont = divContent[0];
+            console.log(divContent)
         } else {
             obj.cont = preContent[0];
         }

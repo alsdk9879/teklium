@@ -16,7 +16,7 @@ section.white
             p No notice has been uploaded
         .cardWrap(v-else)
             //- a.card(v-for="r in releases" :href="r.url")
-            router-link.card(v-for="r in releases" :to="'/news/' + r.message_id")
+            a.card(v-for="r in releases" :href="r.message_id == 'sttj74hebi4cbp4tslc4hah06787taf37kcond81' ? 'https://www.nxtechusa.com/articles/innovative-approach-to-ai-computing-memory-based-cpu-and-gpu-integration/22513/' : 'https://www.nxtechusa.com/articles/the-future-of-ai-computing-beyond-silicon/22514/'" target="_blank")
                 .image(v-if="r.img")
                     img(:src="r.img")
                     //- img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
@@ -96,8 +96,8 @@ let formatTimestamp = (timestamp) => {
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-        min-height: 64px;
-        max-height: 64px;
+        min-height: 72px;
+        max-height: 72px;
     }
     // p {
     //     min-height: 56px;
