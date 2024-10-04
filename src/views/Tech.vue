@@ -24,11 +24,22 @@ section.white
                 div(style="text-align:right")
                     button.lineButton Read More >
 
+    br
+    br
+    br
+
+    div(style="text-align:center")
+        button.fullButton(@click="router.push('/')") Home
+
 br
 br
 </template>
 
 <script setup>
+import { useRoute, useRouter } from 'vue-router';
+
+const router = useRouter();
+const route = useRoute();
 let techs = [
     {
         img: "aicity.jpg",
