@@ -12,7 +12,7 @@ section.white
                 img(src="/assets/img/carbon_chips.jpg")
             .content
                 h1 Pioneering Advanced Semiconductor Technologies
-                p We are the leading global pioneer in semiconductors, developing advanced technologies to meet the evolving demands of AI and computing. #[strong.highlight Our eco-friendly carbon chips revolutionize the industry with unmatched performance, energy efficiency, and environmental sustainability.]
+                p We are the leading global pioneer in semiconductors, developing advanced technologies to meet the evolving demands of AI and computing. Our eco-friendly carbon chips revolutionize the industry with unmatched performance, energy efficiency, and environmental sustainability.
                 p Teklium has formed a strategic alliance with Nantero and Visual Link to advance Carbon Nanotube (CNT) semiconductor technology. Our focus on multi-layered 3D semiconductors and CNTs enables breakthroughs that surpass Moore's Law, reducing power consumption—even in standby mode—and operating at extreme temperatures with a lifespan of up to 100 years.
 
         br
@@ -23,7 +23,7 @@ section.white
         .wrap(style="flex-wrap: wrap-reverse;align-items: unset;")
             .content 
                 h1 Unmatched Performance and Market Solutions
-                p This innovation delivers the highest transistor density available, extending Moore's Law beyond its physical limitations. #[strong.highlight Unlike silicon semiconductors, carbon semiconductors excel in heat dissipation and power efficiency, offering sub-nanometer performance at 90% lower production costs.] Nantero's carbon memory chips, produced using a 20 nm process, provide ten times faster read speeds and lower power consumption.
+                p This innovation delivers the highest transistor density available, extending Moore's Law beyond its physical limitations. Unlike silicon semiconductors, carbon semiconductors excel in heat dissipation and power efficiency, offering sub-nanometer performance at 90% lower production costs. Nantero's carbon memory chips, produced using a 20 nm process, provide ten times faster read speeds and lower power consumption.
                 p Our partnership enables us to deliver comprehensive solutions, develop ecosystems, and drive global market adoption.
             .image
                 img(src="/assets/img/carbon.jpg")

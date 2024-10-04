@@ -18,10 +18,30 @@ section.dark.blend(style="padding: 12rem 1rem;")
         button.fullButton(@click="router.push('/tech')") View more
 
 section.serve(style="padding:5rem 1rem 6rem")
-    .inner
+    .inner(style="text-align:center;")
+        h1.blue Pioneering the Future #[br]of Semiconductor Technologies
+        //- strong Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
+
+        .cardWrap.vision 
+            .card(data-aos="fade-up")
+                h2 Innovative Carbon Semiconductor Technology
+                strong Solutions for Industrialization and the Digital World
+                p At Teklium, we address the increasing demands of industrialization, economics, science, education, and politics with our groundbreaking carbon semiconductor technology developed in partnership with Nantero and Visual Link. Unlike traditional silicon chips, our carbon semiconductors deliver superior performance, power efficiency, and heat dissipation, featuring multi-layered 3D semiconductor technology and Carbon Nanotubes (CNT), with a lifespan of up to 100 years.
+
+            .card(data-aos="fade-up")
+                h2 Creating Innovative Solutions for a Digital World
+                strong Revolutionizing Data Center Operations and AI Applications
+                p With innovations such as the Reusable Chip, Memory-Mapped CPU, Quantum Communications, and Content Aware Memory, we are transforming data center operations and enhancing the speed, efficiency, and security of AI applications. Our vision for a Super Internet, featuring Quantum Spooling and Atomic Routing, aims to improve global internet infrastructure.
+
+            .card(data-aos="fade-up")
+                h2 Sustainable Business Strategies
+                strong AI City and Chip Subscription Model
+                p AI City, supported by strategic partnerships, aims to enhance broadband accessibility, data center efficiency, and sustainable economic development. Additionally, our Chip Subscription model allows users to access the latest advanced chips on a subscription basis, reducing electronic waste and ensuring they remain up to date with cutting-edge technology.
+
+    .inner(style="margin-top: 11rem;")
         h1(style="text-align:center") Who We Serve
 
-        .cont-wrap
+        .cont-wrap(data-aos="fade-up")
             .wrap
                 .image
                     img(src="/assets/img/ai.jpg" style="height: 200px")
@@ -49,26 +69,6 @@ section.serve(style="padding:5rem 1rem 6rem")
                 .content
                     h2 Automotive
                     p Our advanced in-car system processing power and autonomous driving capabilities are revolutionizing the automotive industry.
-
-    .inner(style="text-align:center; margin-top: 11rem;")
-        h1.blue Pioneering the Future #[br]of Semiconductor Technologies
-        //- strong Revolutionizing Performance and #[span.wordset Efficiency with Carbon-Based Innovations]
-
-        .cardWrap.vision 
-            .card(data-aos="fade-up")
-                h2 Innovative Carbon Semiconductor Technology
-                strong Solutions for Industrialization and the Digital World
-                p At Teklium, we address the increasing demands of industrialization, economics, science, education, and politics with our groundbreaking carbon semiconductor technology developed in partnership with Nantero and Visual Link. Unlike traditional silicon chips, our carbon semiconductors deliver superior performance, power efficiency, and heat dissipation, featuring multi-layered 3D semiconductor technology and Carbon Nanotubes (CNT), with a lifespan of up to 100 years.
-
-            .card(data-aos="fade-up")
-                h2 Creating Innovative Solutions for a Digital World
-                strong Revolutionizing Data Center Operations and AI Applications
-                p With innovations such as the Reusable Chip, Memory-Mapped CPU, Quantum Communications, and Content Aware Memory, we are transforming data center operations and enhancing the speed, efficiency, and security of AI applications. Our vision for a Super Internet, featuring Quantum Spooling and Atomic Routing, aims to improve global internet infrastructure.
-
-            .card(data-aos="fade-up")
-                h2 Sustainable Business Strategies
-                strong AI City and Chip Subscription Model
-                p AI City, supported by strategic partnerships, aims to enhance broadband accessibility, data center efficiency, and sustainable economic development. Additionally, our Chip Subscription model allows users to access the latest advanced chips on a subscription basis, reducing electronic waste and ensuring they remain up to date with cutting-edge technology.
 
 section.dark.blend
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
