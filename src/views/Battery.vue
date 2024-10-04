@@ -19,7 +19,7 @@ section.white
                 img(src="/assets/img/hydrogen.jpg")
             .content
                 h1 Revolutionizing Closed-Loop Hydrogen Energy Systems
-                p Teklium and Visual Link have #[strong.highlight developed a groundbreaking closed-loop hydrogen energy system] that efficiently generates electricity using water, hydrogen, and oxygen, #[strong.highlight marking a significant advancement in fuel cell technology.] While fuel cells offer advantages like over 80% energy efficiency and environmental friendliness, challenges such as high hydrogen production costs and expensive catalysts remain.
+                p Teklium and Visual Link have developed a groundbreaking closed-loop hydrogen energy system that efficiently generates electricity using water, hydrogen, and oxygen, marking a significant advancement in fuel cell technology. While fuel cells offer advantages like over 80% energy efficiency and environmental friendliness, challenges such as high hydrogen production costs and expensive catalysts remain.
                 p(style="margin-top: 2rem;") This innovative system addresses these issues by generating and distributing hydrogen internally, eliminating costly external processes and enhancing usability by producing hydrogen from water via standard household power outlets.
 
         br
@@ -31,7 +31,7 @@ section.white
             .content 
                 h1 Technology with Economic Potential
                 p Looking ahead, Teklium is developing magnetic-driven fuel cell technology, poised to revolutionize catalyst cost reduction.
-                p(style="margin-top: 2rem;") This innovation represents the next generation of closed-loop hydrogen energy systems and #[strong.highlight holds immense economic potential, estimated in the hundreds of billions to trillions of US dollars, making it a highly sought-after product in the market.]
+                p(style="margin-top: 2rem;") This innovation represents the next generation of closed-loop hydrogen energy systems and holds immense economic potential, estimated in the hundreds of billions to trillions of US dollars, making it a highly sought-after product in the market.
             .image
                 img(src="/assets/img/potential.jpg")
 
