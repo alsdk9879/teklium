@@ -57,7 +57,7 @@ let techs = [
     }
     ,
     {
-        img: "quantum.png",
+        img: "quantum.jpg",
         tit: "Quantum Communication",
         link: "communication",
         desc: "Quantum communication offers unparalleled security by leveraging fundamental physical laws, particularly through the use of entangled particles like photons. Protocols such as BB84 exploit the no-cloning theorem to safeguard cryptographic keys, ensuring security even if intercepted during key distribution."
