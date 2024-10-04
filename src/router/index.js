@@ -72,11 +72,6 @@ const router = createRouter({
           component: () => import('@/views/tech/quantum-communication.vue'),
         },
         {
-          path: 'quantum-spooling',
-          name: 'quantum-spooling',
-          component: () => import('@/views/tech/quantum-spooling.vue'),
-        },
-        {
           path: 'reusable-carbon-semiconductors',
           name: 'reusable-carbon-semiconductors',
           component: () => import('@/views/tech/reusable-carbon-semiconductors.vue'),
