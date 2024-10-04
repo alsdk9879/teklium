@@ -15,7 +15,7 @@ footer
 
         br
 
-        router-link.policy(to="/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy | Terms & Conditions
+        a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy | Terms & Conditions
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
