@@ -2,7 +2,7 @@
 section.dark.img(style="padding-top: 12rem;")
     .inner
         h1.title The Carbon Alliance
-        p.yellow Eco-Friendly carbon chips
+        p.yellow Eco-Friendly Carbon Chips
     img.bgi(src="/assets/img/carbon_bg.png")
 
 section.white 

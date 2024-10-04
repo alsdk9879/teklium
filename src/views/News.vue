@@ -1,7 +1,7 @@
 <template lang="pug">
 section.dark.img(style="padding-top: 12rem")
     .inner
-        h1.title News & Insight
+        h1.title News & Insights
         p.yellow(style="max-width: 700px") Stay updated with the latest developments at Teklium as well as in-depth insights into our technological advancements and industry impact.
         img.bgi(src="/assets/img/news_bg.png" style="filter: brightness(1.3);")
 

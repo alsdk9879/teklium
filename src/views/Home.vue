@@ -19,7 +19,7 @@ section.dark.blend(style="padding: 12rem 1rem;")
 
 section.serve(style="padding:5rem 1rem 6rem")
     .inner
-        h1(style="text-align:center") We are serve
+        h1(style="text-align:center") Who We Serve
 
         .cont-wrap
             .wrap
@@ -72,7 +72,7 @@ section.serve(style="padding:5rem 1rem 6rem")
 
 section.dark.blend
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center")
-        h1 Teklium – Leading the Way in Innovation. #[br]Connecting Technology and the Future.
+        h1 Leading the Way in Innovation#[br]Connecting Technology and the Future
         button.fullButton(@click="router.push('/tech')") View more
     br
     br
