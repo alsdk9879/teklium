@@ -15,7 +15,8 @@ footer
 
         br
 
-        a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy | Terms & Conditions
+        a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy |
+        a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem; margin-left: 0.25rem;") Terms & Conditions
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
@@ -166,6 +167,7 @@ footer {
     color: #fff;
     padding: 3rem 1rem 2rem 1rem;
     gap: 3rem;
+    cursor: default;
 
     a {
         color: #fff;
