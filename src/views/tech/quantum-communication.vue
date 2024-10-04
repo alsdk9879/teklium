@@ -51,13 +51,13 @@ const route = useRoute();
 .image {
     margin: 0 auto;
     max-width: 600px;
-    height: 400px;
+    // height: 400px;
     overflow: hidden;
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
     }
 }
