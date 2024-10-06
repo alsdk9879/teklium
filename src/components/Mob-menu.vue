@@ -71,7 +71,7 @@ watch(route, (o, n) => {
 
         li {
             list-style: none;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
 
             &:hover {
                 a {

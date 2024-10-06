@@ -5,9 +5,9 @@ section.dark.img(style="padding-top: 12rem;")
         p.yellow Eco-Friendly Carbon Chips
     img.bgi(src="/assets/img/carbon_bg.png")
 
-section.white 
+section.white.contextSection
     .inner
-        .wrap(style="align-items:unset")
+        .imgCont.wrap(style="align-items:unset")
             .image
                 img(src="/assets/img/carbon_chips.jpg")
             .content
@@ -17,36 +17,37 @@ section.white
 
         br
         br
-        br
-        br
 
-        .wrap(style="flex-wrap: wrap-reverse;align-items: unset;")
+        .imgCont.wrap(style="flex-wrap: wrap-reverse;align-items: unset;")
             .content 
                 h1 Unmatched Performance and Market Solutions
                 p This innovation delivers the highest transistor density available, extending Moore's Law beyond its physical limitations. Unlike silicon semiconductors, carbon semiconductors excel in heat dissipation and power efficiency, offering sub-nanometer performance at 90% lower production costs. Nantero's carbon memory chips, produced using a 20 nm process, provide ten times faster read speeds and lower power consumption.
                 p Our partnership enables us to deliver comprehensive solutions, develop ecosystems, and drive global market adoption.
             .image
                 img(src="/assets/img/carbon.jpg")
+        br
 
-section.white 
+section.white(style='background-color: #f3f0e8;' data-aos="fade-up")
     .inner
-        .wrap
-            .image(style='height: 300px; padding: 1rem; border: 1px solid #ddd; border-radius: .625rem;')
+        .wrap(style='box-shadow: none;')
+            .image(style='width: 30%;height: 300px; padding: 1rem; background-color:white;')
                 img(src="/assets/img/visuallink.jpg" style='object-fit: contain;')
-            .content
-                h1 Mark Bayliss
+            .content(style='padding: 0 0 1rem 1rem;')
+                h2 Mark Bayliss
                 strong President Visual link, Member of FCC technical advisory council.
-                p(style="color:#999") The FCC’s Technology Advisory Council (TAC) provides technical advice to the FCC. The TAC is comprised of a diverse array of leading experts that will help the FCC identify important areas of innovation and develop informed technology policies supporting America’s competitiveness and job creation in the global economy.
+                p The FCC’s Technology Advisory Council (TAC) provides technical advice to the FCC. The TAC is comprised of a diverse array of leading experts that will help the FCC identify important areas of innovation and develop informed technology policies supporting America’s competitiveness and job creation in the global economy.
 
         br
         br
         br
         br
+        //- br
+        //- br
 
 section.dark
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center; max-width: 1000px;")
         //- h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
-        h1(style="color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
+        h2(style="color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
         button.fullButton(@click="router.push('/news')") View more
 </template>
 
@@ -59,8 +60,10 @@ const route = useRoute();
 
 <style scoped lang="less">
 .wrap {
+    box-shadow: 0 36px 32px -22px rgba(0, 0, 0, 0.1);
     .image {
-        max-width: 400px !important;
+        // max-width: 400px !important;
+        max-height: 70vw;
     }
 }
 section {
@@ -68,7 +71,35 @@ section {
         color: #fff;
     }
     h1 {
-        color: #444;
+        // color: #444;
+    }
+}
+.contextSection{
+    padding: 1rem;
+}
+.imgCont {
+    // background: linear-gradient(180deg, white, transparent);
+    // background-color: white;
+    background-color: #f3f0e8;
+    .content {
+        padding: 0 1.5rem 1.5rem;
+        
+        // h1 {
+        //     margin-top: .5em;
+        // }
+    }
+    .image {
+        width: 480px;
+    }
+}
+@media (max-width: 600px) {
+    // .linkWrap {
+    //     .link {
+    //         width: 100%;
+    //     }
+    // }
+    .contextSection{
+        padding: 0;
     }
 }
 </style>

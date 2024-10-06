@@ -3,10 +3,13 @@ header#header(:class="{'hide':scroll, 'dark-mode':darkMode}")
     //- router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
     router-link.tit(to="/" style="display:flex; align-items:center;")
         img(src="/assets/img/teklium.png" style="width: 30px; margin-right: 0.7rem;")
-        h1(style="font-size:1.5em; margin:0; position: relative; top: 3px;") TEKLIUM INC.
+        //- h1(style="font-size:1.5em; margin:0; position: relative; top: 3px;") TEKLIUM INC.
+        h3(style="margin:0; position: relative; top: 3px;") TEKLIUM INC.
     DeskMenu(:class="{'dark-mode':darkMode}")
     MobMenu(:class="{'dark-mode':darkMode}")
-main(:class="{'animation': route.name == 'home'}")
+
+//- main(:class="{'animation': (route.name == 'about' || route.name == 'contact')}")
+main
     router-view
 footer
     div
@@ -15,8 +18,8 @@ footer
 
         br
 
-        a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy |
-        a.policy(href="http://teklium.skapi.com/terms.html" target="_blank" style="margin:0; font-size:0.8rem; margin-left: 0.25rem;") Terms & Conditions
+        //- a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy |
+        //- a.policy(href="http://teklium.skapi.com/terms.html" target="_blank" style="margin:0; font-size:0.8rem; margin-left: 0.25rem;") Terms & Conditions
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
@@ -25,8 +28,7 @@ footer
             p Teklium Inc., 2880 Zanker Road, San Jose, CA 95134
         .route
             .title.yellow Contact Us
-            p Should you wish to reach out to us, you can send us an email.
-            router-link(to="/contact" style="font-size: 0.9rem;text-decoration:underline") Get in touch >
+            router-link(to="/contact" style="font-size: 0.9rem;text-decoration:underline") Get in Touch >
 
 </template>
 
@@ -85,42 +87,48 @@ watch(route, (ov, nv) => {
 </script>
 
 <style scoped lang="less"> 
-@keyframes bganimation {
-    0% {
-        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
-    }
-    50% {
-        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
-    }
-    100% {
-        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
-    }
+main {
+    // background-color: #eeebdc;
+    // background-color: #f1efea;
+    // background-color: white;
+    background-color: #eee9dc;
 }
-.animation {
-    background: radial-gradient(
-        ellipse at center,
-        rgba(0, 0, 255, 0.3) 0%,
-        rgba(0, 0, 0, 0) 70%
-        ),
-        /* niebieski */
-        radial-gradient(
-            ellipse at center,
-            rgba(255, 0, 0, 0.3) 0%,
-            rgba(29, 21, 21, 0) 70%
-        ),
-        /*czerwony */
-        radial-gradient(
-            ellipse at center,
-            rgba(0, 255, 0, 0.3) 0%,
-            rgba(0, 0, 0, 0) 70%
-        )
-        /*zielony */ #efebdb;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    // background-size: 900px 900px, 900px 900px, 900px 900px;
-    background-size: 900px 1500px, 1500px 900px, 1100px 1800px;
-    background-attachment: fixed;
-    animation: bganimation 30s infinite;
-}
+// @keyframes bganimation {
+//     0% {
+//         background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+//     }
+//     50% {
+//         background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+//     }
+//     100% {
+//         background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+//     }
+// }
+// .animation {
+//     background: radial-gradient(
+//         ellipse at center,
+//         rgba(0, 0, 255, 0.3) 0%,
+//         rgba(0, 0, 0, 0) 70%
+//         ),
+//         radial-gradient(
+//             ellipse at center,
+//             rgba(255, 0, 0, 0.3) 0%,
+//             rgba(29, 21, 21, 0) 70%
+//         ),
+//         radial-gradient(
+//             ellipse at center,
+//             rgba(0, 255, 0, 0.3) 0%,
+//             rgba(0, 0, 0, 0) 70%
+//         ),
+//         #efebdb;
+//     background-repeat: no-repeat, no-repeat, no-repeat;
+//     // background-size: 900px 900px, 900px 900px, 900px 900px;
+//     background-size: 900px 1500px, 1500px 900px, 1100px 1800px;
+//     background-attachment: fixed;
+//     animation: bganimation 30s infinite;
+// }
+
+
 header, footer {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +140,7 @@ header, footer {
 }
 header {
     position: fixed;
+    // position: sticky;
     width: 100%;
     left: 0;
     top: 0;

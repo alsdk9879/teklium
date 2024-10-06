@@ -6,24 +6,25 @@ section.dark.img(style="padding-top: 12rem;")
     img.bgi(src="/assets/img/tech_bg.png")
 
 section.white
-    br
     .inner
         .cardWrap 
             router-link.card(v-for="tech in techs" :to="'/tech/' + tech.tit.replaceAll(' ', '-')")
                 .image
                     img(:src="'/assets/img/' + tech.img")
 
-                br
+                //- br
 
-                h2 {{ tech.tit }}
-                
-                p {{ tech.desc }}
+                .contx
+                    h2 {{ tech.tit }}
+                    
+                    p {{ tech.desc }}
 
                 hr
 
-                div(style="text-align:right")
+                div(style="text-align:right;margin-right: .25rem;")
                     button.lineButton Read More >
 
+    br
     br
     br
     br
@@ -92,18 +93,30 @@ let techs = [
 
 <style scoped lang="less">
 .card {
-    width: 45%;
-    min-width: 320px;
-    border: 1px solid rgba(0,0,0,0.1);
+    // width: 45%;
+    // min-width: 320px;
+    width: 480px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    // border: 1px solid rgba(0,0,0,0.1);
     box-shadow: 0 36px 32px -22px rgba(0,0,0,0.1);
-    border-radius: 16px;
-    padding: 1rem;
+    // border-radius: 16px;
+    border-radius: .5rem;
+    // padding: 1rem;
+    padding: .5rem .5rem 1rem;
     text-decoration: none;
     color: #000;
 
+    background: linear-gradient(0deg, white, #f3f0e8 50%);
+
+    .contx {
+        padding: 0 0 0 .5rem;
+    }
+
     h2 {
-        margin: 0;
-        margin-bottom: 0.5rem;
+        // margin: 0;
+        // margin-bottom: 0.5rem;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -114,6 +127,8 @@ let techs = [
     .image {
         width: 100%;
         height: 400px;
+        max-height: 50vw;
+        border-radius: .25rem;
         overflow: hidden;
 
         img {
@@ -152,6 +167,15 @@ let techs = [
 
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+    
+    &:hover {
+        @media (pointer: fine) {
+            button {
+                background-color: #ff5151;
+                color: #efebdb;
             }
         }
     }

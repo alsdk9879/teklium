@@ -7,7 +7,7 @@ section.dark.img(style="padding-top: 12rem")
 
 section.white    
     .inner 
-        h1(style="text-align:center") News
+        //- h1(style="text-align:center") News
 
         template(v-if="fetching")
             Loading
@@ -20,11 +20,11 @@ section.white
                 .image(v-if="r.img")
                     img(:src="r.img")
                     //- img(v-else src="/assets/img/teklium.png" style="width:40px; height:40px; opacity:0.5;")
-                .content 
-                    .date(style="color:#999") {{ formatTimestamp(r.timestamp) }}
-                    h2 {{ r.subject }}
+                .date(style="color:#999;font-size:0.8rem;") {{ formatTimestamp(r.timestamp) }}
+                .content
+                    h3(style='margin-top:0;') {{ r.subject }}
                     p(:class="{'long' : !r.img}") {{ r.cont }}
-                .button Read More >
+                .button(style='padding:0 .5rem;') Read More >
 
 
 //- section.white
@@ -99,6 +99,7 @@ let formatTimestamp = (timestamp) => {
         min-height: 72px;
         max-height: 72px;
     }
+    padding: .5rem;
     // p {
     //     min-height: 56px;
     //     max-height: 84px;
@@ -109,21 +110,39 @@ let formatTimestamp = (timestamp) => {
     grid-template-columns: repeat(3, 1fr);
 }
 .card {
+    // width: 45%;
+    // min-width: 320px;
+    width: 480px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    // border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 36px 32px -22px rgba(0,0,0,0.1);
+    // border-radius: 16px;
+    border-radius: .5rem;
+    // padding: 1rem;
+    padding: .5rem .5rem 1rem;
+    text-decoration: none;
+    color: #000;
+
+    background: linear-gradient(0deg, white, #f3f0e8 50%);
+}
+.card {
     display: flex;
     // flex-wrap: wrap;
     flex-direction: column;
     gap: 1rem;
     width: 32%;
     // min-width: 320px;
-    padding: 1rem;
+    // padding: 1rem;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .05);
     transform: translateY(0px);
     transition: all 0.3s;
     cursor: pointer;
     text-decoration: none;
     color: #000;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 1rem;
+    // border: 1px solid rgba(0,0,0,0.1);
+    // border-radius: 1rem;
     width: 100%;
 
     &:hover {
@@ -139,7 +158,9 @@ let formatTimestamp = (timestamp) => {
         height: 300px;
         text-align: center;
         line-height: 320px;
-        border: #ddd 1px solid;
+        // border: #ddd 1px solid;
+        border-radius: .25rem;
+        overflow: hidden;
         // background-color: #999;
         // background: linear-gradient(150deg, rgba(6,23,65,1) 0%, rgba(9,51,121,1) 33%, rgba(119,247,180,1) 100%);
 
