@@ -44,10 +44,10 @@ section.white(style='background-color: #f3f0e8;' data-aos="fade-up")
         //- br
         //- br
 
-section.dark
+section.dark(style='height: 70vw; max-height: 30vh;display:flex;align-items:center;justify-content:center;')
     .inner(data-aos="fade-up" data-aos-duration="1000" style="text-align:center; max-width: 1000px;")
         //- h1(style="color:#fff") Stay updated with the latest developments #[span.wordset at Teklium]
-        h2(style="color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
+        h2(style="margin-top:0;color:#fff") Curious about how cutting-edge technologies and innovative solutions are shaping our future?
         button.fullButton(@click="router.push('/news')") View more
 </template>
 

@@ -96,9 +96,9 @@ section.serve
                     h2 Automotive
                     p Our advanced in-car system processing power and autonomous driving capabilities are revolutionizing the automotive industry.
 
-section.dark.blend
+section.dark.blend(style='height: 70vw; max-height: 30vh;display:flex;align-items:center;justify-content:center;')
     .inner(data-aos="fade-up" style="text-align:center")
-        h2 Leading the Way in Innovation#[br]Connecting Technology and the Future
+        h2(style='margin-top:0;') Leading the Way in Innovation#[br]Connecting Technology and the Future
         button.fullButton(@click="router.push('/tech')") View more
     br
 </template>
