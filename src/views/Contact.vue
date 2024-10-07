@@ -5,33 +5,35 @@ section.dark.img(style="padding-top: 12rem;")
         p.yellow We want to hear from you
     img.bgi(src="/assets/img/contact_bg.png")
 
-section.white 
+section.white(style='padding: 2rem;')
     .inner(style="max-width:600px")
-        h1(style="text-align:center; margin-top:0 ") Connect with our team 
-        form#form(@submit.prevent="sendEmail")
-            label Name
-            input(name='name' type="text" placeholder="Your name" required)
+        br
+        //- h1(style="text-align:center; margin-top:0 ") 
+        p(style="text-align:center; margin-top:0 ") Contact us by submitting your message below.
+        form#form(@submit.prevent="sendEmail" style='line-height: 1.7;font-size: .8rem;')
+            label
+                | Name
+                input(name='name' type="text" placeholder="Your name" required)
             
-            br
+            label
+                | Email
+                input(name='email' type="email" placeholder="your@email.com" required)
             
-            label Email
-            input(name='email' type="email" placeholder="your@email.com" required)
-            
-            br
-            
-            label Subject
-            input(name='subject' placeholder="Your subject" required)
+            label
+                | Subject
+                input(name='subject' placeholder="Your subject" required)
 
-            br
-
-            label Message
-            textarea(name='message' placeholder="Your message" style="min-height: 150px" required)
+            label
+                | Message
+                textarea(name='message' placeholder="Your message" style="min-height: 150px" required)
 
             br
             br
 
             div(style="text-align:center")
                 button.fullButton(type="submit") Send Message
+    br
+    br
 
 </template>
 

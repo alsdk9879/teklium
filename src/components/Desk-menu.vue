@@ -26,6 +26,7 @@ const route = useRoute();
     margin-left: auto;
     
     ul {
+        margin: 0; // Remove default margin
         display: inline-block;
         li {
             display: inline-block;

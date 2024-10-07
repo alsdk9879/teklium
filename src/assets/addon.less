@@ -1,0 +1,86 @@
+
+@keyframes bganimation {
+    0% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+    50% {
+        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+    }
+    100% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+}
+.blend{
+    // background-color: rgba(255, 255, 255, 0.85);
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: radial-gradient(
+                ellipse at center,
+                rgba(0, 0, 255, 0.2) 0%,
+                rgba(0, 0, 0, 0) 70%
+            ),
+            radial-gradient(
+                ellipse at center,
+                rgba(255, 0, 0, 0.2) 0%,
+                rgba(29, 21, 21, 0) 70%
+            ),
+            radial-gradient(
+                ellipse at center,
+                rgba(0, 255, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0) 70%
+            ),
+            #efebdb;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 900px 1500px, 1500px 900px, 1100px 1800px;
+        background-attachment: fixed;
+        animation: bganimation 30s infinite;
+    }
+}
+
+.sectionTitle {
+    // background: linear-gradient(45deg, #f3f0e8, transparent);
+    text-align: left;
+    margin: 0;
+    padding: 1rem 0.5em;
+    color: #444;
+    // border-bottom: 1px solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid;
+    font-weight: 600;
+    
+    font-size: 1.5rem;
+}
+
+img.img-in-blend {
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // mix-blend-mode: color-dodge;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: brightness(0.2);
+    mix-blend-mode: luminosity;
+}
+
+section {
+    position: relative;
+}
+
+main {
+    min-height: 100vh;
+}

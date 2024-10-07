@@ -3,12 +3,10 @@ section.dark(style="padding-top: 12rem")
     .inner
         h1.title {{ route.path.split('/')[2].replaceAll('-', ' ') }}
     
-    br
-    br
-
-section.white
+section.white.tech-view
     router-view
 
+    br
     br
     
     div(style="text-align:center")
@@ -16,7 +14,7 @@ section.white
 
     br
     br
-    br
+    //- br
 </template>
 
 <script setup>

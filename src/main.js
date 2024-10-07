@@ -1,5 +1,5 @@
 import '@/assets/main.less';
-
+import '@/assets/addon.less';
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
