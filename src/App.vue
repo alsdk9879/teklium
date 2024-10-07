@@ -1,10 +1,8 @@
 <template lang="pug">
 header#header(:class="{'hide':scroll, 'dark-mode':darkMode}")
-    //- router-link(to="/" style="font-size:1.5em; font-weight:bold") TEKLIUM INC.
     router-link.tit(to="/" style="display:flex; align-items:center;")
-        img(src="/assets/img/teklium.png" style="width: 30px; margin-right: 0.7rem;")
-        //- h1(style="font-size:1.5em; margin:0; position: relative; top: 3px;") TEKLIUM INC.
-        h3(style="margin:0; position: relative; top: 3px;") TEKLIUM INC.
+        img(v-if="darkMode" src="/assets/img/teklium_dark.png" style="width:10rem")
+        img(v-else src="/assets/img/teklium_bright.png" style="width:10rem")
     DeskMenu(:class="{'dark-mode':darkMode}")
     MobMenu(:class="{'dark-mode':darkMode}")
 
@@ -14,12 +12,13 @@ main
 footer
     div
         router-link(to="/" style="flex-grow:3")
-            h2(style="margin: 0;") TEKLIUM INC.
+            img(src="/assets/img/teklium_dark.png" style="width:10rem; margin: 0 0 12px -12px")
+            //- h2(style="margin: 0;") TEKLIUM INC.
 
         br
 
-        //- a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy |
-        //- a.policy(href="http://teklium.skapi.com/terms.html" target="_blank" style="margin:0; font-size:0.8rem; margin-left: 0.25rem;") Terms & Conditions
+        a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy |
+        a.policy(href="http://teklium.skapi.com/terms.html" target="_blank" style="margin:0; font-size:0.8rem; margin-left: 0.25rem;") Terms & Conditions
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
     .routeWrap
