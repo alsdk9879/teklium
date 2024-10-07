@@ -12,8 +12,9 @@ section.dark.blend.landingTop(style="padding: 9rem 1rem 4rem;min-height: 100vh;d
     .inner
         .tit(style="display:flex; align-items:center;")
             // logo by height not width
-            img(src="/assets/img/teklium.png" style="height: 2.5em; margin-right: 1rem;")
-            h1(style="font-family: 'Arial';font-weight:300;font-size: 2.5rem;margin:0;") Teklium
+            img(src="/assets/img/teklium_dark.png" style="width: 16rem; margin-left: -0.8rem")
+            //- img(src="/assets/img/teklium.png" style="height: 2.5em; margin-right: 1rem;")
+            //- h1(style="font-family: 'Arial';font-weight:300;font-size: 2.5rem;margin:0;") Teklium
         br
         // use h tags, strong for bold text within tags
         h2.yellow Innovating #[.wordset eco-friendly technologies] #[.wordset to transform everyday living,] #[.wordset working, and recreation.]
