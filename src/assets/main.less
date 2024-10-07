@@ -1,19 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", "Arial", sans-serif; // Lato is alternative to Arial
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: "Arial", sans-serif;
 }
 
 p, strong {
     line-height: 1.4;
 }
 
+section:not(.tech-view) {
+    @media (max-width: 600px) {
+        padding: 1rem 0.5rem;
+    }
+}
 section {
-    padding: 3rem 1rem;
+    // padding: 3rem 1rem;
+    padding: 2rem 1rem;
+
     cursor: default;
 
     &.bright {
@@ -70,7 +82,8 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    // gap: 2rem;
+    gap: 1rem;
 
     > div {
         width: 45%;
@@ -114,7 +127,7 @@ section {
         position: relative;
         flex-grow: 1;
     }
-    h2 {
+    h2, h3 {
         color: #444;
     }
 }

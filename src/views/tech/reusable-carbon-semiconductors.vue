@@ -1,7 +1,7 @@
 <template lang="pug">
-br
-br
-br
+//- br
+//- br
+//- br
 
 .inner
     .image
@@ -32,7 +32,7 @@ br
     br
     br
 
-    strong.red INCLUDE STATS & CITATIONS
+    strong.red STATS & CITATIONS
 
     ul
         li R&D investment of the 3 nm process reaches $4-5 billion. 
@@ -52,15 +52,19 @@ const route = useRoute();
 <style scoped lang="less">
 .image {
     margin: 0 auto;
-    max-width: 600px;
-    height: 400px;
+    // max-width: 600px;
     overflow: hidden;
 
     img {
         width: 100%;
         height: 100%;
+        max-height: 33vh;
+        @media (max-width: 768px) {
+            max-height: 70vw;
+        }
         object-fit: cover;
-        object-position: center;
+        // object-position: center;
+        object-position: bottom;
     }
 }
 
