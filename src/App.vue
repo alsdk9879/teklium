@@ -19,7 +19,7 @@ footer
 
         //- a.policy(href="http://teklium.skapi.com/policy.html" target="_blank" style="margin:0; font-size:0.8rem;") Privacy Policy |
         //- a.policy(href="http://teklium.skapi.com/terms.html" target="_blank" style="margin:0; font-size:0.8rem; margin-left: 0.25rem;") Terms & Conditions
-        a.policy(href="/public/disclaimer.html" target="_blank" style="margin:0; font-size:0.8rem; margin-bottom: 0.25rem; display: inline-block; text-decoration: underline") Disclaimer
+        a.policy(href="http://tekliuminc.skapi.com/disclaimer.html" target="_blank" style="margin:0; font-size:0.8rem; margin-bottom: 0.25rem; display: inline-block") Disclaimer
         
         p(style="margin:0; font-size:0.8rem;") © #[span {{new Date().getFullYear()}}] teklium. All rights reserved.
 
