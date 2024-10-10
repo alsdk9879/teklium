@@ -36,6 +36,7 @@ footer
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { onMounted, ref, watch } from 'vue';
+import { skapi } from '@/main'
 
 import DeskMenu from '@/components/Desk-menu.vue'
 import MobMenu from '@/components/Mob-menu.vue'
@@ -50,8 +51,6 @@ let previousScrollY = window.scrollY;
 let checkHeaderColor = () => {
     const header = document.getElementById('header');
     const sections = document.getElementsByTagName('section');
-
-    console.log('ddd')
 
     Array.from(sections).forEach(section => {
         const sectionTop = section.offsetTop;

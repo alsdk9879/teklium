@@ -57,15 +57,11 @@ br
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { ref } from 'vue';
-import { releases, fetching, getNewsletters, endOfList } from '@/assets/js/news'
+import { releases, fetching, endOfList } from '@/assets/js/news'
 import Loading from '@/components/Loading.vue'
 
 const router = useRouter();
 const route = useRoute();
-
-if (!endOfList.value) {
-    getNewsletters();
-}
 
 let formatTimestamp = (timestamp) => {
     let date = new Date(timestamp);
@@ -77,15 +73,6 @@ let formatTimestamp = (timestamp) => {
 
     return formattedDateTime;
 }
-
-// let papers = [
-//     {
-//         img: "communication.webp",
-//         tit: "Emulated Quantum Communication",
-//         cont: "Discover the benefits of our new chip technology and the environmental advantages it brings, alongside our strategic partnership with Mark Bayliss and Rick Ridgley.",
-//         date: "2024.01.01"
-//     }
-// ]
 </script>
 
 <style scoped lang="less">
