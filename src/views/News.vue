@@ -60,6 +60,7 @@ import { ref } from 'vue';
 import { releases, fetching, getNewsletters, endOfList } from '@/assets/js/news'
 import Loading from '@/components/Loading.vue'
 
+// console.log(fetchedData)
 const router = useRouter();
 const route = useRoute();
 
