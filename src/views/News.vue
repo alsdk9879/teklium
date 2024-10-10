@@ -56,11 +56,10 @@ br
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { releases, fetching, getNewsletters, endOfList } from '@/assets/js/news'
 import Loading from '@/components/Loading.vue'
 
-// console.log(fetchedData)
 const router = useRouter();
 const route = useRoute();
 
@@ -78,6 +77,16 @@ let formatTimestamp = (timestamp) => {
 
     return formattedDateTime;
 }
+
+onMounted(() => {
+  const storedData = sessionStorage.getItem('newsletters');
+  if (storedData) {
+    releases.value = JSON.parse(storedData);
+  } else {
+    getNewsletters();
+  }
+});
+
 
 // let papers = [
 //     {
