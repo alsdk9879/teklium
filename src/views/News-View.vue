@@ -20,7 +20,7 @@ section.white
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
-import { releases, getNewsletters } from '@/assets/js/news'
+// import { releases, getNewsletters } from '@/assets/js/news'
 import { ref, onMounted } from 'vue';
 import Loading from '@/components/Loading.vue'
 
@@ -31,7 +31,7 @@ let currentNews = ref(null);
 let newsHtml = ref('');
 
 let fetchNews = async () => {
-    await getNewsletters();
+    // await getNewsletters();
     currentNews.value = releases.value[route.params.id];
 
     if (currentNews.value) {
