@@ -51,8 +51,6 @@ let checkHeaderColor = () => {
     const header = document.getElementById('header');
     const sections = document.getElementsByTagName('section');
 
-    console.log('ddd')
-
     Array.from(sections).forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;

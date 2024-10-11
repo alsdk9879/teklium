@@ -20,7 +20,7 @@ section.white
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
-import { releases, getNewsletters } from '@/assets/js/news'
+// import { releases, getNewsletters } from '@/assets/js/news'
 import { ref, onMounted } from 'vue';
 import Loading from '@/components/Loading.vue'
 
@@ -30,39 +30,39 @@ const route = useRoute();
 let currentNews = ref(null);
 let newsHtml = ref('');
 
-let fetchNews = async () => {
-    await getNewsletters();
-    currentNews.value = releases.value[route.params.id];
+// let fetchNews = async () => {
+//     await getNewsletters();
+//     currentNews.value = releases.value[route.params.id];
 
-    if (currentNews.value) {
-        let url = currentNews.value.url;
-        let res = await fetch(url);
-        let html = await res.text();
+//     if (currentNews.value) {
+//         let url = currentNews.value.url;
+//         let res = await fetch(url);
+//         let html = await res.text();
 
-        let parser = new DOMParser();
-        let doc = parser.parseFromString(html, 'text/html');
-        let images = doc.querySelectorAll('img');
+//         let parser = new DOMParser();
+//         let doc = parser.parseFromString(html, 'text/html');
+//         let images = doc.querySelectorAll('img');
 
-        images.forEach(img => {
-            img.parentNode.classList.add('image');
-            img.parentNode.style.margin = '0 auto';
-            img.parentNode.style.maxWidth = '600px';
-            img.parentNode.style.height = '400px';
-            img.parentNode.style.overflow = 'hidden';
+//         images.forEach(img => {
+//             img.parentNode.classList.add('image');
+//             img.parentNode.style.margin = '0 auto';
+//             img.parentNode.style.maxWidth = '600px';
+//             img.parentNode.style.height = '400px';
+//             img.parentNode.style.overflow = 'hidden';
 
-            img.style.width = '100%';
-            img.style.height = '100%';
-            img.style.objectFit = 'cover';
-            img.style.objectPosition = 'center';
-        });
+//             img.style.width = '100%';
+//             img.style.height = '100%';
+//             img.style.objectFit = 'cover';
+//             img.style.objectPosition = 'center';
+//         });
 
-        newsHtml.value = doc.body.innerHTML;
-    }
-};
+//         newsHtml.value = doc.body.innerHTML;
+//     }
+// };
 
-onMounted(() => {
-    fetchNews();
-})
+// onMounted(() => {
+//     fetchNews();
+// })
 </script>
 
 <style scoped lang="less">
