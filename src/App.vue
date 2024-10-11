@@ -36,8 +36,6 @@ footer
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { onMounted, ref, watch } from 'vue';
-import { skapi } from '@/main'
-
 import DeskMenu from '@/components/Desk-menu.vue'
 import MobMenu from '@/components/Mob-menu.vue'
 

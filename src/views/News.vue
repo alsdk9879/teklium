@@ -11,7 +11,7 @@ section.white
 
         template(v-if="fetching")
             Loading
-        div(v-else-if="!Object.keys(releases).length" style="text-align:center; color:#999; padding:9rem 0 6rem")
+        div(v-else-if="!releases" style="text-align:center; color:#999; padding:9rem 0 6rem")
             img(src="/assets/img/error.svg" style="width:3rem; opacity:0.7")
             p No notice has been uploaded
         .cardWrap(v-else)
@@ -57,7 +57,7 @@ br
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
 import { ref } from 'vue';
-import { releases, fetching, endOfList } from '@/assets/js/news'
+import { fetching, releases } from '@/cachedNews';
 import Loading from '@/components/Loading.vue'
 
 const router = useRouter();
