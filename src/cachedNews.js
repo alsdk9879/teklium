@@ -27,16 +27,17 @@ let crawl = async (obj) => {
     obj.cont = preContent[0];
   }
 
-  const urlurlIndex = html.indexOf('$urlurl:');
+  let urlurlIndex = html.indexOf('$urlurl:');
+
   if (urlurlIndex !== -1) {
-    // '$urlurl:' 다음에 오는 <a> 태그를 찾기
-    const anchorTag = doc.querySelector('a');
+    let anchorTag = doc.querySelector('a');
+    let cleanedText = obj.cont.replace(/\$urlurl:.*/, '');
+    obj.cont = cleanedText;
 
-    // <a> 태그가 존재하는 경우 href 속성 가져오기
     if (anchorTag) {
-      const url = anchorTag.href;
+      let url = anchorTag.href;
 
-      obj.src = url; // 객체에 담기
+      obj.src = url;
     }
   }
 

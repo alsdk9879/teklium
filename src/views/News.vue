@@ -141,6 +141,7 @@ let formatTimestamp = (timestamp) => {
     // border: 1px solid rgba(0,0,0,0.1);
     // border-radius: 1rem;
     width: 100%;
+    word-break: break-all;
 
     &:hover {
         transform: translateY(-5px);
