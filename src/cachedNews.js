@@ -27,18 +27,23 @@ let crawl = async (obj) => {
     obj.cont = preContent[0];
   }
 
+  // News.vue > 특정문자 '$urlurl:' 포함시 외부링크로 이동 (Bulk Email 전송시 유의)
   let urlurlIndex = html.indexOf('$urlurl:');
 
   if (urlurlIndex !== -1) {
-    let anchorTag = doc.querySelector('a');
-    let cleanedText = obj.cont.replace(/\$urlurl:.*/, '');
-    obj.cont = cleanedText;
+    let afterUrlurl = html.substring(urlurlIndex + '$urlurl:'.length).trim();
+    let tempDoc = parser.parseFromString(afterUrlurl, 'text/html');
 
+    let anchorTag = tempDoc.querySelector('a');
     if (anchorTag) {
       let url = anchorTag.href;
-
-      obj.src = url;
+      if (url && url.startsWith('http')) {
+        obj.src = url;
+      }
     }
+
+    let cleanedText = obj.cont.replace(/\$urlurl:.*/, '');
+    obj.cont = cleanedText.trim();
   }
 
   return obj;
